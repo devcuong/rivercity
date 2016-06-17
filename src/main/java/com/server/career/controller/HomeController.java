@@ -1,6 +1,7 @@
 package com.server.career.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -13,13 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.server.career.bean.ImageSlideBean;
-import com.server.career.bean.InformationInvesterBean;
+import com.server.career.bean.InformationInvestorBean;
 import com.server.career.bean.InformationNormalBean;
 import com.server.career.bean.InformationSpecialBean;
 import com.server.career.service.ImageSlideService;
 import com.server.career.service.InformationNormalService;
 import com.server.career.service.InformationSpecialService;
-import com.server.career.service.InvesterService;
+import com.server.career.service.InvestorService;
 
 /**
  * Handles requests for the application home page.
@@ -37,7 +38,7 @@ public class HomeController {
 	private InformationSpecialService informationSpecialService;
 
 	@Autowired
-	private InvesterService investerService;
+	private InvestorService investorService;
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -58,14 +59,15 @@ public class HomeController {
 			if ("gioi-thieu".equals(pageName)) {
 				List<InformationNormalBean> informationNormalBeans = informationNormalService.getAllInformationNormal();
 				List<InformationSpecialBean> informationSpecialBeans = informationSpecialService.getAllInformationSpecial();
-				List<InformationInvesterBean> allInformationInvesterBean = new ArrayList<InformationInvesterBean>();
+				List<InformationInvestorBean> allInformationInvestorBean = new ArrayList<InformationInvestorBean>();
 				for(int i = 0; i< informationSpecialBeans.size();i++){
-					List<InformationInvesterBean> informationInvesterBean = investerService.getInvesterByInformationSpecialId(informationSpecialBeans.get(i).getInforId());
-					allInformationInvesterBean.addAll(informationInvesterBean);
+					List<InformationInvestorBean> informationInvestorBean = investorService.getInvestorByInformationSpecialId(informationSpecialBeans.get(i).getInforId());
+					allInformationInvestorBean.addAll(informationInvestorBean);
+					allInformationInvestorBean.removeAll(Collections.singleton(null));
 				}
 				model.put("informationNormal", informationNormalBeans);
 				model.put("informationSpecial", informationSpecialBeans);
-				model.put("informationInvester", allInformationInvesterBean);
+				model.put("informationInvestor", allInformationInvestorBean);
 				return "gioithieu";
 			}
 			if ("vi-tri".equals(pageName)) {

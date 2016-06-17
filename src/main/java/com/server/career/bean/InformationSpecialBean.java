@@ -1,15 +1,15 @@
 package com.server.career.bean;
 
 public class InformationSpecialBean {
-	public int inforId;
+	public Integer inforId;
 	public String inforImage;
 	public String inforUrl;
-	public int inforDataName;
-	public int inforDataHash;
+	public Integer inforDataName;
+	public Integer inforDataHash;
 	public String inforName;
 	public String inforAlias;
 	public String inforContent;
-	public int getInforId() {
+	public Integer getInforId() {
 		return inforId;
 	}
 	public void setInforId(int inforId) {
