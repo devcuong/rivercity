@@ -22,9 +22,24 @@
         <put-attribute name="contact" value="/WEB-INF/template/main/contact.jsp" />
         <put-attribute name="rightcolumn" value="/WEB-INF/template/main/rightcolumn.jsp" />
     </definition>
-    <definition name="secondTemplate" template="/WEB-INF/template/second/template.jsp">
-        <put-attribute name="header" value="/WEB-INF/template/second/header.jsp" />
-        <put-attribute name="menu" value="/WEB-INF/template/second/menu.jsp" />
-        <put-attribute name="footer" value="/WEB-INF/template/second/footer.jsp" />
+    <definition name="gioithieuTemplate" template="/WEB-INF/template/gioithieu/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/gioithieu/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/gioithieu/menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/gioithieu/footer.jsp" />
+    </definition>
+    <definition name="vitriTemplate" template="/WEB-INF/template/vitri/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/vitri/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/vitri/menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/vitri/footer.jsp" />
+    </definition>
+     <definition name="tienichTemplate" template="/WEB-INF/template/tienich/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/tienich/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/tienich/menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/tienich/footer.jsp" />
+    </definition>
+    <definition name="lienheTemplate" template="/WEB-INF/template/lienhe/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/lienhe/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/lienhe/menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/lienhe/footer.jsp" />
     </definition>
 </tiles-definitions>
