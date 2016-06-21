@@ -12,7 +12,7 @@
 <meta name="Description" content="RIVER CITY" />
 <meta name="keywords" content="RIVER CITY" />
 <meta name="author" content="RIVER CITY">
-<meta property="og:url" content="lien-he.html">
+<meta property="og:url" content="thong-tin-can-ho.html">
 <meta property="og:title" content="RIVER CITY">
 <meta property="og:image"
 	content="catalog/view/theme/default/images/social-share.png">
@@ -26,18 +26,18 @@
 <link rel="SHORTCUT ICON"
 	href="catalog/view/theme/default/images/favicon.ico">
 <link
-	href="<c:url value="/resources/lienhe/css/A.style.css+validationEngine.jquery.css,Mcc.OAlrngD5j2.css.pagespeed.cf.RNSuIYM9wI.css" />"
+	href="<c:url value="/resources/thongtincanho/css/A.style.css+validationEngine.jquery.css,Mcc.OAlrngD5j2.css.pagespeed.cf.RNSuIYM9wI.css" />"
 	rel="stylesheet" type="text/css" />
 <script type="text/javascript"
-	src="<c:url value="/resources/lienhe/js/jquery.js.pagespeed.jm.BnirE05kB4.js" />"></script>
+	src="<c:url value="/resources/thongtincanho/js/jquery.js.pagespeed.jm.BnirE05kB4.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/lienhe/js/common.js.pagespeed.jm.jobZyt4kpk.js" />"></script>
+	src="<c:url value="/resources/thongtincanho/js/common.js.pagespeed.jm.jobZyt4kpk.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/lienhe/js/slide.js.pagespeed.jm.41_i7m3MLM.js" />"></script>
+	src="<c:url value="/resources/thongtincanho/js/slide.js.pagespeed.jm.41_i7m3MLM.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/lienhe/js/scroll.js" />"></script>
+	src="<c:url value="/resources/thongtincanho/js/scroll.js" />"></script>
 <script
-	src="<c:url value="/resources/lienhe/js/load.js+validate.js+jquery.validationEngine.js.pagespeed.jc.PjG9iBJAmS.js" />"></script>
+	src="<c:url value="/resources/thongtincanho/js/load.js+validate.js+jquery.validationEngine.js.pagespeed.jc.PjG9iBJAmS.js" />"></script>
 <script>
 	eval(mod_pagespeed_UJf0KLnZI4);
 </script>
@@ -63,7 +63,7 @@
 	ga('send', 'pageview');
 </script>
 </head>
-<body id="contact-page">
+<body id="apartment-page">
 	<!--LOAD-->
 	<div class="loadicon">
 		<svg class="load-present" version="1.1"
@@ -441,6 +441,6 @@
 	<div class="go-top"></div>
 	<div class="scroll-down"></div>
 	<script type="text/javascript"
-		src="<c:url value="/resources/lienhe/js/btq.js.pagespeed.jm.9g2_au-jvj.js" />"></script>
+		src="<c:url value="/resources/thongtincanho/js/btq.js.pagespeed.jm.9g2_au-jvj.js" />"></script>
 </body>
 </html>
