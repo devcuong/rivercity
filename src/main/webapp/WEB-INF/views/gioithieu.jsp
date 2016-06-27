@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<tiles:insertDefinition name="secondTemplate">
+<tiles:insertDefinition name="gioithieuTemplate">
 	<tiles:putAttribute name="body">
 		<div class="title-page"
 			style="background-image: url(http://rivercity.vn/pictures/catalog/about/bg.jpg)">
@@ -106,7 +106,7 @@
 							style="display: flex; height: 597px; transform: translate3d(0px, -50px, 100px) rotateX(-10deg) rotateY(0deg); z-index: 0; transition-duration: 0ms;">
 							<div class="bg-picture">
 								<img
-									src="<c:url value="/resources/second/images/${sInformationNormal.inforImage}" />"
+									src="<c:url value="/resources/gioithieu/images/${sInformationNormal.inforImage}" />"
 									alt="${sInformationNormal.inforName}"
 									style="width: 1366px; height: 708.613px; left: 0px;">
 							</div>

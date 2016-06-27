@@ -8,11 +8,6 @@
 	private-lock-whitelist="true">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<div class="_xdsptemp">
-	undefined
-	<div></div>
-</div>
 <meta name="Description"
 	content="Lần đầu tiên 99 TIỆN ÍCH ƯU VIỆT &amp; những kiệt tác kiến trúc danh tiếng thế giới đã xuất hiện tại Việt Nam: Biển đảo nhân tạo, quảng trường nước &amp; ánh sáng, đường hoa đi bộ trên không, hồ bơi thác nước 2 tầng.">
 <meta name="keywords" content="RIVER CITY">

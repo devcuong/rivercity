@@ -11,25 +11,25 @@
 						data-href="http://rivercity.vn/view-video.html?id=7">Video</a></li>
 
 					<li class="current"><a class="link-load"
-						href="http://rivercity.vn/gioi-thieu.html" data-name="about-page">Giới
+						href="gioi-thieu.html" data-name="about-page">Giới
 							thiệu</a></li>
 					<li><a class="link-load"
-						href="http://rivercity.vn/vi-tri.html" data-name="location-page">Vị
+						href="vi-tri.html" data-name="location-page">Vị
 							trí</a></li>
 					<li><a class="link-load"
-						href="http://rivercity.vn/tien-ich.html"
+						href="tien-ich.html"
 						data-name="facilities-page">Tiện ích</a></li>
 					<li><a class="link-load"
-						href="http://rivercity.vn/thong-tin-can-ho.html"
+						href="thong-tin-can-ho.html"
 						data-name="apartment-page">Thông tin căn hộ</a></li>
 					<li><a class="link-load"
-						href="http://rivercity.vn/thu-vien.html" data-name="library-page">Thư
+						href="thu-vien.html" data-name="library-page">Thư
 							viện</a></li>
 					<li><a class="link-load"
-						href="http://rivercity.vn/tin-tuc.html" data-name="news-page">Tin
+						href="tin-tuc.html" data-name="news-page">Tin
 							tức</a></li>
 					<li><a class="link-load"
-						href="http://rivercity.vn/lien-he.html" data-name="contact-page">Liên
+						href="lien-he.html" data-name="contact-page">Liên
 							hệ</a></li>
 				</ul>
 			</div>
