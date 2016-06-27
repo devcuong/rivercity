@@ -39,9 +39,7 @@ public class HomeController {
 
 	@Autowired
 	private InvestorService investorService;
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
+
 	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String home(Map<String, Object> model, HttpServletRequest request) {
 		/* String requestURI = request.getServerName(); */
@@ -87,6 +85,10 @@ public class HomeController {
 			}
 			if("lien-he".equals(pageName)){
 				return "lienhe";
+			}
+			String[] tenBlock = pageName.split("-");
+			if("block".equals(tenBlock[0])){
+				return "block";
 			}
 		}
 		return "article";
