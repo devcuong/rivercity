@@ -5,7 +5,7 @@
 <tiles:insertDefinition name="vitriTemplate">
 	<tiles:putAttribute name="body">
 		<div class="title-page"
-			style="background-image: url(pictures/catalog/location/xbg.jpg.pagespeed.ic.nHGaswqJYj.jpg)">
+			style="background-image: url(<c:url value="/resources/vitri/images/xbg.jpg.pagespeed.ic.nHGaswqJYj.jpg" />)">
 			<h1>Vị trí dự án</h1>
 		</div>
 		<div class="content-page">

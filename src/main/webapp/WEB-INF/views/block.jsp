@@ -2,10 +2,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<tiles:insertDefinition name="vitriTemplate">
+<tiles:insertDefinition name="blockTemplate">
 	<tiles:putAttribute name="body">
 		<div class="title-page"
-			style="background-image: url(../pictures/catalog/apartment/xbg3.jpg.pagespeed.ic.HCQtVszKDh.jpg)">
+			style="background-image: url(<c:url value="/resources/block/images/xbg3.jpg.pagespeed.ic.HCQtVszKDh.jpg" />)">
 			<h1>Thông tin căn hộ</h1>
 		</div>
 		<div class="content-page">
@@ -13,34 +13,34 @@
 				<ul>
 					<li><h2>
 							Tầng <strong>1</strong>
-						</h2> <a class="bullet" href="block-d/tang-01.html" data-name="1"
+						</h2> <a class="bullet" href="${pageContext.request.contextPath}/thong-tin-can-ho/block-${blockName}/tang-01.html" data-name="1"
 						data-title="RIVER CITY" data-description="RIVER CITY"
 						data-keyword="RIVER CITY"></a></li>
 					<li><h2>
 							Tầng <strong>lửng</strong>
-						</h2> <a class="bullet" href="block-d/tang-lung.html" data-name="2"
+						</h2> <a class="bullet" href="${pageContext.request.contextPath}/thong-tin-can-ho/block-${blockName}/tang-lung.html" data-name="2"
 						data-title="RIVER CITY" data-description="RIVER CITY"
 						data-keyword="RIVER CITY"></a></li>
 					<li><h2>
 							Tầng <strong>2</strong> - Tầng <strong>15</strong>
-						</h2> <a class="bullet" href="block-d/tang-2-tang-15.html"
-						data-name="3" data-title="RIVER CITY"
-						data-description="RIVER CITY" data-keyword="RIVER CITY"></a></li>
+						</h2> <a class="bullet" href="${pageContext.request.contextPath}/thong-tin-can-ho/block-${blockName}/tang-2-tang-15.html" data-name="3"
+						data-title="RIVER CITY" data-description="RIVER CITY"
+						data-keyword="RIVER CITY"></a></li>
 					<li><h2>
 							Tầng <strong>16</strong> - Tầng <strong>22</strong>
-						</h2> <a class="bullet" href="block-d/tang-16-tang-22.html"
-						data-name="4" data-title="RIVER CITY"
-						data-description="RIVER CITY" data-keyword="RIVER CITY"></a></li>
+						</h2> <a class="bullet" href="${pageContext.request.contextPath}/thong-tin-can-ho/block-${blockName}/tang-16-tang-22.html" data-name="4"
+						data-title="RIVER CITY" data-description="RIVER CITY"
+						data-keyword="RIVER CITY"></a></li>
 					<li><h2>
 							Tầng <strong>23</strong> - Tầng <strong>29</strong>
-						</h2> <a class="bullet" href="block-d/tang-23-tang-29.html"
-						data-name="5" data-title="RIVER CITY"
-						data-description="RIVER CITY" data-keyword="RIVER CITY"></a></li>
+						</h2> <a class="bullet" href="${pageContext.request.contextPath}/thong-tin-can-ho/block-${blockName}/tang-23-tang-29.html" data-name="5"
+						data-title="RIVER CITY" data-description="RIVER CITY"
+						data-keyword="RIVER CITY"></a></li>
 					<li><h2>
 							Tầng <strong>30</strong> - Tầng <strong>36</strong>
-						</h2> <a class="bullet" href="block-d/tang-30-tang-36.html"
-						data-name="6" data-title="RIVER CITY"
-						data-description="RIVER CITY" data-keyword="RIVER CITY"></a></li>
+						</h2> <a class="bullet" href="${pageContext.request.contextPath}/thong-tin-can-ho/block-${blockName}/tang-30-tang-36.html" data-name="6"
+						data-title="RIVER CITY" data-description="RIVER CITY"
+						data-keyword="RIVER CITY"></a></li>
 				</ul>
 			</div>
 			<div class="bg-nav">
@@ -62,7 +62,7 @@
 								</h2>
 								<div class="typical-block">
 									<div class="typical-block-top"
-										style="background-image: url(../pictures/catalog/apartment/xd-t1.jpg.pagespeed.ic.1skJu6Ijwn.jpg)">
+										style="background-image: url(<c:url value="/resources/block/images/xd-t1.jpg.pagespeed.ic.1skJu6Ijwn.jpg" />)">
 									</div>
 								</div>
 								<div class="block-bg block-bg-vi"></div>
@@ -80,7 +80,7 @@
 								</h2>
 								<div class="typical-block">
 									<div class="typical-block-top"
-										style="background-image: url(../pictures/catalog/apartment/xd-tl.jpg.pagespeed.ic.AajQ_qvfAb.jpg)">
+										style="background-image: url(<c:url value="/resources/block/images/xd-tl.jpg.pagespeed.ic.AajQ_qvfAb.jpg" />)">
 									</div>
 								</div>
 								<div class="block-bg block-bg-vi"></div>
@@ -98,48 +98,68 @@
 								</h2>
 								<div class="typical-block">
 									<div class="typical-block-top"
-										style="background-image: url(../pictures/catalog/apartment/xd-t215.jpg.pagespeed.ic.UXYzPjsqsF.jpg)">
+										style="background-image: url(<c:url value="/resources/block/images/xd-t215.jpg.pagespeed.ic.UXYzPjsqsF.jpg" />)">
 										<a class="d15-thumb-1"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-110m2.html"
-											data-info="d15-1"></a> <a class="d15-thumb-2"
+											data-info="d15-1"></a> 
+										<a class="d15-thumb-2"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-932m2.html"
-											data-info="d15-2"></a> <a class="d15-thumb-3"
+											data-info="d15-2"></a> 
+										<a class="d15-thumb-3"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-653m2.html"
-											data-info="d15-3"></a> <a class="d15-thumb-5"
+											data-info="d15-3"></a>
+										<a class="d15-thumb-5"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-668m2.html"
-											data-info="d15-5"></a> <a class="d15-thumb-6"
+											data-info="d15-5"></a>
+										<a class="d15-thumb-6"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-653m2.html"
-											data-info="d15-6"></a> <a class="d15-thumb-7"
+											data-info="d15-6"></a>
+										<a class="d15-thumb-7"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-764m2.html"
-											data-info="d15-7"></a> <a class="d15-thumb-8"
+											data-info="d15-7"></a>
+										<a class="d15-thumb-8"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-653m2.html"
-											data-info="d15-8"></a> <a class="d15-thumb-9"
+											data-info="d15-8"></a>
+										<a class="d15-thumb-9"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-47m2.html"
-											data-info="d15-9"></a> <a class="d15-thumb-10"
+											data-info="d15-9"></a>
+										<a class="d15-thumb-10"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-548m2.html"
-											data-info="d15-10"></a> <a class="d15-thumb-11"
+											data-info="d15-10"></a>
+										<a class="d15-thumb-11"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-548m2.html"
-											data-info="d15-11"></a> <a class="d15-thumb-12"
+											data-info="d15-11"></a>
+										<a class="d15-thumb-12"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-548m2.html"
-											data-info="d15-12"></a> <a class="d15-thumb-14"
+											data-info="d15-12"></a>
+										<a class="d15-thumb-14"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-548m2.html"
-											data-info="d15-14"></a> <a class="d15-thumb-15"
+											data-info="d15-14"></a>
+										<a class="d15-thumb-15"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-47m2.html"
-											data-info="d15-15"></a> <a class="d15-thumb-16"
+											data-info="d15-15"></a>
+										<a class="d15-thumb-16"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-548m2.html"
-											data-info="d15-16"></a> <a class="d15-thumb-17"
+											data-info="d15-16"></a>
+										<a class="d15-thumb-17"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-764m2.html"
-											data-info="d15-17"></a> <a class="d15-thumb-18"
+											data-info="d15-17"></a>
+										<a class="d15-thumb-18"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-548m2.html"
-											data-info="d15-18"></a> <a class="d15-thumb-19"
+											data-info="d15-18"></a>
+										<a class="d15-thumb-19"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-668m2.html"
-											data-info="d15-19"></a> <a class="d15-thumb-20"
+											data-info="d15-19"></a>
+										<a class="d15-thumb-20"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-548m2.html"
-											data-info="d15-20"></a> <a class="d15-thumb-21"
+											data-info="d15-20"></a>
+										<a class="d15-thumb-21"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-653m2.html"
-											data-info="d15-21"></a> <a class="d15-thumb-22"
+											data-info="d15-21"></a>
+										<a class="d15-thumb-22"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-932m2.html"
-											data-info="d15-22"></a> <a class="d15-thumb-23"
+											data-info="d15-22"></a>
+										<a class="d15-thumb-23"
 											href="block-d/tang-2-tang-15/t2-t15-can-ho-110m2.html"
 											data-info="d15-23"></a>
 									</div>
@@ -307,7 +327,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t16.jpg.pagespeed.ic.T-Z47mjgmR.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t16.jpg.pagespeed.ic.T-Z47mjgmR.jpg" />)">
 											<a class="d16-thumb-1"
 												href="block-d/tang-16-tang-22/tang-16/can-ho-110m2.html"
 												data-info="d16-1"></a> <a class="d16-thumb-2"
@@ -457,7 +477,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t17.jpg.pagespeed.ic.5ns34Da-wN.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t17.jpg.pagespeed.ic.5ns34Da-wN.jpg" />)">
 											<a class="d17-thumb-1"
 												href="block-d/tang-16-tang-22/tang-17/d-t17-can-ho-110m2.html"
 												data-info="d17-1"></a> <a class="d17-thumb-2"
@@ -622,7 +642,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t18.jpg.pagespeed.ic.5vC-5905eL.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t18.jpg.pagespeed.ic.5vC-5905eL.jpg" />)">
 											<a class="d18-thumb-1"
 												href="block-d/tang-16-tang-22/tang-18/d-t18-can-ho-110m2.html"
 												data-info="d18-1"></a> <a class="d18-thumb-2"
@@ -774,7 +794,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t19.jpg.pagespeed.ic.bMqapU34PV.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t19.jpg.pagespeed.ic.bMqapU34PV.jpg" />)">
 											<a class="d19-thumb-1"
 												href="block-d/tang-16-tang-22/tang-19/d-t19-can-ho-110m2.html"
 												data-info="d19-1"></a> <a class="d19-thumb-2"
@@ -925,7 +945,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t20.jpg.pagespeed.ic.rN23Fzz_w3.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t20.jpg.pagespeed.ic.rN23Fzz_w3.jpg" />)">
 											<a class="d20-thumb-1"
 												href="block-d/tang-16-tang-22/tang-20/d-t20-can-ho-110m2.html"
 												data-info="d20-1"></a> <a class="d20-thumb-2"
@@ -1076,7 +1096,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t21.jpg.pagespeed.ic.XX-bMqB8OZ.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t21.jpg.pagespeed.ic.XX-bMqB8OZ.jpg" />)">
 											<a class="d21-thumb-1"
 												href="block-d/tang-16-tang-22/tang-21/d-t21-can-ho-110m2.html"
 												data-info="d21-1"></a> <a class="d21-thumb-2"
@@ -1227,7 +1247,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t22.jpg.pagespeed.ic.-rkM9ElWvP.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t22.jpg.pagespeed.ic.-rkM9ElWvP.jpg" />)">
 											<a class="d22-thumb-1"
 												href="block-d/tang-16-tang-22/tang-22/d-t22-can-ho-110m2.html"
 												data-info="d22-1"></a> <a class="d22-thumb-2"
@@ -1418,7 +1438,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t23.jpg.pagespeed.ic.I27h_kHVyE.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t23.jpg.pagespeed.ic.I27h_kHVyE.jpg" />)">
 											<a class="d23-thumb-1"
 												href="block-d/tang-23-tang-29/tang-23/d-t23-can-ho-110m2.html"
 												data-info="d23-1"></a> <a class="d23-thumb-2"
@@ -1561,7 +1581,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t24.jpg.pagespeed.ic.0ijzXSv19J.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t24.jpg.pagespeed.ic.0ijzXSv19J.jpg" />)">
 											<a class="d24-thumb-1"
 												href="block-d/tang-23-tang-29/tang-24/d-t24-can-ho-110m2.html"
 												data-info="d24-1"></a> <a class="d24-thumb-2"
@@ -1696,7 +1716,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t25.jpg.pagespeed.ic.cZKnIbgoKl.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t25.jpg.pagespeed.ic.cZKnIbgoKl.jpg" />)">
 											<a class="d25-thumb-1"
 												href="block-d/tang-23-tang-29/tang-25/d-t25-can-ho-110m2.html"
 												data-info="d25-1"></a> <a class="d25-thumb-2"
@@ -1831,7 +1851,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t26.jpg.pagespeed.ic.pJcvlqadAU.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t26.jpg.pagespeed.ic.pJcvlqadAU.jpg" />)">
 											<a class="d26-thumb-1"
 												href="block-d/tang-23-tang-29/tang-269123.html?apartment_id=100.html"
 												data-info="d26-1"></a> <a class="d26-thumb-2"
@@ -1966,7 +1986,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t27.jpg.pagespeed.ic.0fNqakXTZ4.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t27.jpg.pagespeed.ic.0fNqakXTZ4.jpg" />)">
 											<a class="d27-thumb-1"
 												href="block-d/tang-23-tang-29/tang-27/d-t27-can-ho-110m2.html"
 												data-info="d27-1"></a> <a class="d27-thumb-2"
@@ -2101,7 +2121,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t28.jpg.pagespeed.ic.9hLKn1LuTe.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t28.jpg.pagespeed.ic.9hLKn1LuTe.jpg" />)">
 											<a class="d28-thumb-1"
 												href="block-d/tang-23-tang-29/tang-28/d-t28-can-ho-110m2.html"
 												data-info="d28-1"></a> <a class="d28-thumb-2"
@@ -2228,7 +2248,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t29.jpg.pagespeed.ic.jgKUJk1xxf.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t29.jpg.pagespeed.ic.jgKUJk1xxf.jpg" />)">
 											<a class="d29-thumb-1"
 												href="block-d/tang-23-tang-29/tang-29/d-t29-can-ho-110m2.html"
 												data-info="d29-1"></a> <a class="d29-thumb-2"
@@ -2403,7 +2423,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t30.jpg.pagespeed.ic.vTCDHOFRIx.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t30.jpg.pagespeed.ic.vTCDHOFRIx.jpg" />)">
 											<a class="d30-thumb-1"
 												href="block-d/tang-30-tang-36/tang-30/d-t30-can-ho-110m2.html"
 												data-info="d30-1"></a> <a class="d30-thumb-2"
@@ -2522,7 +2542,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t31.jpg.pagespeed.ic.9Xor98v35C.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t31.jpg.pagespeed.ic.9Xor98v35C.jpg" />)">
 											<a class="d31-thumb-1"
 												href="block-d/tang-30-tang-36/tang-31/d-t31-can-ho-110m2.html"
 												data-info="d31-1"></a> <a class="d31-thumb-2"
@@ -2641,7 +2661,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t32.jpg.pagespeed.ic.I3UTLxCyd6.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t32.jpg.pagespeed.ic.I3UTLxCyd6.jpg" />)">
 											<a class="d32-thumb-1"
 												href="block-d/tang-30-tang-36/tang-32/d-t32-can-ho-110m2.html"
 												data-info="d32-1"></a> <a class="d32-thumb-2"
@@ -2760,7 +2780,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t33.jpg.pagespeed.ic.ImqCZn_YRN.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t33.jpg.pagespeed.ic.ImqCZn_YRN.jpg" />)">
 											<a class="d33-thumb-1"
 												href="block-d/tang-30-tang-36/tang-33/d-t33-can-ho-110m2.html"
 												data-info="d33-1"></a> <a class="d33-thumb-2"
@@ -2879,7 +2899,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t34.jpg.pagespeed.ic.yqYIJDkjke.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t34.jpg.pagespeed.ic.yqYIJDkjke.jpg" />)">
 											<a class="d34-thumb-1"
 												href="block-d/tang-30-tang-36/tang-34/d-t34-can-ho-110m2.html"
 												data-info="d34-1"></a> <a class="d34-thumb-2"
@@ -2990,9 +3010,9 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t35.jpg.pagespeed.ic.3XIuNirsFh.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t35.jpg.pagespeed.ic.3XIuNirsFh.jpg" />)">
 											<a class="d35-thumb-1"
-												href="block-d/tang-30-tang-36/tang-35/d-t35-can-ho-110m2.html"
+												href="block-d/tang-30-tang-36/tang-35/d-t35-can-ho-110m2.jpghtml"
 												data-info="d35-1"></a> <a class="d35-thumb-2"
 												href="block-d/tang-30-tang-36/tang-35/d-t35-can-ho-932m2.html"
 												data-info="d35-2"></a> <a class="d35-thumb-3"
@@ -3101,7 +3121,7 @@
 									</h2>
 									<div class="typical-block">
 										<div class="typical-block-top"
-											style="background-image: url(../pictures/catalog/apartment/xd-t36.jpg.pagespeed.ic.eAZgT2r1_q.jpg)">
+											style="background-image: url(<c:url value="/resources/block/images/xd-t36.jpg.pagespeed.ic.eAZgT2r1_q.jpg" />)">
 											<a class="d36-thumb-1"
 												href="block-d/tang-30-tang-36/tang-36/d-t36-can-ho-110m2.html"
 												data-info="d36-1"></a> <a class="d36-thumb-2"
@@ -3206,13 +3226,13 @@
 				VỀ</a>
 			<div class="link-block">
 				<a class="block-link " href="block-a.html"> <img
-					src="../pictures/catalog/apartment/xblock-a.jpg.pagespeed.ic.drRFgUwhAp.jpg"
+					src="<c:url value="/resources/block/images/xblock-a.jpg.pagespeed.ic.drRFgUwhAp.jpg" />"
 					alt="Block A">
 					<h3>
 						Block <strong>A</strong>
 					</h3>
 				</a> <a class="block-link current" href="block-d.html"> <img
-					src="../pictures/catalog/apartment/xblock-d.jpg.pagespeed.ic.ffhn2-ciFy.jpg"
+					src="<c:url value="/resources/block/images/xblock-d.jpg.pagespeed.ic.ffhn2-ciFy.jpg" />"
 					alt="Block D">
 					<h3>
 						Block <strong>D</strong>

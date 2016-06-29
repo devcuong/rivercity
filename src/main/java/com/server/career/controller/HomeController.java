@@ -17,10 +17,12 @@ import com.server.career.bean.ImageSlideBean;
 import com.server.career.bean.InformationInvestorBean;
 import com.server.career.bean.InformationNormalBean;
 import com.server.career.bean.InformationSpecialBean;
+import com.server.career.bean.NewsBean;
 import com.server.career.service.ImageSlideService;
 import com.server.career.service.InformationNormalService;
 import com.server.career.service.InformationSpecialService;
 import com.server.career.service.InvestorService;
+import com.server.career.service.NewsService;
 
 /**
  * Handles requests for the application home page.
@@ -30,20 +32,23 @@ public class HomeController {
 
 	@Autowired
 	private ImageSlideService imageSlideService;
-	
+
 	@Autowired
 	private InformationNormalService informationNormalService;
-	
+
 	@Autowired
 	private InformationSpecialService informationSpecialService;
 
 	@Autowired
 	private InvestorService investorService;
+	
+	@Autowired
+	private NewsService newsService;
 
 	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String home(Map<String, Object> model, HttpServletRequest request) {
-		/* String requestURI = request.getServerName(); */
-		List<ImageSlideBean> imageSlideBeans = imageSlideService.getAllImageSlide();
+		List<ImageSlideBean> imageSlideBeans = imageSlideService
+				.getAllImageSlide();
 		model.put("slide", imageSlideBeans);
 		return "home";
 	}
@@ -55,13 +60,18 @@ public class HomeController {
 			String[] nameArray = urlPage.split("\\.");
 			String pageName = nameArray[0].toString();
 			if ("gioi-thieu".equals(pageName)) {
-				List<InformationNormalBean> informationNormalBeans = informationNormalService.getAllInformationNormal();
-				List<InformationSpecialBean> informationSpecialBeans = informationSpecialService.getAllInformationSpecial();
+				List<InformationNormalBean> informationNormalBeans = informationNormalService
+						.getAllInformationNormal();
+				List<InformationSpecialBean> informationSpecialBeans = informationSpecialService
+						.getAllInformationSpecial();
 				List<InformationInvestorBean> allInformationInvestorBean = new ArrayList<InformationInvestorBean>();
-				for(int i = 0; i< informationSpecialBeans.size();i++){
-					List<InformationInvestorBean> informationInvestorBean = investorService.getInvestorByInformationSpecialId(informationSpecialBeans.get(i).getInforId());
+				for (int i = 0; i < informationSpecialBeans.size(); i++) {
+					List<InformationInvestorBean> informationInvestorBean = investorService
+							.getInvestorByInformationSpecialId(informationSpecialBeans
+									.get(i).getInforId());
 					allInformationInvestorBean.addAll(informationInvestorBean);
-					allInformationInvestorBean.removeAll(Collections.singleton(null));
+					allInformationInvestorBean.removeAll(Collections
+							.singleton(null));
 				}
 				model.put("informationNormal", informationNormalBeans);
 				model.put("informationSpecial", informationSpecialBeans);
@@ -71,23 +81,38 @@ public class HomeController {
 			if ("vi-tri".equals(pageName)) {
 				return "vitri";
 			}
-			if("tien-ich".equals(pageName)){
+			if ("tien-ich".equals(pageName)) {
 				return "tienich";
 			}
-			if("thong-tin-can-ho".equals(pageName)){
+			if ("thong-tin-can-ho".equals(pageName)) {
 				return "thongtincanho";
 			}
-			if("thu-vien".equals(pageName)){
+			if ("thu-vien".equals(pageName)) {
 				return "thuvien";
 			}
-			if("tin-tuc".equals(pageName)){
+			if ("tin-tuc".equals(pageName)) {
+				List<NewsBean> newsBeans = newsService.getAllNews();
+				if(newsBeans != null){
+					model.put("news", newsBeans);
+				}
 				return "tintuc";
 			}
-			if("lien-he".equals(pageName)){
+			if ("lien-he".equals(pageName)) {
 				return "lienhe";
 			}
-			String[] tenBlock = pageName.split("-");
-			if("block".equals(tenBlock[0])){
+
+		}
+		return "article";
+	}
+
+	@RequestMapping(value = { "/{urlPage}/{urlSubPage}" }, method = RequestMethod.GET)
+	public String subPage(@PathVariable("urlPage") String urlPage,
+			@PathVariable("urlSubPage") String urlSubPage,
+			Map<String, Object> model, HttpServletRequest request) {
+		if (urlPage != null) {
+			String[] tenBlock = urlSubPage.split("-");
+			if ("block".equals(tenBlock[0])) {
+				model.put("blockName", tenBlock[1]);
 				return "block";
 			}
 		}

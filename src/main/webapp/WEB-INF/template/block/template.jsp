@@ -26,19 +26,19 @@
 <link rel="SHORTCUT ICON"
 	href="../catalog/view/theme/default/images/favicon.ico">
 <link
-	href="../catalog/view/theme/default/css/A.style.css%2bvalidationEngine.jquery.css%2cMcc.OAlrngD5j2.css.pagespeed.cf.RNSuIYM9wI.css"
+	href="<c:url value="/resources/block/css/A.style.css+validationEngine.jquery.css,Mcc.OAlrngD5j2.css.pagespeed.cf.RNSuIYM9wI.css" />"
 	rel="stylesheet" type="text/css" />
 
 <script type="text/javascript"
-	src="../catalog/view/theme/default/js/jquery.js.pagespeed.jm.BnirE05kB4.js"></script>
+	src="<c:url value="/resources/block/js/jquery.js.pagespeed.jm.BnirE05kB4.js" />"></script>
 <script type="text/javascript"
-	src="../catalog/view/theme/default/js/common.js.pagespeed.jm.jobZyt4kpk.js"></script>
+	src="<c:url value="/resources/block/js/common.js.pagespeed.jm.jobZyt4kpk.js" />"></script>
 <script type="text/javascript"
-	src="../catalog/view/theme/default/js/slide.js.pagespeed.jm.41_i7m3MLM.js"></script>
+	src="<c:url value="/resources/block/js/slide.js.pagespeed.jm.41_i7m3MLM.js" />"></script>
 <script type="text/javascript"
-	src="../catalog/view/theme/default/js/scroll.js"></script>
+	src="<c:url value="/resources/block/js/scroll.js" />"></script>
 <script
-	src="../catalog/view/theme/default/js/load.js%2bvalidate.js%2bjquery.validationEngine.js.pagespeed.jc.PjG9iBJAmS.js"></script>
+	src="<c:url value="/resources/block/js/load.js+validate.js+jquery.validationEngine.js.pagespeed.jc.PjG9iBJAmS.js" />"></script>
 <script>
 	eval(mod_pagespeed_UJf0KLnZI4);
 </script>
@@ -440,6 +440,6 @@
 	<div class="go-top"></div>
 	<div class="scroll-down"></div>
 	<script type="text/javascript"
-		src="../catalog/view/theme/default/js/btq.js.pagespeed.jm.9g2_au-jvj.js"></script>
+		src="<c:url value="/resources/block/js/btq.js.pagespeed.jm.9g2_au-jvj.js" />"></script>
 </body>
 </html>
