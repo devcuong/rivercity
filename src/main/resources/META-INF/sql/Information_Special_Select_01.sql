@@ -1,2 +1,2 @@
 SELECT *
-FROM information_special
+FROM special

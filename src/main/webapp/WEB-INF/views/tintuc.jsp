@@ -5,8 +5,8 @@
 <tiles:insertDefinition name="tintucTemplate">
 	<tiles:putAttribute name="body">
 		<div class="title-page"
-			style="background-image: url(<c:url value="/resources/tintuc/images/xbg.jpg.pagespeed.ic.lTKuwZA4tQ.jpg" />)">
-			<h1>Tin tức</h1>
+			style="background-image: url(<c:url value="/resources/tintuc/images/xbg.jpg.pagespeed.ic.UW9g3TOGcJ.jpg" />)">
+			<h1>Liên hệ</h1>
 		</div>
 		<div class="content-page">
 			<div class="bg-cover"
@@ -15,9 +15,11 @@
 				<div class="scrollB">
 					<c:forEach var="sNews" items="${news}" varStatus="loop">
 						<div class="link-page ">
-							<a href="${pageContext.request.contextPath}/tin-tuc/${sNews.newsAlias}.html" data-name="${sNews.newsId}"
-								data-title="${sNews.newsTitle}"
-								data-description="${sNews.newsDescription}" data-keyword="">
+							<a
+								href="${pageContext.request.contextPath}/tin-tuc/${sNews.newsAlias}-${sNews.newsId}.html"
+								data-name="${sNews.newsId}" data-title="${sNews.newsTitle}"
+								data-description="${sNews.newsDescription}" data-keyword=""
+								onclick="madeAjaxCall(${sNews.newsId});">
 								<div class="new-icon"></div>
 								<div class="pic-thumb">
 									<img src="${sNews.newsImage}"
@@ -30,7 +32,8 @@
 				</div>
 			</div>
 			<div class="colum-box-news">
-				<h1>gdgdgdgsdgsds fdgdgsdfgddsfg sdfgsd g</h1>
+				<div id="news-content" class="scrollC"
+					style="background: #CCC; opacity: 0.4;"></div>
 			</div>
 			<a class="go-page" href="../tien-ich.html">99 TIỆN ÍCH ƯU VIỆT</a> <a
 				class="go-page" href="../thong-tin-can-ho.html">BẢN VẼ CĂN HỘ</a>

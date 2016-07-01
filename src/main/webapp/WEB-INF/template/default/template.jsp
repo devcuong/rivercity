@@ -33,7 +33,7 @@
 	href="<c:url value="/resources/css/validationEngine.jquery.css" />"
 	rel="stylesheet">
 
-<script type="text/javascript"charset="utf-8"
+<script type="text/javascript" charset="utf-8"
 	src="<c:url value="/resources/js/blade_track_gl.js" />"></script>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/conversion_async.js" />"></script>
@@ -494,7 +494,7 @@
 		src="<c:url value="/resources/js/btq.js" />"></script>
 
 	<div></div>
-<!-- 	<div style="display: none; visibility: hidden;">
+	<!-- 	<div style="display: none; visibility: hidden;">
 		<script type="text/javascript" class="microad_blade_track">
 			var microad_blade_gl = microad_blade_gl || {
 				params : [],
@@ -520,5 +520,19 @@
 			})();
 		</script>
 	</div> -->
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+		(function() {
+			var s1 = document.createElement("script"), s0 = document
+					.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5775c5f8e800b5095babe80d/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 </body>
 </html>

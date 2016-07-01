@@ -18,5 +18,9 @@ public class NewsServiceImpl implements NewsService {
 	public List<NewsBean> getAllNews() {
 		return newsDao.getAllNews();
 	}
+	
+	public NewsBean getNewsById(Integer newsId) {
+		return newsDao.getNewsById(newsId);
+	}
 
 }

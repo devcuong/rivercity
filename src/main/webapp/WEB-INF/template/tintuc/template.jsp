@@ -43,6 +43,8 @@
 	src="<c:url value="/resources/tintuc/js/scroll.js" />"></script>
 <script
 	src="<c:url value="/resources/tintuc/js/load.js+validate.js+jquery.validationEngine.js.pagespeed.jc.PjG9iBJAmS.js" />"></script>
+<script
+	src="<c:url value="/resources/tintuc/js/web.js" />"></script>
 <script>
 	eval(mod_pagespeed_UJf0KLnZI4);
 </script>

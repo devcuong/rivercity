@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.server.career.bean.ImageSlideBean;
 import com.server.career.bean.InformationInvestorBean;
@@ -41,7 +42,7 @@ public class HomeController {
 
 	@Autowired
 	private InvestorService investorService;
-	
+
 	@Autowired
 	private NewsService newsService;
 
@@ -92,7 +93,7 @@ public class HomeController {
 			}
 			if ("tin-tuc".equals(pageName)) {
 				List<NewsBean> newsBeans = newsService.getAllNews();
-				if(newsBeans != null){
+				if (newsBeans != null) {
 					model.put("news", newsBeans);
 				}
 				return "tintuc";
@@ -109,7 +110,24 @@ public class HomeController {
 	public String subPage(@PathVariable("urlPage") String urlPage,
 			@PathVariable("urlSubPage") String urlSubPage,
 			Map<String, Object> model, HttpServletRequest request) {
-		if (urlPage != null) {
+		if (urlSubPage != null) {
+			if ("tin-tuc".equals(urlPage)) {
+				String[] nameArray = urlSubPage.split("\\-");
+				String lastName = nameArray[nameArray.length - 1];
+				String[] idArray = lastName.split("\\.");
+				String id = idArray[0];
+				NewsBean newsBean = newsService.getNewsById(Integer
+						.parseInt(id));
+
+				// Tin tuc chinh
+				model.put("newsMain", newsBean);
+
+				List<NewsBean> newsBeans = newsService.getAllNews();
+				// Danh sach cac tin tuc khac
+				model.put("news", newsBeans);
+
+				return "tintuc";
+			}
 			String[] tenBlock = urlSubPage.split("-");
 			if ("block".equals(tenBlock[0])) {
 				model.put("blockName", tenBlock[1]);
@@ -117,5 +135,23 @@ public class HomeController {
 			}
 		}
 		return "article";
+	}
+
+	@RequestMapping(value = "/tin-tuc", method = RequestMethod.POST)
+	public @ResponseBody NewsBean loadNews(Map<String, Object> model, HttpServletRequest request) {
+
+		String newsId = request.getParameter("newsId");
+
+		if (newsId != null) {
+			NewsBean newsBean = newsService.getNewsById(Integer.parseInt(newsId));
+
+			// Tin tuc chinh
+			model.put("newsMain", newsBean);
+
+			List<NewsBean> newsBeans = newsService.getAllNews();
+
+			return newsBean;
+		}
+		return null;
 	}
 }

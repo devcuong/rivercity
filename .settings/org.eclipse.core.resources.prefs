@@ -2,5 +2,6 @@ eclipse.preferences.version=1
 encoding//src/main/webapp/WEB-INF/template/default/menu.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/template/gioithieu/template.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/template/tienich/template.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/template/tintuc/template.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/admin/addarticle.jsp=UTF-8
 encoding/<project>=UTF-8

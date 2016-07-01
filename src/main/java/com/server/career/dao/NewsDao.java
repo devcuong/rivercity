@@ -9,4 +9,5 @@ import com.server.career.bean.NewsBean;
 @Repository
 public interface NewsDao {
 	public List<NewsBean> getAllNews();
+	public NewsBean getNewsById(Integer newsId);
 }
