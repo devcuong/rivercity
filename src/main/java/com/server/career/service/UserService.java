@@ -10,5 +10,5 @@ import org.springframework.stereotype.Service;
 @Service
 public interface UserService {
 
-	public String login(String username, String password);
+	public Integer login(String username, String password);
 }

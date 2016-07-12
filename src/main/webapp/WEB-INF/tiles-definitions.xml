@@ -59,6 +59,11 @@
 	</definition>
 	<definition name="tintucTemplate" template="/WEB-INF/template/tintuc/template.jsp">
 		<put-attribute name="menu" value="/WEB-INF/template/tintuc/menu.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/template/tintuc/footer.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/template/tintuc/footer.jsp" />
+	</definition>
+	<definition name="quantriTemplate" template="/WEB-INF/template/quantri/trangchu/template.jsp">
+		<put-attribute name="menu" value="/WEB-INF/template/quantri/trangchu/menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/template/quantri/trangchu/footer.jsp" />
 	</definition>
 </tiles-definitions>

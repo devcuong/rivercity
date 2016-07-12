@@ -9,7 +9,6 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.server.career.bean.ArticleBean;
 import com.server.career.bean.NewsBean;
 import com.server.career.constant.SQLConstant;
 import com.server.career.dao.NewsDao;

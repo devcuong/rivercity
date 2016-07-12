@@ -3,7 +3,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://ckeditor.com" prefix="ckeditor"%>
-<html>
+<tiles:insertDefinition name="quantriTemplate">
+	<tiles:putAttribute name="body">
+		<html>
 <head>
 <script type="text/javascript"
 	src="<c:url value="/resources/js/jquery-1.12.3.min.js" />" /></script>
@@ -122,7 +124,7 @@ table.artable th {
 			<label>Tên Bài Viết</label>
 			<div>
 				<form:input path="articleId" type="hidden" cols="20" />
-				<form:input path="articleName" type="text" cols="20"/>
+				<form:input path="articleName" type="text" cols="20" />
 			</div>
 		</div>
 		<div>
@@ -166,4 +168,6 @@ table.artable th {
 		</c:forEach>
 	</table>
 </body>
-</html>
+		</html>
+	</tiles:putAttribute>
+</tiles:insertDefinition>

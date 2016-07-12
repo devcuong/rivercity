@@ -14,20 +14,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.server.career.bean.AgentBean;
 import com.server.career.bean.ImageSlideBean;
 import com.server.career.bean.InformationInvestorBean;
 import com.server.career.bean.InformationNormalBean;
 import com.server.career.bean.InformationSpecialBean;
 import com.server.career.bean.NewsBean;
+import com.server.career.service.AgencyService;
 import com.server.career.service.ImageSlideService;
 import com.server.career.service.InformationNormalService;
 import com.server.career.service.InformationSpecialService;
 import com.server.career.service.InvestorService;
 import com.server.career.service.NewsService;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class HomeController {
 
@@ -45,6 +44,9 @@ public class HomeController {
 
 	@Autowired
 	private NewsService newsService;
+
+	@Autowired
+	private AgencyService agencyService;
 
 	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String home(Map<String, Object> model, HttpServletRequest request) {
@@ -99,6 +101,10 @@ public class HomeController {
 				return "tintuc";
 			}
 			if ("lien-he".equals(pageName)) {
+				List<AgentBean> agentBeans = agencyService.getAllAgent();
+				if (agentBeans != null) {
+					model.put("agent", agentBeans);
+				}
 				return "lienhe";
 			}
 
@@ -138,17 +144,20 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/tin-tuc", method = RequestMethod.POST)
-	public @ResponseBody NewsBean loadNews(Map<String, Object> model, HttpServletRequest request) {
+	public @ResponseBody NewsBean loadNews(Map<String, Object> model,
+			HttpServletRequest request) {
 
 		String newsId = request.getParameter("newsId");
 
 		if (newsId != null) {
-			NewsBean newsBean = newsService.getNewsById(Integer.parseInt(newsId));
+			NewsBean newsBean = newsService.getNewsById(Integer
+					.parseInt(newsId));
 
-			// Tin tuc chinh
-			model.put("newsMain", newsBean);
-
-			List<NewsBean> newsBeans = newsService.getAllNews();
+			/*
+			 * // Tin tuc chinh model.put("newsMain", newsBean);
+			 * 
+			 * List<NewsBean> newsBeans = newsService.getAllNews();
+			 */
 
 			return newsBean;
 		}

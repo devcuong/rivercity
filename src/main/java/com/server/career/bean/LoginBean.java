@@ -2,18 +2,10 @@ package com.server.career.bean;
 
 public class LoginBean {
 	
-	/*
-	 *Constant to definition user type
-	 *
-	 * 0: employee
-	 * 
-	 * 1: employer
-	 */
-	public static final Integer USER_TYPE_EMPLOYEE = 0;
-	public static final Integer USER_TYPE_EMPLOYER = 1;
 	
 	private Integer userId;
 	private String userName;
+	private String password;
 	private String email;
 	private Integer isLogin;
 	private Integer typeUser;
@@ -46,6 +38,12 @@ public class LoginBean {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	
