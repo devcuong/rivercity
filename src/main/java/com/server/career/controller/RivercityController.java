@@ -28,7 +28,7 @@ import com.server.career.service.InvestorService;
 import com.server.career.service.NewsService;
 
 @Controller
-public class HomeController {
+public class RivercityController {
 
 	@Autowired
 	private ImageSlideService imageSlideService;
