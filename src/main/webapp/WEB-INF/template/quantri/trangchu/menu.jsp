@@ -14,7 +14,7 @@
 			<li><a href="#"><i class="fa fa-qrcode "></i>My Link One</a></li>
 			<li><a href="#"><i class="fa fa-bar-chart-o"></i>My Link Two</a></li>
 			<li><a href="#"><i class="fa fa-edit "></i>My Link Three </a></li>
-			<li><a href="#"><i class="fa fa-table "></i>My Link Four</a></li>
+			<li><a href="gioithieu"><i class="fa fa-table "></i>GIỚI THIỆU</a></li>
 			<li><a href="upload"><i class="fa fa-edit "></i>HÌNH ANH</a></li>
 		</ul>
 	</div>

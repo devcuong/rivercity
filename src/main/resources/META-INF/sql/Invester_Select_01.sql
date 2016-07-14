@@ -1,2 +1,2 @@
 SELECT *
-FROM investor WHERE information_special_id = :informationSpecialId
+FROM investor WHERE infor_id = :informationSpecialId

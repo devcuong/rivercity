@@ -4,7 +4,7 @@ public class InformationInvestorBean {
 	public int investorId;
 	public String investorImage;
 	public String investorDescription;
-	public Integer informationSpecialId;
+	public Integer inforId;
 	public int getInvestorId() {
 		return investorId;
 	}
@@ -23,12 +23,13 @@ public class InformationInvestorBean {
 	public void setInvestorDescription(String investorDescription) {
 		this.investorDescription = investorDescription;
 	}
-	public Integer getInformationSpecialId() {
-		return informationSpecialId;
+	public Integer getInforId() {
+		return inforId;
 	}
-	public void setInformationSpecialId(Integer informationSpecialId) {
-		this.informationSpecialId = informationSpecialId;
+	public void setInforId(Integer inforId) {
+		this.inforId = inforId;
 	}
+	
 	
 
 	

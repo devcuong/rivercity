@@ -117,11 +117,11 @@ table.artable th {
 </style>
 </head>
 <body>
-	<form:form method="post"
-		action="${pageContext.request.contextPath}/admin/article/add?commit=1"
+	 <form:form method="post"
+		action="${pageContext.request.contextPath}/quantri/gioithieu?commit=1"
 		commandName="articleBean">
 		<div>
-			<label>Tên Bài Viết</label>
+			<label>Tên s Viết</label>
 			<div>
 				<form:input path="articleId" type="hidden" cols="20" />
 				<form:input path="articleName" type="text" cols="20" />
@@ -163,10 +163,10 @@ table.artable th {
 				<td><a href="#"
 					onclick="layDuLieuTuBangBaiViet(${loop.index});">Sửa</a></td>
 				<td><a
-					href="${pageContext.request.contextPath}/admin/article/delete?articleId=${art.articleId}">Xóa</a></td>
+					href="${pageContext.request.contextPath}/quantri/gioithieu?deleteId=${art.articleId}">Xóa</a></td>
 			</tr>
 		</c:forEach>
-	</table>
+	</table> 
 </body>
 		</html>
 	</tiles:putAttribute>

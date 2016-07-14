@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.server.career.bean.InformationNormalBean;
 import com.server.career.bean.LoginBean;
 import com.server.career.service.UserService;
 
@@ -35,5 +36,12 @@ public class AdminController {
 			return "admin/trangchu";
 		} else
 			return "uploadfile";
+	}
+
+	@RequestMapping(value = { "/quantri/gioithieu" }, method = RequestMethod.GET)
+	public String quanTriGioiThieu(
+			@ModelAttribute("informationNormalBean") InformationNormalBean informationNormalBean,
+			Map<String, Object> model, HttpServletRequest request) {
+		return "admin/gioithieu";
 	}
 }

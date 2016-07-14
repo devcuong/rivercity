@@ -37,16 +37,6 @@
 								data-title="RIVER CITY - ${sInformationNormal.inforName}"
 								data-description="" data-keyword=""></a></li>
 						</c:forEach>
-						<c:forEach var="sInformationSpecial" items="${informationSpecial}" varStatus="loop">
-						<li><h2>
-									<div>
-										<strong>${sInformationSpecial.inforName}</strong>
-									</div>
-								</h2> <a class="bullet" href="${sInformationSpecial.inforUrl}"
-								data-name="${sInformationSpecial.inforDataName}"
-								data-title="RIVER CITY - ${sInformationSpecial.inforName}"
-								data-description="" data-keyword=""></a></li>
-						</c:forEach>
 					</ul>
 				</div>
 				<div class="bg-nav" style="height: 477px;">
@@ -55,24 +45,24 @@
 				</div>
 				<div class="item-wrapper"
 					style="display: flex; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-					<c:forEach var="sInformationSpecial" items="${informationSpecial}"
+					<c:forEach var="sInformationNormal" items="${informationNormal}"
 						varStatus="loop">
 						<div class="item-container"
-							data-hash="${sInformationSpecial.inforDataHash}"
-							data-href="${sInformationSpecial.inforUrl}"
-							data-name="${sInformationSpecial.inforDataName}"
-							data-title="RIVER CITY - ${sInformationSpecial.inforName}"
+							data-hash="${sInformationNormal.inforDataHash}"
+							data-href="${sInformationNormal.inforUrl}"
+							data-name="${sInformationNormal.inforDataName}"
+							data-title="RIVER CITY - ${sInformationNormal.inforName}"
 							data-description="" data-keyword="" data-slide-index="0"
 							style="display: flex; height: 597px; transform: translate3d(0px, 0px, 0px) rotateX(10deg) rotateY(0deg); z-index: 0; transition-duration: 0ms;">
 							<div class="bg-picture">
-								<img src="${sInformationSpecial.inforImage}"
-									alt="${sInformationSpecial.inforName}"
+								<img src="${sInformationNormal.inforImage}"
+									alt="${sInformationNormal.inforName}"
 									style="width: 1366px; height: 708.613px; left: 0px;">
 							</div>
 							<div class="content-box color-03" style="max-height: 377px;">
-								<h2>${sInformationSpecial.inforName}</h2>
+								<h2>${sInformationNormal.inforName}</h2>
 
-								<mark>${sInformationSpecial.inforContent}</mark>
+								<mark>${sInformationNormal.inforContent}</mark>
 								<!--chu dau tu-->
 								<div class="scrollA"
 									style="height: 350px; max-height: 445px; overflow: hidden; outline: none;"
@@ -81,7 +71,7 @@
 										items="${informationInvestor}" varStatus="loop">
 										<c:choose>
 											<c:when
-												test="${sInformationInvestor.informationSpecialId == sInformationSpecial.inforId}">
+												test="${sInformationInvestor.inforId == sInformationNormal.inforId}">
 												<div class="box-text">
 													<img
 														src="${sInformationInvestor.investorImage}"
@@ -92,27 +82,6 @@
 										</c:choose>
 									</c:forEach>
 								</div>
-							</div>
-						</div>
-					</c:forEach>
-					<c:forEach var="sInformationNormal" items="${informationNormal}"
-						varStatus="loop">
-						<div class="item-container"
-							data-hash="${sInformationNormal.inforDataHash}"
-							data-href="${sInformationNormal.inforUrl}"
-							data-name="${sInformationNormal.inforDataName}"
-							data-title="RIVER CITY - ${sInformationNormal.inforName}"
-							data-description="" data-keyword="" data-slide-index="${sInformationNormal.inforId}"
-							style="display: flex; height: 597px; transform: translate3d(0px, -50px, 100px) rotateX(-10deg) rotateY(0deg); z-index: 0; transition-duration: 0ms;">
-							<div class="bg-picture">
-								<img
-									src="<c:url value="/resources/gioithieu/images/${sInformationNormal.inforImage}" />"
-									alt="${sInformationNormal.inforName}"
-									style="width: 1366px; height: 708.613px; left: 0px;">
-							</div>
-							<div class="content-box color-02">
-								<h2>${sInformationNormal.inforName}</h2>
-								<p>${sInformationNormal.inforContent}</p>
 							</div>
 						</div>
 					</c:forEach>

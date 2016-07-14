@@ -53,7 +53,7 @@ public class HomeController {
 		List<ImageSlideBean> imageSlideBeans = imageSlideService
 				.getAllImageSlide();
 		model.put("slide", imageSlideBeans);
-		return "home";
+		return "rivercity/home";
 	}
 
 	@RequestMapping(value = { "/{urlPage}" }, method = RequestMethod.GET)
@@ -65,51 +65,48 @@ public class HomeController {
 			if ("gioi-thieu".equals(pageName)) {
 				List<InformationNormalBean> informationNormalBeans = informationNormalService
 						.getAllInformationNormal();
-				List<InformationSpecialBean> informationSpecialBeans = informationSpecialService
-						.getAllInformationSpecial();
 				List<InformationInvestorBean> allInformationInvestorBean = new ArrayList<InformationInvestorBean>();
-				for (int i = 0; i < informationSpecialBeans.size(); i++) {
+				for (int i = 0; i < informationNormalBeans.size(); i++) {
 					List<InformationInvestorBean> informationInvestorBean = investorService
-							.getInvestorByInformationSpecialId(informationSpecialBeans
+							.getInvestorByInformationSpecialId(informationNormalBeans
 									.get(i).getInforId());
 					allInformationInvestorBean.addAll(informationInvestorBean);
 					allInformationInvestorBean.removeAll(Collections
 							.singleton(null));
 				}
 				model.put("informationNormal", informationNormalBeans);
-				model.put("informationSpecial", informationSpecialBeans);
 				model.put("informationInvestor", allInformationInvestorBean);
-				return "gioithieu";
+				return "rivercity/gioithieu";
 			}
 			if ("vi-tri".equals(pageName)) {
-				return "vitri";
+				return "rivercity/vitri";
 			}
 			if ("tien-ich".equals(pageName)) {
-				return "tienich";
+				return "rivercity/tienich";
 			}
 			if ("thong-tin-can-ho".equals(pageName)) {
-				return "thongtincanho";
+				return "rivercity/thongtincanho";
 			}
 			if ("thu-vien".equals(pageName)) {
-				return "thuvien";
+				return "rivercity/thuvien";
 			}
 			if ("tin-tuc".equals(pageName)) {
 				List<NewsBean> newsBeans = newsService.getAllNews();
 				if (newsBeans != null) {
 					model.put("news", newsBeans);
 				}
-				return "tintuc";
+				return "rivercity/tintuc";
 			}
 			if ("lien-he".equals(pageName)) {
 				List<AgentBean> agentBeans = agencyService.getAllAgent();
 				if (agentBeans != null) {
 					model.put("agent", agentBeans);
 				}
-				return "lienhe";
+				return "rivercity/lienhe";
 			}
 
 		}
-		return "article";
+		return "rivercity/home";
 	}
 
 	@RequestMapping(value = { "/{urlPage}/{urlSubPage}" }, method = RequestMethod.GET)
@@ -137,10 +134,10 @@ public class HomeController {
 			String[] tenBlock = urlSubPage.split("-");
 			if ("block".equals(tenBlock[0])) {
 				model.put("blockName", tenBlock[1]);
-				return "block";
+				return "rivercity/block";
 			}
 		}
-		return "article";
+		return "rivercity/home";
 	}
 
 	@RequestMapping(value = "/tin-tuc", method = RequestMethod.POST)
@@ -152,12 +149,6 @@ public class HomeController {
 		if (newsId != null) {
 			NewsBean newsBean = newsService.getNewsById(Integer
 					.parseInt(newsId));
-
-			/*
-			 * // Tin tuc chinh model.put("newsMain", newsBean);
-			 * 
-			 * List<NewsBean> newsBeans = newsService.getAllNews();
-			 */
 
 			return newsBean;
 		}
