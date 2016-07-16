@@ -18,7 +18,6 @@ import com.server.career.bean.AgentBean;
 import com.server.career.bean.ImageSlideBean;
 import com.server.career.bean.InformationInvestorBean;
 import com.server.career.bean.InformationNormalBean;
-import com.server.career.bean.InformationSpecialBean;
 import com.server.career.bean.NewsBean;
 import com.server.career.service.AgencyService;
 import com.server.career.service.ImageSlideService;
