@@ -24,7 +24,7 @@
 <meta name="apple-itunes-app" content="app-id=866492094" />
 <title>Nhà đất | Mua bán nhà đất | Cho thuê nhà đất</title>
 <link rel="stylesheet" type="text/css"
-	href="../content.batdongsan.com.vn/css/style204b.css" media="all" />
+	href="<c:url value="/resources/raovat/css/style204b.css" />" media="all" />
 </head>
 <body class="bg-site">
 	<!--Home Master-->
@@ -119,7 +119,6 @@
 </style>
 			bottom
 		</div>
-
 		</div>
 		<div id="SiteRight" class="banner-right">
 
