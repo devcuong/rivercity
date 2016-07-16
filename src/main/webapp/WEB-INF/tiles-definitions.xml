@@ -62,8 +62,24 @@
 		<put-attribute name="footer"
 			value="/WEB-INF/template/tintuc/footer.jsp" />
 	</definition>
-	<definition name="quantriTemplate" template="/WEB-INF/template/quantri/trangchu/template.jsp">
-		<put-attribute name="menu" value="/WEB-INF/template/quantri/trangchu/menu.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/template/quantri/trangchu/footer.jsp" />
+	<definition name="quantriTemplate"
+		template="/WEB-INF/template/quantri/trangchu/template.jsp">
+		<put-attribute name="menu"
+			value="/WEB-INF/template/quantri/trangchu/menu.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/template/quantri/trangchu/footer.jsp" />
+	</definition>
+	<definition name="raovatTemplate"
+		template="/WEB-INF/template/raovat/trangchu/template.jsp">
+		<put-attribute name="top"
+			value="/WEB-INF/template/raovat/trangchu/top.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/template/raovat/trangchu/menu.jsp" />
+		<put-attribute name="maincolumn"
+			value="/WEB-INF/template/raovat/trangchu/maincolumn.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/template/raovat/trangchu/footer.jsp" />
+		<put-attribute name="bottom"
+			value="/WEB-INF/template/raovat/trangchu/bottom.jsp" />
 	</definition>
 </tiles-definitions>

@@ -1,0 +1,1 @@
+select * from contact_info where contact_id = :contactId
