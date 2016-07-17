@@ -5,7 +5,7 @@
 	<div class="header-top-left">
 
 		<div style="padding-top: 5px;">
-			<img src="../file4.batdongsan.com.vn/images/logo-bds.jpg"
+			<img src="<c:url value="/resources/raovat/images/logo-bds.jpg" />"
 				alt="Nhà đất" style="padding-top: 2px;" />
 		</div>
 	</div>
@@ -32,7 +32,7 @@
 					<a href="english.html"><span class="HeaderText">English</span></a>
 				</div>
 				<div class="header-middle-righ-icon">
-					<img src="../file4.batdongsan.com.vn/images/Flags/cy-GB.gif"
+					<img src="<c:url value="/resources/raovat/images/cy-GB.gif" />"
 						alt="English" style="margin-top: 9px;" />
 				</div>
 			</div>
@@ -44,7 +44,7 @@
 					</div>
 					<div class="header-middle-righ-icon">
 						<img
-							src="../file4.batdongsan.com.vn/images/header-middle-right-icon4.jpg">
+							src="<c:url value="/resources/raovat/images/header-middle-right-icon4.jpg" />">
 					</div>
 				</div>
 				<div id="UserControl1_divRegister">
@@ -54,7 +54,7 @@
 					</div>
 					<div class="header-middle-righ-icon" id="chat-quick-inbox-icon">
 						<img
-							src="../file4.batdongsan.com.vn/images/header-middle-right-icon3.jpg">
+							src="<c:url value="/resources/raovat/images/header-middle-right-icon3.jpg" />">
 					</div>
 				</div>
 			</div>
@@ -65,7 +65,7 @@
 				</div>
 				<div class="header-middle-righ-icon">
 					<img
-						src="../file4.batdongsan.com.vn/images/header-middle-right-icon2.jpg" />
+						src="<c:url value="/resources/raovat/images/header-middle-right-icon2.jpg" />" />
 				</div>
 			</div>
 			<div>
@@ -76,7 +76,7 @@
 				</div>
 				<div class="header-middle-righ-icon">
 					<img
-						src="../file4.batdongsan.com.vn/images/header-middle-right-icon1.jpg" />
+						src="<c:url value="/resources/raovat/images/header-middle-right-icon1.jpg" />" />
 				</div>
 			</div>
 			<div id="UserControl1_divMember"></div>
@@ -86,7 +86,7 @@
 						class="HeaderText">Mobile</span></a>
 				</div>
 				<div class="header-middle-righ-icon" style="width: 12px;">
-					<img src="../file4.batdongsan.com.vn/images/bdsmobile.png"
+					<img src="<c:url value="/resources/raovat/images/bdsmobile.png" />"
 						style="width: 10px; height: 17px;" />
 				</div>
 				<div id="UserControl1_bxhicon">
@@ -97,7 +97,7 @@
 					</div>
 
 					<div class="header-middle-righ-icon" style="width: 16px;">
-						<img src="../file4.batdongsan.com.vn/images/caricon.jpg"
+						<img src="<c:url value="/resources/raovat/images/caricon.jpg" />"
 							style="width: 14px; height: 15px; padding-top: 3px;" />
 					</div>
 				</div>
@@ -105,7 +105,7 @@
 			<div id="utube">
 				<a href="https://www.youtube.com/user/BDSVN" target="_blank"
 					rel="nofollow" title="Batdongsan.com.vn trên Youtube"> <img
-					src="../file4.batdongsan.com.vn/images/Icons/youtube.png"
+					src="<c:url value="/resources/raovat/images/youtube.png" />"
 					style="vertical-align: middle; margin-top: 0;"
 					alt="Youtube Batdongsan.com.vn" /></a>
 			</div>
@@ -113,14 +113,14 @@
 				<a href="https://plus.google.com/u/0/106775252072535887002/"
 					target="_blank" rel="nofollow"
 					title="Batdongsan.com.vn trên Google+"> <img
-					src="../file4.batdongsan.com.vn/images/Icons/gg.png"
+					src="<c:url value="/resources/raovat/images/gg.png" />"
 					style="vertical-align: middle; margin-top: 0;"
 					alt="Google+ Batdongsan.com.vn" /></a>
 			</div>
 			<div id="fblink">
 				<a href="https://www.facebook.com/Batdongsandv" target="_blank"
 					rel="nofollow" title="Batdongsan.com.vn trên Facebook"> <img
-					src="../file4.batdongsan.com.vn/images/fb.png"
+					src="<c:url value="/resources/raovat/images/fb.png" />"
 					style="height: 26px; vertical-align: middle;"
 					alt="Facebook Batdongsan.com.vn" /></a>
 			</div>

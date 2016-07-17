@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <div class="header-menu">
 	<div id='left-page-nav'></div>
 	<div class='menupad'></div>
 	<div id='page-navigative-menu'>
 		<div class='ihome'>
 			<a href='index.html'><img
-				src="../file4.batdongsan.com.vn/images/homea.gif" /></a>
+				src="<c:url value="/resources/raovat/images/homea.gif" />" /></a>
 		</div>
 		<ul class='dropdown-navigative-menu'>
 			<li class='lv0'><a href='nha-dat-ban.html' class='haslink '>Nhà
@@ -393,7 +394,7 @@
 				</ul>
 			</div>
 		</div>
-		<img src="../file4.batdongsan.com.vn/images/header-bottom-button.jpg"
+		<img src="<c:url value="/resources/raovat/images/header-bottom-button.jpg" />"
 			onclick="Redirect();"
 			class="fg-button fg-button-bg-default fg-button-toggleable ui-corner-all"
 			alt="Tìm kiếm" name="btnSearch" id="btnSearch" />

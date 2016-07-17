@@ -5,13 +5,10 @@
 	<div class="footer-bottom">
 		<div class="clearboth pad-bot-10">
 			<div class='footer-home'>
-
 				<div class="footer-bottom-top-1">
-
 					<a href="gioi-thieu.html" rel="nofollow">Giới thiệu</a>
 				</div>
 				<div class="footer-bottom-top-1">
-
 					<a href="dieu-khoan-thoa-thuan.html" rel="nofollow">Điều khoản
 						thỏa thuận</a>
 				</div>
@@ -21,12 +18,10 @@
 						động</a>
 				</div>
 				<div class="footer-bottom-top-1">
-
 					<a href="bao-gia-quang-cao.html" rel="nofollow">Báo giá & hỗ
 						trợ</a>
 				</div>
 				<div class="footer-bottom-top-1">
-
 					<a href="nhung-cau-hoi-thuong-gap.html" rel="nofollow">Những
 						câu hỏi thường gặp</a>
 				</div>

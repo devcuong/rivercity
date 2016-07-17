@@ -431,7 +431,7 @@
 								<div class="timkiems">
 									<a id="lblSearch">Tìm nâng cao</a> <input type="image"
 										name="action" id="btnSearch"
-										src="../file4.batdongsan.com.vn/images/timkiem.jpg">
+										src="<c:url value="/resources/raovat/images/timkiem.jpg" />">
 									<div style="display: none;">
 										<div id="divCategory">
 											<span class="select-text"> <span

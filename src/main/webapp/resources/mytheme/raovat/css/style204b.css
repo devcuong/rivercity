@@ -514,7 +514,7 @@ strong, b {
 }
 
     .home-search-box .tops {
-        background: url("../../file4.batdongsan.com.vn/images/Search/congcutimkiem.jpg") no-repeat scroll 0 0 transparent;
+        background: url("http://localhost:8080/rivercity/resources/raovat/images/congcutimkiem.jpg") no-repeat scroll 0 0 transparent;
         height: 38px;
         width: 250px;
         text-align: center;
