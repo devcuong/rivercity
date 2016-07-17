@@ -53,11 +53,19 @@
 				href="Modules/UserComment/CommentPopUp.html" ref="nofollow"></a>
 		</div>
 		<div class="site-center">
+			<!-- TOP -->
 			<tiles:insertAttribute name="top" />
+			
+			<!-- MENU -->
 			<tiles:insertAttribute name="menu" />
 			<div id="MainContent"></div>
+			
+			<!-- BODY -->
 			<tiles:insertAttribute name="body" />
+			
+			<!-- MAINCOLUMN -->
 			<tiles:insertAttribute name="maincolumn" />
+			
 			<!-- Intro-->
 			<div id="Intro">
 				<div>
@@ -94,7 +102,8 @@
 			</div>
 
 			<div class="clear"></div>
-			footer
+			<!-- FOOTER -->
+			<tiles:insertAttribute name="footer" />
 			<div id="BottomMainContent"></div>
 			<div class="footer-banner">
 				<div id="SubBottomLeftMainContent" style="float: left; width: 495px">
@@ -117,7 +126,8 @@
 	white-space: nowrap;
 }
 </style>
-			bottom
+			<!-- BOTTOM -->
+			<tiles:insertAttribute name="bottom" />
 		</div>
 		</div>
 		<div id="SiteRight" class="banner-right">
