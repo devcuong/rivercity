@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.server.career.bean.InformationNormalBean;
 import com.server.career.bean.LoginBean;
+import com.server.career.service.InformationNormalService;
 import com.server.career.service.UserService;
 
 @Controller
@@ -19,6 +20,9 @@ public class AdminController {
 
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private InformationNormalService normalService;
 
 	@RequestMapping(value = { "/quantri" }, method = RequestMethod.GET)
 	public String home(@ModelAttribute("userBean") LoginBean loginBean,
@@ -38,10 +42,18 @@ public class AdminController {
 			return "uploadfile";
 	}
 
-	@RequestMapping(value = { "/quantri/gioithieu" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/quantri/gioithieu" }, method = { RequestMethod.GET, RequestMethod.POST })
 	public String quanTriGioiThieu(
 			@ModelAttribute("informationNormalBean") InformationNormalBean informationNormalBean,
 			Map<String, Object> model, HttpServletRequest request) {
+		String them = request.getParameter("them");
+		if(them != null){
+			InformationNormalBean inforNormalBeanMaxDataHash = normalService.getNormalBeanMaxDataHash();
+			informationNormalBean.setInforDataHash(inforNormalBeanMaxDataHash.getInforDataHash() + 1);
+			informationNormalBean.setInforDataName(inforNormalBeanMaxDataHash.getInforDataName() + 1);
+			int updateData = normalService.updateNormalBean(informationNormalBean);
+		}
+		model.put("normalBean", informationNormalBean);
 		return "admin/gioithieu";
 	}
 }

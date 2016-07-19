@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Simple Responsive Admin</title>
+<title>Trang quản trị Rivercity</title>
 <!-- BOOTSTRAP STYLES-->
 <link href="<c:url value="/resources/quantri/css/bootstrap.css" />" rel="stylesheet" />
 <!-- FONTAWESOME STYLES-->
@@ -59,11 +59,13 @@
 	<tiles:insertAttribute name="footer" />
 	<!-- /. WRAPPER  -->
 	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-	<!-- JQUERY SCRIPTS -->
-	<script src="<c:url value="/resources/quantri/js/jquery-1.10.2.js" />"></script>
 	<!-- BOOTSTRAP SCRIPTS -->
 	<script src="<c:url value="/resources/quantri/js/bootstrap.min.js" />"></script>
 	<!-- CUSTOM SCRIPTS -->
 	<script src="<c:url value="/resources/quantri/js/custom.js" />"></script>
+	<script type="text/javascript"
+	src="<c:url value="/resources/ckeditor/ckeditor.js" />" /></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/ckeditor/adapters/jquery.js" />" /></script>
 </body>
 </html>

@@ -27,33 +27,33 @@
 <meta name="format-detection" content="telephone=no">
 <link rel="SHORTCUT ICON"
 	href="http://rivercity.vn/catalog/view/theme/default/images/favicon.ico">
-<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"
+<link href="<c:url value="/resources/home/css/style.css" />" rel="stylesheet"
 	type="text/css">
 <link
-	href="<c:url value="/resources/css/validationEngine.jquery.css" />"
+	href="<c:url value="/resources/home/css/validationEngine.jquery.css" />"
 	rel="stylesheet">
 
 <script type="text/javascript" charset="utf-8"
-	src="<c:url value="/resources/js/blade_track_gl.js" />"></script>
+	src="<c:url value="/resources/home/js/blade_track_gl.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/conversion_async.js" />"></script>
-<script src="<c:url value="/resources/js/whlist.js" />"></script>
-<script src="<c:url value="/resources/js/gtm.js" />"></script>
-<script src="<c:url value="/resources/js/analytics.js" />"></script>
+	src="<c:url value="/resources/home/js/conversion_async.js" />"></script>
+<script src="<c:url value="/resources/home/js/whlist.js" />"></script>
+<script src="<c:url value="/resources/home/js/gtm.js" />"></script>
+<script src="<c:url value="/resources/home/js/analytics.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/jquery.js" />"></script>
+	src="<c:url value="/resources/home/js/jquery.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/common.js" />"></script>
+	src="<c:url value="/resources/home/js/common.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/slide.js" />"></script>
+	src="<c:url value="/resources/home/js/slide.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/scroll.js" />"></script>
+	src="<c:url value="/resources/home/js/scroll.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/load.js" />"></script>
+	src="<c:url value="/resources/home/js/load.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/validate.js" />"></script>
+	src="<c:url value="/resources/home/js/validate.js" />"></script>
 <script type="text/javascript"
-	src="<c:url value="/resources/js/jquery.validationEngine.js" />"></script>
+	src="<c:url value="/resources/home/js/jquery.validationEngine.js" />"></script>
 <script>
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
@@ -491,35 +491,9 @@
 	<div class="go-top" style="display: none; opacity: 0;"></div>
 	<div class="scroll-down" style="display: none; opacity: 0;"></div>
 	<script type="text/javascript"
-		src="<c:url value="/resources/js/btq.js" />"></script>
+		src="<c:url value="/resources/home/js/btq.js" />"></script>
 
 	<div></div>
-	<!-- 	<div style="display: none; visibility: hidden;">
-		<script type="text/javascript" class="microad_blade_track">
-			var microad_blade_gl = microad_blade_gl || {
-				params : [],
-				complete_map : {}
-			};
-			(function() {
-				var a = {
-					co_account_id : "14466",
-					group_id : "",
-					country_id : "5",
-					ver : "2.1.0"
-				};
-				microad_blade_gl.params.push(a);
-				var b = "https:" == location.protocol ? "https://d-cache.microadinc.com/js/blade_track_gl.js"
-						: "http://d-cache.microadinc.com/js/blade_track_gl.js", a = document
-						.createElement("script");
-				a.type = "text/javascript";
-				a.async = !0;
-				a.charset = "utf-8";
-				a.src = b;
-				b = document.getElementsByTagName("script")[0];
-				b.parentNode.insertBefore(a, b)
-			})();
-		</script>
-	</div> -->
 	<!--Start of Tawk.to Script-->
 	<script type="text/javascript">
 		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();

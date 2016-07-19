@@ -9,4 +9,6 @@ import com.server.career.bean.InformationNormalBean;
 @Repository
 public interface InformationNormalDao {
 	public List<InformationNormalBean> getAllInformationNormal();
+	public InformationNormalBean getNormalBeanMaxDataHash();
+	public int updateNormalBean(InformationNormalBean informationNormalBean);
 }

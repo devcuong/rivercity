@@ -19,4 +19,13 @@ public class InformationNormalServiceImpl implements InformationNormalService {
 		return informationNormalDao.getAllInformationNormal();
 	}
 
+	@Override
+	public InformationNormalBean getNormalBeanMaxDataHash() {
+		return informationNormalDao.getNormalBeanMaxDataHash();
+	}
+	
+	@Override
+	public int updateNormalBean(InformationNormalBean informationNormalBean) {
+		return informationNormalDao.updateNormalBean(informationNormalBean);
+	}
 }

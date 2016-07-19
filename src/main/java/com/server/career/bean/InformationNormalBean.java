@@ -1,14 +1,14 @@
 package com.server.career.bean;
 
 public class InformationNormalBean {
-	public int inforId;
-	public String inforImage;
-	public String inforUrl;
-	public int inforDataName;
-	public int inforDataHash;
-	public String inforName;
-	public String inforAlias;
-	public String inforContent;
+	private int inforId;
+	private String inforImage;
+	private String inforUrl;
+	private int inforDataName;
+	private int inforDataHash;
+	private String inforName;
+	private String inforAlias;
+	private String inforContent;
 	public int getInforId() {
 		return inforId;
 	}
