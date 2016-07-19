@@ -53,8 +53,8 @@
 							ký </a>
 					</div>
 					<div class="header-middle-righ-icon" id="chat-quick-inbox-icon">
-						<img
-							src="<c:url value="/resources/raovat/images/header-middle-right-icon3.jpg" />">
+						<%-- <img
+							src="<c:url value="	" />"> --%>
 					</div>
 				</div>
 			</div>
