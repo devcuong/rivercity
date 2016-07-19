@@ -10,14 +10,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Trang quản trị Rivercity</title>
 <!-- BOOTSTRAP STYLES-->
-<link href="<c:url value="/resources/quantri/css/bootstrap.css" />" rel="stylesheet" />
+<link href="<c:url value="/resources/quantri/css/bootstrap.css" />"
+	rel="stylesheet" />
 <!-- FONTAWESOME STYLES-->
-<link href="<c:url value="/resources/quantri/css/font-awesome.css" />" rel="stylesheet" />
+<link href="<c:url value="/resources/quantri/css/font-awesome.css" />"
+	rel="stylesheet" />
 <!-- CUSTOM STYLES-->
-<link href="<c:url value="/resources/quantri/css/custom.css" />" rel="stylesheet" />
+<link href="<c:url value="/resources/quantri/css/custom.css" />"
+	rel="stylesheet" />
 <!-- GOOGLE FONTS-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans'
 	rel='stylesheet' type='text/css' />
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -64,8 +69,8 @@
 	<!-- CUSTOM SCRIPTS -->
 	<script src="<c:url value="/resources/quantri/js/custom.js" />"></script>
 	<script type="text/javascript"
-	src="<c:url value="/resources/ckeditor/ckeditor.js" />" /></script>
-<script type="text/javascript"
-	src="<c:url value="/resources/ckeditor/adapters/jquery.js" />" /></script>
+		src="<c:url value="/resources/ckeditor/ckeditor.js" />" /></script>
+	<script type="text/javascript"
+		src="<c:url value="/resources/ckeditor/adapters/jquery.js" />" /></script>
 </body>
 </html>

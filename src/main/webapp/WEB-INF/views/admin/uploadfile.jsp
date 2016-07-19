@@ -8,8 +8,8 @@
 		<html>
 <head>
 <title>Crunchify - Spring MVC Upload Multiple Files Example</title>
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!--  <script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
 <script>
     $(document)
             .ready(

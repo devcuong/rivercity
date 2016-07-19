@@ -48,10 +48,7 @@ public class AdminController {
 			Map<String, Object> model, HttpServletRequest request) {
 		String them = request.getParameter("them");
 		if(them != null){
-			InformationNormalBean inforNormalBeanMaxDataHash = normalService.getNormalBeanMaxDataHash();
-			informationNormalBean.setInforDataHash(inforNormalBeanMaxDataHash.getInforDataHash() + 1);
-			informationNormalBean.setInforDataName(inforNormalBeanMaxDataHash.getInforDataName() + 1);
-			int updateData = normalService.updateNormalBean(informationNormalBean);
+			int updateData = normalService.updateNormalBean(informationNormalBean, request);
 		}
 		model.put("normalBean", informationNormalBean);
 		return "admin/gioithieu";

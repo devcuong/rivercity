@@ -7,8 +7,8 @@
 	<tiles:putAttribute name="body">
 		<html>
 <head>
-<script type="text/javascript"
-	src="<c:url value="/resources/quantri/js/jquery-1.12.3.min.js" />" /></script>
+<%-- <script type="text/javascript"
+	src="<c:url value="/resources/quantri/js/jquery-1.12.3.min.js" />" /></script> --%>
 <script type="text/javascript">
 	$(document)
 			.ready(
@@ -145,7 +145,6 @@ table.artable th {
 		</div>
 		<div>
 			<label>Nội dung bài giới thiệu</label>
-<%-- 			<form:input path="inforDataHash" type="text" cols="20" value="${normalBean.inforDataHash}" /> --%>
 			<form:textarea rows="10" path="inforContent" />
 		</div>
 		<div>

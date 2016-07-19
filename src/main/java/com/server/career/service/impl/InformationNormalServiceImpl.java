@@ -2,6 +2,8 @@ package com.server.career.service.impl;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +27,15 @@ public class InformationNormalServiceImpl implements InformationNormalService {
 	}
 	
 	@Override
-	public int updateNormalBean(InformationNormalBean informationNormalBean) {
+	public int updateNormalBean(InformationNormalBean informationNormalBean, HttpServletRequest request) {
+		InformationNormalBean inforNormalBeanMaxDataHash = getNormalBeanMaxDataHash();
+		informationNormalBean.setInforDataHash(inforNormalBeanMaxDataHash.getInforDataHash() + 1);
+		informationNormalBean.setInforDataName(inforNormalBeanMaxDataHash.getInforDataName() + 1);
+		
+		// Create infor url from infor alias
+		String inforUrl = request.getContextPath() + "/gioi-thieu/"+ informationNormalBean.getInforAlias();
+		informationNormalBean.setInforUrl(inforUrl);
+		
 		return informationNormalDao.updateNormalBean(informationNormalBean);
 	}
 }

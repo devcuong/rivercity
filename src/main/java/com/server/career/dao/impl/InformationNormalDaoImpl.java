@@ -83,11 +83,11 @@ public class InformationNormalDaoImpl implements InformationNormalDao {
 			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_DATA_HASH,
 					informationNormalBean.getInforDataHash());
 			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_NAME,
-					informationNormalBean.getInforDataName());
+					informationNormalBean.getInforName());
 			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_ALIAS,
-					informationNormalBean.getInforDataName());
+					informationNormalBean.getInforAlias());
 			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_CONTENT,
-					informationNormalBean.getInforDataName());
+					informationNormalBean.getInforContent());
 			// Return
 			normal = namedParameterJdbcTemplate.update(
 					SqlFileReaderUtil.getSql(INFORMATION_NORMAL_INS), parameter);
