@@ -4,34 +4,10 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 
-	<definition name="defaultTemplate" template="/WEB-INF/template/default/template.jsp">
-		<put-attribute name="header"
-			value="/WEB-INF/template/default/header.jsp" />
-		<put-attribute name="menu" value="/WEB-INF/template/default/menu.jsp" />
-		<put-attribute name="slide"
-			value="/WEB-INF/template/default/slide.jsp" />
+	<definition name="defaultTemplate" template="/WEB-INF/template/home/template.jsp">
+		<put-attribute name="menu" value="/WEB-INF/template/home/menu.jsp" />
 		<put-attribute name="footer"
-			value="/WEB-INF/template/default/footer.jsp" />
-		<put-attribute name="panel"
-			value="/WEB-INF/template/default/panel.jsp" />
-		<put-attribute name="content"
-			value="/WEB-INF/template/default/content.jsp" />
-	</definition>
-	<definition name="mainTemplate" template="/WEB-INF/template/main/template.jsp">
-		<put-attribute name="header"
-			value="/WEB-INF/template/default/header.jsp" />
-		<put-attribute name="menu" value="/WEB-INF/template/default/menu.jsp" />
-		<put-attribute name="slide"
-			value="/WEB-INF/template/default/slide.jsp" />
-		<put-attribute name="footer"
-			value="/WEB-INF/template/default/footer.jsp" />
-		<put-attribute name="panel"
-			value="/WEB-INF/template/default/panel.jsp" />
-		<put-attribute name="content"
-			value="/WEB-INF/template/default/content.jsp" />
-		<put-attribute name="contact" value="/WEB-INF/template/main/contact.jsp" />
-		<put-attribute name="rightcolumn"
-			value="/WEB-INF/template/main/rightcolumn.jsp" />
+			value="/WEB-INF/template/home/footer.jsp" />
 	</definition>
 	<definition name="gioithieuTemplate" template="/WEB-INF/template/gioithieu/template.jsp">
 		<put-attribute name="menu"

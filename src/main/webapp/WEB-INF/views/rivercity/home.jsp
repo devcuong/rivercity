@@ -53,7 +53,7 @@
 		<!--MOBILE-INTRO-->
 		<section id="home">
 			<div class="mobile-bg">
-				<img src="<c:url value="/resources/images/bg1-m.jpg" />"
+				<img src="<c:url value="/resources/home/images/bg1-m.jpg" />"
 					alt="Trang chủ"
 					style="width: 1366px; height: 708.613px; left: 0px; margin-top: 0px;">
 				<div class="title-home">
@@ -144,7 +144,7 @@
 					<a class="go-page" href="http://rivercity.vn/tien-ich.html">TIỆN
 						NGHI CUỘC SỐNG</a>
 				</div>
-				<img src="<c:url value="/resources/images/facilities.jpg" />"
+				<img src="<c:url value="/resources/home/images/facilities.jpg" />"
 					alt="KHU BIỂN ĐẢO NHÂN TẠO LẦN ĐẦU TIÊN XUẤT HIỆN TẠI VIỆT NAM">
 			</div>
 		</section>
@@ -158,7 +158,7 @@
 					<a class="go-page" href="http://rivercity.vn/thong-tin-can-ho.html">BẢN
 						VẼ CĂN HỘ</a>
 				</div>
-				<img src="<c:url value="/resources/images/facilities2.jpg" />"
+				<img src="<c:url value="/resources/home/images/facilities2.jpg" />"
 					alt="QUẢNG TRƯỜNG NƯỚC &amp; ÁNH SÁNG LẦN ĐẦU TIÊN XUẤT HIỆN TẠI VIỆT NAM">
 			</div>
 		</section>
