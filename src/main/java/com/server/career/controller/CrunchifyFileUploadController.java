@@ -50,7 +50,7 @@ public class CrunchifyFileUploadController {
 	
 	@RequestMapping(value = "/quantri/danhsachfile", method = RequestMethod.GET)
 	public String fileFolder(Map<String, Object> model) throws IllegalStateException, IOException {
-		String saveDirectory = "C:/Users/cuong/git/rivercity/src/main/webapp/resources/mytheme/images/";
+		String saveDirectory = "D:\\MyWorkSpace\\rivercity\\src\\main\\webapp\\resources\\mytheme\\home\\images";
 		final File folder = new File(saveDirectory);
 		List<String> lstFile = listFilesForFolder(folder);
 		model.put("fileName", lstFile);

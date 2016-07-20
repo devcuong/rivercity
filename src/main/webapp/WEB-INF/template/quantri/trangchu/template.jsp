@@ -23,6 +23,7 @@
 	rel='stylesheet' type='text/css' />
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="<c:url value="/resources/quantri/js/clipboard.min.js" />"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -34,9 +35,9 @@
 						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"> <img
+				<!-- 	<a class="navbar-brand" href="#"> <img
 						src="assets/img/logo.png" />
-					</a>
+					</a> -->
 				</div>
 				<span class="logout-spn"> <a href="#" style="color: #fff;">LOGOUT</a>
 				</span>
@@ -72,5 +73,7 @@
 		src="<c:url value="/resources/ckeditor/ckeditor.js" />" /></script>
 	<script type="text/javascript"
 		src="<c:url value="/resources/ckeditor/adapters/jquery.js" />" /></script>
+<%-- 		<script type="text/javascript"
+		src="<c:url value="/resources/quantri/js/dropzone.js" />" /></script> --%>
 </body>
 </html>

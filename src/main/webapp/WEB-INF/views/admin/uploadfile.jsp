@@ -59,6 +59,9 @@ body {
 			<input type="submit" value="Upload" />
 			<input id="addFile" type="button" value="Add File" />
 		</form:form>
+		<%-- <form:form action="savefiles.html" class="dropzone" id="my-awesome-dropzone">
+			<input type="file" name="file" multiple="multiple" />
+		</form:form> --%>
 
 		<br />
 	</div>

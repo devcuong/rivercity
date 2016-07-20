@@ -2,13 +2,66 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<style type="text/css">
+table.imgtable {
+	border-collapse: collapse;
+	font: normal normal 11px Verdana, Arial, Sans-Serif;
+	color: #333;
+}
+
+table.imgtable tr {
+	background-color: #666699;
+}
+
+table.imgtable th, table.imgtable td {
+	vertical-align: top;
+	padding: 5px 10px;
+	border: 1px solid #333;
+}
+
+table.imgtable th {
+	background-color: #ccc;
+	color: black;
+	font-weight: bold;
+}
+
+div.imgarea {
+	border-radius: 6px 6px 6px 6px;
+	width: 580px;
+	background-color: #EEEEEE;
+	margin: auto;
+	padding: 40px;
+}
+</style>
 <tiles:insertDefinition name="quantriTemplate">
 	<tiles:putAttribute name="body">
-		<c:forEach var="sfileName" items="${fileName}" varStatus="loop">
-			<a
-				href="${pageContext.request.contextPath}/resources/images/${sfileName}">${sfileName}</a>
-			<br>
-			<hr>
-		</c:forEach>
+		<div class="imgarea">
+			<table class="imgtable" id="imgtableId">
+				<c:forEach var="sfileName" items="${fileName}" varStatus="loop">
+					<tr>
+						<td><a
+							href="${pageContext.request.contextPath}/resources/home/images/${sfileName}">${sfileName}</a></td>
+						<td><img
+							src="${pageContext.request.contextPath}/resources/home/images/${sfileName}"
+							width="40px" height="40px" /></td>
+						<td><input id="img${loop.index}"
+							value="${pageContext.request.contextPath}/resources/home/images/${sfileName}" /></td>
+						<td><button class="btn" data-clipboard-action="copy"
+								data-clipboard-target="#img${loop.index}">copy</button></td>
+					</tr>
+				</c:forEach>
+			</table>
+		</div>
 	</tiles:putAttribute>
 </tiles:insertDefinition>
+<script>
+	var clipboard = new Clipboard('.btn');
+
+	clipboard.on('success', function(e) {
+		console.log(e);
+	});
+
+	clipboard.on('error', function(e) {
+		console.log(e);
+	});
+</script>
