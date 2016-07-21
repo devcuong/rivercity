@@ -27,10 +27,12 @@ table.imgtable th {
 
 div.imgarea {
 	border-radius: 6px 6px 6px 6px;
-	width: 580px;
+	width: 700px;
+	height: 500px;
 	background-color: #EEEEEE;
 	margin: auto;
 	padding: 40px;
+	overflow: scroll;
 }
 </style>
 <tiles:insertDefinition name="quantriTemplate">
@@ -48,6 +50,8 @@ div.imgarea {
 							value="${pageContext.request.contextPath}/resources/home/images/${sfileName}" /></td>
 						<td><button class="btn" data-clipboard-action="copy"
 								data-clipboard-target="#img${loop.index}">copy</button></td>
+						<td><button class="btn" onclick="xoaHinhAnh('${sfileName}.cuong1503')">Xóa
+								ảnh</button></td>
 					</tr>
 				</c:forEach>
 			</table>
@@ -64,4 +68,14 @@ div.imgarea {
 	clipboard.on('error', function(e) {
 		console.log(e);
 	});
+</script>
+<script type="text/javascript">
+	var ctx = "${pageContext.request.contextPath}";
+	function xoaHinhAnh(hinhAnh) {
+		var encodedData = window.btoa(hinhAnh);
+		var result = confirm("Bạn có chắc chắn muốn xóa image này");
+		if (result == true) {
+			document.location="danhsachfile?delete="+encodedData;
+		}
+	}
 </script>
