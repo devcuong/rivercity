@@ -50,7 +50,7 @@ div.imgarea {
 							value="${pageContext.request.contextPath}/resources/home/images/${sfileName}" /></td>
 						<td><button class="btn" data-clipboard-action="copy"
 								data-clipboard-target="#img${loop.index}">copy</button></td>
-						<td><button class="btn" onclick="xoaHinhAnh('${sfileName}.cuong1503')">Xóa
+						<td><button class="btn" onclick="xoaHinhAnh('${sfileName}:cuong1503')">Xóa
 								ảnh</button></td>
 					</tr>
 				</c:forEach>
