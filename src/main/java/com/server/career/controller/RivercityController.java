@@ -22,7 +22,6 @@ import com.server.career.bean.NewsBean;
 import com.server.career.service.AgencyService;
 import com.server.career.service.ImageSlideService;
 import com.server.career.service.InformationNormalService;
-import com.server.career.service.InformationSpecialService;
 import com.server.career.service.InvestorService;
 import com.server.career.service.NewsService;
 
@@ -34,9 +33,6 @@ public class RivercityController {
 
 	@Autowired
 	private InformationNormalService informationNormalService;
-
-	@Autowired
-	private InformationSpecialService informationSpecialService;
 
 	@Autowired
 	private InvestorService investorService;
@@ -128,7 +124,7 @@ public class RivercityController {
 				// Danh sach cac tin tuc khac
 				model.put("news", newsBeans);
 
-				return "tintuc";
+				return "rivercity/tintuc";
 			}
 			String[] tenBlock = urlSubPage.split("-");
 			if ("block".equals(tenBlock[0])) {

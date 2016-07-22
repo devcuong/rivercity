@@ -13,9 +13,10 @@
 			</li>
 			<li><a href="#"><i class="fa fa-qrcode "></i>My Link One</a></li>
 			<li><a href="#"><i class="fa fa-bar-chart-o"></i>My Link Two</a></li>
-			<li><a href="#"><i class="fa fa-edit "></i>My Link Three </a></li>
+			<li><a href="tintuc"><i class="fa fa-edit "></i>TIN TỨC</a></li>
 			<li><a href="gioithieu"><i class="fa fa-table "></i>GIỚI THIỆU</a></li>
-			<li><a href="upload"><i class="fa fa-edit "></i>HÌNH ANH</a></li>
+			<li><a href="upload"><i class="fa fa-edit "></i>HÌNH ẢNH</a></li>
+			<li><a href="danhsachfile"><i class="fa fa-edit "></i>DANH SÁCH HÌNH ẢNH</a></li>
 		</ul>
 	</div>
 </nav>

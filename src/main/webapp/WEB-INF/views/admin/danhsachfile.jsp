@@ -27,7 +27,7 @@ table.imgtable th {
 
 div.imgarea {
 	border-radius: 6px 6px 6px 6px;
-	width: 700px;
+	width: 650px;
 	height: 500px;
 	background-color: #EEEEEE;
 	margin: auto;
@@ -42,16 +42,16 @@ div.imgarea {
 				<c:forEach var="sfileName" items="${fileName}" varStatus="loop">
 					<tr>
 						<td><a
-							href="${pageContext.request.contextPath}/resources/home/images/${sfileName}">${sfileName}</a></td>
+							href="${pageContext.request.contextPath}/images/${sfileName}">${sfileName}</a></td>
 						<td><img
-							src="${pageContext.request.contextPath}/resources/home/images/${sfileName}"
+							src="${pageContext.request.contextPath}/images/${sfileName}"
 							width="40px" height="40px" /></td>
 						<td><input id="img${loop.index}"
-							value="${pageContext.request.contextPath}/resources/home/images/${sfileName}" /></td>
+							value="${pageContext.request.contextPath}/images/${sfileName}" /></td>
 						<td><button class="btn" data-clipboard-action="copy"
 								data-clipboard-target="#img${loop.index}">copy</button></td>
-						<td><button class="btn" onclick="xoaHinhAnh('${sfileName}:cuong1503')">Xóa
-								ảnh</button></td>
+						<td><button class="btn"
+								onclick="xoaHinhAnh('${sfileName}:cuong1503')">Xóa ảnh</button></td>
 					</tr>
 				</c:forEach>
 			</table>

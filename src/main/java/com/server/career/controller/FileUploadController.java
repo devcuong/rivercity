@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.server.career.bean.CrunchifyFileUpload;
+import com.server.career.constant.WebConstant;
 
 @Controller
 public class FileUploadController {
@@ -29,7 +30,7 @@ public class FileUploadController {
 	public String crunchifySave(
 			@ModelAttribute("uploadForm") CrunchifyFileUpload uploadForm,
 			Model map) throws IllegalStateException, IOException {
-		String saveDirectory = "C:/Users/cuong/git/rivercity/src/main/webapp/resources/mytheme/images/";
+		String saveDirectory = WebConstant.IMAGES_SERVER_PATH;
 
 		List<MultipartFile> crunchifyFiles = uploadForm.getFiles();
 
@@ -56,7 +57,7 @@ public class FileUploadController {
 		
 		String delete = request.getParameter("delete");
 		if(delete == null){
-			String saveDirectory = "D:\\MyWorkSpace\\rivercity\\src\\main\\webapp\\resources\\mytheme\\home\\images";
+			String saveDirectory = WebConstant.IMAGES_SERVER_PATH;
 			final File folder = new File(saveDirectory);
 			List<String> lstFile = listFilesForFolder(folder);
 			model.put("fileName", lstFile);
@@ -66,10 +67,9 @@ public class FileUploadController {
 			byte[] deleteImageString = Base64.decodeBase64(delete.trim());
 			String[] deleteImage = (new String(deleteImageString,"UTF-8")).split(":");
 			String imageName = deleteImage[0];
-			File fileDelete = new File("D:\\MyWorkSpace\\rivercity\\src\\main\\webapp\\resources\\mytheme\\home\\images\\"+imageName);
+			File fileDelete = new File(WebConstant.IMAGES_SERVER_PATH+imageName);
 			if(fileDelete.delete()){
-				System.out.println("file is deleted "+fileDelete.getName());
-				return "admin/danhsachfile";
+				return "redirect:/quantri/danhsachfile";
 			}
 		}
 		return "admin/danhsachfile";

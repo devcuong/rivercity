@@ -1,8 +1,8 @@
 function madeAjaxCall(newsId) {
-/*	var radioValue = document.querySelector('input[name="type"]:checked').value;*/
+	var ctx = "${pageContext.request.contextPath}";
 	$.ajax({
 		type : "post",
-		url : "http://namtiencorp.com/tin-tuc",
+		url : "../tin-tuc",
 		data : 'newsId=' +newsId,
 		success : function(response) {
 			$("#news-content").html(response.newsContent);

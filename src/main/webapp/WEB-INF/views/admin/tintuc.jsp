@@ -88,29 +88,6 @@
 		}
 	}
 </script>
-<style type="text/css">
-table.artable {
-	border-collapse: collapse;
-	font: normal normal 11px Verdana, Arial, Sans-Serif;
-	color: #333;
-}
-
-table.artable tr {
-	background-color: #fff;
-}
-
-table.artable th, table.artable td {
-	vertical-align: top;
-	padding: 5px 10px;
-	border: 1px solid #333;
-}
-
-table.artable th {
-	background-color: #ccc;
-	color: black;
-	font-weight: bold;
-}
-</style>
 </head>
 <body>
 	<form:form method="post"
@@ -150,28 +127,6 @@ table.artable th {
 				value="Làm mới" id="btnMoi">
 		</div>
 	</form:form>
-	<%-- <table class="artable" id="arTableId">
-		<tr>
-			<th width="10%">Mã Bài Viết</th>
-			<th width="10%">Tên Bài Viết</th>
-			<th width="10%">Alias Url</th>
-			<th width="60%">Nội dung bài viết</th>
-			<th width="5%">Sửa</th>
-			<th width="5%">Xóa</th>
-		</tr>
-		<c:forEach var="art" items="${allArticle}" varStatus="loop">
-			<tr>
-				<td>${art.articleId}</td>
-				<td>${art.articleName}</td>
-				<td>${art.articleAlias}</td>
-				<td>${art.articleContent}</td>
-				<td><a href="#"
-					onclick="layDuLieuTuBangBaiViet(${loop.index});">Sửa</a></td>
-				<td><a
-					href="${pageContext.request.contextPath}/quantri/gioithieu?deleteId=${art.articleId}">Xóa</a></td>
-			</tr>
-		</c:forEach>
-	</table>  --%>
 </body>
 		</html>
 	</tiles:putAttribute>
