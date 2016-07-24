@@ -12,14 +12,14 @@
 			.ready(
 					function() {
 						CKEDITOR.config.removePlugins = 'save,print,preview,find,about,maximize,showblocks';
-						$("#inforContent").ckeditor({
+						$("#newsContent").ckeditor({
 							toolbar : 'Basic',
 							uiColor : '#F7D358'
 						});
 						$("#btnAlias")
 								.click(
 										function() {
-											var articleName = $("#inforName")
+											var articleName = $("#newsTitle")
 													.val();
 											if (articleName.length > 0) {
 												articleName = articleName
@@ -58,14 +58,14 @@
 														.replace(/^\-+|\-+$/g,
 																"");//cắt bỏ ký tự - ở đầu và cuối chuỗi
 
-												$("#inforAlias").val(
+												$("#newsAlias").val(
 														articleName);
 											}
 										});
 						$("#btnMoi").click(function() {
-							$("#articleName").val("");
-							$("#articleAlias").val("");
-							$("#articleContent").val("");
+							$("#newsTitle").val("");
+							$("#newsAlias").val("");
+							$("#newsContent").val("");
 						});
 					});
 	var ctx = "${pageContext.request.contextPath}";
@@ -91,28 +91,34 @@
 </head>
 <body>
 	<form:form method="post"
-		action="${pageContext.request.contextPath}/quantri/gioithieu?them=1"
-		commandName="informationNormalBean">
+		action="${pageContext.request.contextPath}/quantri/tintuc?them=1"
+		commandName="newsBean">
 		<div>
-			<label>Tiêu đề bài giới thiệu</label>
+			<label>Tiêu đề tin tức</label>
 			<div>
-				<form:input path="inforId" type="hidden" cols="20" />
-				<form:input path="inforName" type="text" cols="20" />
+				<form:input path="newsId" type="hidden" cols="20" />
+				<form:input path="newsTitle" type="text" cols="20" />
 			</div>
 		</div>
 		<div>
 			<label>Tiêu đề dạng alias</label>
 			<div>
-				<form:input path="inforAlias" type="text" />
+				<form:input path="newsAlias" type="text" />
 			</div>
 			<div>
 				<input type="button" value="Lấy Alias" id="btnAlias" />
 			</div>
 		</div>
 		<div>
+			<label>Mô tả tin tức</label>
+			<div>
+				<form:input path="newsDescription" type="text" />
+			</div>
+		</div>
+		<div>
 			<label>Hình nền slide giới thiệu</label>
 			<div>
-				<form:input path="inforImage" type="text" />
+				<form:input path="newsImage" type="text" />
 			</div>
 			<div>
 				<input type="button" value="Hình ảnh" id="btnImage" />
@@ -120,7 +126,7 @@
 		</div>
 		<div>
 			<label>Nội dung bài giới thiệu</label>
-			<form:textarea rows="10" path="inforContent" />
+			<form:textarea rows="10" path="newsContent" />
 		</div>
 		<div>
 			<input type="submit" value="Cập nhật"> <input type="button"

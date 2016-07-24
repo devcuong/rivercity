@@ -55,14 +55,44 @@ public class NewsDaoImpl implements NewsDao {
 					NewsBean.class);
 
 			// Return
-			newsBean = namedParameterJdbcTemplate.queryForObject(
-					SqlFileReaderUtil.getSql(NEWS_SEL_BY_ID), parameter,
-					mapper);
+			newsBean = namedParameterJdbcTemplate
+					.queryForObject(SqlFileReaderUtil.getSql(NEWS_SEL_BY_ID),
+							parameter, mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 		return newsBean;
+	}
+
+	@Override
+	public int addNews(NewsBean newsBean) {
+		int normal = 0;
+		try {
+			// Parameter sql
+			final MapSqlParameterSource parameter = new MapSqlParameterSource();
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_IMAGE,
+					informationNormalBean.getInforImage());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_URL,
+					informationNormalBean.getInforUrl());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_DATA_NAME,
+					informationNormalBean.getInforDataName());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_DATA_HASH,
+					informationNormalBean.getInforDataHash());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_NAME,
+					informationNormalBean.getInforName());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_ALIAS,
+					informationNormalBean.getInforAlias());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_CONTENT,
+					informationNormalBean.getInforContent());
+			// Return
+			normal = namedParameterJdbcTemplate.update(
+					SqlFileReaderUtil.getSql(INFORMATION_NORMAL_INS), parameter);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return normal;
 	}
 
 }

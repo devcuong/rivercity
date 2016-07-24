@@ -1,12 +1,11 @@
 package com.server.career.controller;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -43,6 +42,9 @@ public class RivercityController {
 	@Autowired
 	private AgencyService agencyService;
 
+	private static final Logger logger = Logger
+			.getLogger(RivercityController.class);
+
 	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String home(Map<String, Object> model, HttpServletRequest request) {
 		List<ImageSlideBean> imageSlideBeans = imageSlideService
@@ -54,54 +56,55 @@ public class RivercityController {
 	@RequestMapping(value = { "/{urlPage}" }, method = RequestMethod.GET)
 	public String page(@PathVariable("urlPage") String urlPage,
 			Map<String, Object> model, HttpServletRequest request) {
-		if (urlPage != null) {
-			String[] nameArray = urlPage.split("\\.");
-			String pageName = nameArray[0].toString();
-			if ("gioi-thieu".equals(pageName)) {
-				List<InformationNormalBean> informationNormalBeans = informationNormalService
-						.getAllInformationNormal();
-				List<InformationInvestorBean> allInformationInvestorBean = new ArrayList<InformationInvestorBean>();
-				for (int i = 0; i < informationNormalBeans.size(); i++) {
-					List<InformationInvestorBean> informationInvestorBean = investorService
-							.getInvestorByInformationSpecialId(informationNormalBeans
-									.get(i).getInforId());
-					allInformationInvestorBean.addAll(informationInvestorBean);
-					allInformationInvestorBean.removeAll(Collections
-							.singleton(null));
-				}
-				model.put("informationNormal", informationNormalBeans);
-				model.put("informationInvestor", allInformationInvestorBean);
-				return "rivercity/gioithieu";
-			}
-			if ("vi-tri".equals(pageName)) {
-				return "rivercity/vitri";
-			}
-			if ("tien-ich".equals(pageName)) {
-				return "rivercity/tienich";
-			}
-			if ("thong-tin-can-ho".equals(pageName)) {
-				return "rivercity/thongtincanho";
-			}
-			if ("thu-vien".equals(pageName)) {
-				return "rivercity/thuvien";
-			}
-			if ("tin-tuc".equals(pageName)) {
-				List<NewsBean> newsBeans = newsService.getAllNews();
-				if (newsBeans != null) {
-					model.put("news", newsBeans);
-				}
-				return "rivercity/tintuc";
-			}
-			if ("lien-he".equals(pageName)) {
-				List<AgentBean> agentBeans = agencyService.getAllAgent();
-				if (agentBeans != null) {
-					model.put("agent", agentBeans);
-				}
-				return "rivercity/lienhe";
-			}
 
+		try {
+			if (urlPage != null) {
+				String[] nameArray = urlPage.split("\\.");
+				String pageName = nameArray[0].toString();
+				if ("gioi-thieu".equals(pageName)) {
+					// Get 
+					List<InformationNormalBean> informationNormalBeans = informationNormalService
+							.getAllInformationNormal();
+
+					List<InformationInvestorBean> allInformationInvestorBean = investorService
+							.AddAllInvester(informationNormalBeans);
+
+					model.put("informationNormal", informationNormalBeans);
+					model.put("informationInvestor", allInformationInvestorBean);
+					return "rivercity/gioithieu";
+				}
+				if ("vi-tri".equals(pageName)) {
+					return "rivercity/vitri";
+				}
+				if ("tien-ich".equals(pageName)) {
+					return "rivercity/tienich";
+				}
+				if ("thong-tin-can-ho".equals(pageName)) {
+					return "rivercity/thongtincanho";
+				}
+				if ("thu-vien".equals(pageName)) {
+					return "rivercity/thuvien";
+				}
+				if ("tin-tuc".equals(pageName)) {
+					List<NewsBean> newsBeans = newsService.getAllNews();
+					if (newsBeans != null) {
+						model.put("news", newsBeans);
+					}
+					return "rivercity/tintuc";
+				}
+				if ("lien-he".equals(pageName)) {
+					List<AgentBean> agentBeans = agencyService.getAllAgent();
+					if (agentBeans != null) {
+						model.put("agent", agentBeans);
+					}
+					
+				}
+			}
+			return "admin/error";
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			return "admin/error";
 		}
-		return "rivercity/home";
 	}
 
 	@RequestMapping(value = { "/{urlPage}/{urlSubPage}" }, method = RequestMethod.GET)
@@ -139,13 +142,17 @@ public class RivercityController {
 	public @ResponseBody NewsBean loadNews(Map<String, Object> model,
 			HttpServletRequest request) {
 
-		String newsId = request.getParameter("newsId");
+		try {
+			String newsId = request.getParameter("newsId");
 
-		if (newsId != null) {
-			NewsBean newsBean = newsService.getNewsById(Integer
-					.parseInt(newsId));
+			if (newsId != null) {
+				NewsBean newsBean = newsService.getNewsById(Integer
+						.parseInt(newsId));
 
-			return newsBean;
+				return newsBean;
+			}
+		} catch (Exception e) {
+			logger.error(e.getMessage());
 		}
 		return null;
 	}
