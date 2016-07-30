@@ -65,7 +65,7 @@ public class NewsDaoImpl implements NewsDao {
 		return newsBean;
 	}
 
-	@Override
+	/*@Override
 	public int addNews(NewsBean newsBean) {
 		int normal = 0;
 		try {
@@ -93,6 +93,6 @@ public class NewsDaoImpl implements NewsDao {
 		}
 
 		return normal;
-	}
+	}*/
 
 }

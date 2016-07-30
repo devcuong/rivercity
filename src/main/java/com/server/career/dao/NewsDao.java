@@ -10,5 +10,5 @@ import com.server.career.bean.NewsBean;
 public interface NewsDao {
 	public List<NewsBean> getAllNews();
 	public NewsBean getNewsById(Integer newsId);
-	public int addNews(NewsBean newsBean); 
+/*	public int addNews(NewsBean newsBean); */
 }

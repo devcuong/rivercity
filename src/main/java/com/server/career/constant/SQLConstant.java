@@ -30,12 +30,12 @@ public class SQLConstant {
 	/**
 	 * Parameter insert news
 	 */
-	public static final String SQL_PARAMETER_INFOR_IMAGE = "inforImage";
+/*	public static final String SQL_PARAMETER_INFOR_IMAGE = "inforImage";
 	public static final String SQL_PARAMETER_INFOR_URL = "inforUrl";
 	public static final String SQL_PARAMETER_INFOR_DATA_NAME = "inforDataName";
 	public static final String SQL_PARAMETER_INFOR_DATA_HASH = "inforDataHash";
 	public static final String SQL_PARAMETER_INFOR_NAME = "inforName";
 	public static final String SQL_PARAMETER_INFOR_ALIAS = "inforAlias";
-	public static final String SQL_PARAMETER_INFOR_CONTENT = "inforContent";
+	public static final String SQL_PARAMETER_INFOR_CONTENT = "inforContent";*/
 	
 }
