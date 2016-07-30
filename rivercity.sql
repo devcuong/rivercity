@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2016-07-16 16:20:39
+Date: 2016-07-30 08:52:17
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -37,6 +37,69 @@ INSERT INTO `agency` VALUES ('4', 'Happy Land', 'http://localhost:8080/rivercity
 INSERT INTO `agency` VALUES ('5', 'ThienDuc Real', 'http://localhost:8080/rivercity/resources/lienhe/images/xthienduc.png.pagespeed.ic._R9Qtmxn-d.png', '0903 98 2772');
 INSERT INTO `agency` VALUES ('6', 'Phat Hung', 'http://localhost:8080/rivercity/resources/lienhe/images/xphathung.png.pagespeed.ic.GkGJh78Cfs.png', '0937 156 969');
 INSERT INTO `agency` VALUES ('7', 'My Hung', 'http://localhost:8080/rivercity/resources/lienhe/images/xmyhung.png.pagespeed.ic.aROyIQ9_yU.png', '0911 775 888');
+
+-- ----------------------------
+-- Table structure for buy_post
+-- ----------------------------
+DROP TABLE IF EXISTS `buy_post`;
+CREATE TABLE `buy_post` (
+  `post_id` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
+  `post_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `post_content` mediumtext COLLATE utf8_unicode_ci NOT NULL,
+  `post_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `post_type` int(1) NOT NULL,
+  `post_category` int(2) NOT NULL,
+  `post_province` int(11) NOT NULL,
+  `post_district` int(11) NOT NULL,
+  `post_ward` int(11) NOT NULL,
+  `post_street` int(11) NOT NULL,
+  `post_area` int(11) NOT NULL,
+  `post_price` int(11) NOT NULL,
+  `post_unit` int(11) NOT NULL,
+  `post_description` mediumtext COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`post_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of buy_post
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for detail_post
+-- ----------------------------
+DROP TABLE IF EXISTS `detail_post`;
+CREATE TABLE `detail_post` (
+  `detail_id` int(11) NOT NULL,
+  `detail_front_line` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_way_in` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_direction` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_number_floor` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_number_bed_room` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_number_toilet_room` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_furniture` mediumtext COLLATE utf8_unicode_ci,
+  `post_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`detail_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of detail_post
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for district
+-- ----------------------------
+DROP TABLE IF EXISTS `district`;
+CREATE TABLE `district` (
+  `district_id` int(11) NOT NULL,
+  `district_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `province_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`district_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of district
+-- ----------------------------
+INSERT INTO `district` VALUES ('0', 'Quận 9', '0');
 
 -- ----------------------------
 -- Table structure for headquarter
@@ -101,15 +164,15 @@ INSERT INTO `news_real` VALUES ('2', 'Mỗi tuần một niềm vui: Lái Vespa 
 DROP TABLE IF EXISTS `normal`;
 CREATE TABLE `normal` (
   `infor_id` int(11) NOT NULL AUTO_INCREMENT,
-  `infor_image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `infor_url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `infor_data_name` int(255) NOT NULL,
-  `infor_data_hash` int(255) NOT NULL,
-  `infor_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `infor_alias` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `infor_content` mediumtext COLLATE utf8_unicode_ci NOT NULL,
+  `infor_image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `infor_url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `infor_data_name` int(255) DEFAULT NULL,
+  `infor_data_hash` int(255) DEFAULT NULL,
+  `infor_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `infor_alias` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `infor_content` mediumtext COLLATE utf8_unicode_ci,
   PRIMARY KEY (`infor_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of normal
@@ -117,6 +180,66 @@ CREATE TABLE `normal` (
 INSERT INTO `normal` VALUES ('1', 'bg1.jpg', 'http://rivercity.vn/gioi-thieu/gioi-thieu-du-an.html', '2', '2', 'Giới thiệu dự án', 'gioi-thieu-du-an', ' Đây không đơn thuần là 1 tòa nhà, đây chính là một phần của thành phố. RIVER CITY - tuyệt tác căn hộ bên Sông Sài Gòn với Giải Thưởng Phối Cảnh Đô Thị Châu Á danh giá sẽ là biểu tượng kiến trúc độc đáo – ngay chính tại Nam Sài Gòn này. <br> <br>Thiết kế bứt phá mọi giới hạn. Không gian sống kiêu hãnh dành cho chủ nhân thượng lưu. Tiện ích ưu việt lần đầu tiên có mặt tại Việt Nam. Căn hộ RIVER CITY sẽ mang lại cuộc sống thăng hoa, tràn năng lượng cùng hàng loạt trải nghiệm mà bạn chưa từng thấy ở những căn hộ tương tự.');
 INSERT INTO `normal` VALUES ('2', 'bg6.jpg', 'http://rivercity.vn/gioi-thieu/thong-tin-du-an.html', '3', '3', 'Thông tin dự án', 'thong-tin-du-an', 'Quy mô: <strong>12</strong> block từ <strong>15</strong> đến <strong>39</strong> tầng<br> Diện tích đất: <strong>112.585</strong> m2<br> Diện tích xây dựng: <strong>26.614</strong> m2<br> Mật độxây dựng: <strong>23,6</strong>%<br> Tổng số căn hộ ở: <strong>4.800</strong> căn<br> Tổng số căn hộ dịch vụ (office-tel, shop house): <strong>2.500</strong> căn');
 INSERT INTO `normal` VALUES ('3', 'bg7.jpg', 'http://rivercity.vn/gioi-thieu/dau-tu-phat-trien.html', '1', '1', 'Đầu tư và phát triển', 'dau-tu-phat-trien', 'TUYỆT TÁC RIVER CITY ĐẾN TỪ NHỮNG THƯƠNG HIỆU HÀNG ĐẦU');
+INSERT INTO `normal` VALUES ('4', 'bg9.jpg', null, '4', '4', '4', '4', '4');
+
+-- ----------------------------
+-- Table structure for project
+-- ----------------------------
+DROP TABLE IF EXISTS `project`;
+CREATE TABLE `project` (
+  `project_id` int(11) NOT NULL AUTO_INCREMENT,
+  `project_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `district_id` int(11) NOT NULL,
+  `province_id` int(11) NOT NULL,
+  PRIMARY KEY (`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of project
+-- ----------------------------
+INSERT INTO `project` VALUES ('0', 'Lan Phương MHBR', '0', '0');
+
+-- ----------------------------
+-- Table structure for province
+-- ----------------------------
+DROP TABLE IF EXISTS `province`;
+CREATE TABLE `province` (
+  `province_id` int(11) NOT NULL AUTO_INCREMENT,
+  `province_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`province_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of province
+-- ----------------------------
+INSERT INTO `province` VALUES ('0', 'TP.Hồ Chí Minh');
+
+-- ----------------------------
+-- Table structure for sell_post
+-- ----------------------------
+DROP TABLE IF EXISTS `sell_post`;
+CREATE TABLE `sell_post` (
+  `post_id` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
+  `post_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `post_category` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
+  `post_province` int(11) NOT NULL,
+  `post_district` int(11) NOT NULL,
+  `post_ward` int(11) DEFAULT NULL,
+  `post_street` int(11) DEFAULT NULL,
+  `post_area` int(11) DEFAULT NULL,
+  `post_price` int(11) DEFAULT NULL,
+  `post_unit` varchar(11) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `post_description` mediumtext COLLATE utf8_unicode_ci,
+  `post_image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`post_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of sell_post
+-- ----------------------------
+INSERT INTO `sell_post` VALUES ('sp01', 'Căn hộ Lan phương TT 30% nhận nhà và sổ, NHHT 70%, 350 triệu/70m2/2PN, thanh toán linh hoạt', 'BCHCC', '0', '0', null, null, '80', '25', 'BGT', '- Căn hộ được thiết kế hiện đại, có ban công thoáng mát, hướng Tây Bắc, Đông Nam đón lấy nắng gió thiên nhiên, tạo cho khách hàng không gian sống rộng rãi. Nội thất đầy đủ, tiện nghi, đạt chuẩn Singapore, vật liệu an toàn với người sử dụng và thân thiện với môi trường.', 'http://file4.batdongsan.com.vn/resize/745x510/2016/06/28/20160628144803-e7e2.jpg', '1');
+INSERT INTO `sell_post` VALUES ('sp02', 'Căn hộ Lan phương TT 30% nhận nhà và sổ, NHHT 70%, 350 triệu/70m2/2PN, thanh toán linh hoạt', 'BCHCC', '0', '0', null, null, '80', '25', 'BGT', '- Căn hộ được thiết kế hiện đại, có ban công thoáng mát, hướng Tây Bắc, Đông Nam đón lấy nắng gió thiên nhiên, tạo cho khách hàng không gian sống rộng rãi. Nội thất đầy đủ, tiện nghi, đạt chuẩn Singapore, vật liệu an toàn với người sử dụng và thân thiện với môi trường', 'http://file4.batdongsan.com.vn/resize/745x510/2016/06/28/20160628144803-e7e2.jpg', '1');
 
 -- ----------------------------
 -- Table structure for slide_image
@@ -166,6 +289,21 @@ CREATE TABLE `special` (
 INSERT INTO `special` VALUES ('1', 'http://localhost:8080/rivercity/resources/gioithieu/images/bg7.jpg', 'http://rivercity.vn/gioi-thieu/dau-tu-phat-trien.html', '1', '1', 'ĐẦU TƯ VÀ PHÁT TRIỂN', 'dau-tu-phat-trien', 'TUYỆT TÁC RIVER CITY ĐẾN TỪ NHỮNG THƯƠNG HIỆU HÀNG ĐẦU');
 
 -- ----------------------------
+-- Table structure for street
+-- ----------------------------
+DROP TABLE IF EXISTS `street`;
+CREATE TABLE `street` (
+  `street_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `street_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `district_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`street_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of street
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
@@ -176,10 +314,27 @@ CREATE TABLE `user` (
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `is_login` int(255) NOT NULL,
   `type_user` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'cuongdeptrai', '123456', 'cuong.dh8c@gmail.com', '1', '');
+INSERT INTO `user` VALUES ('1', 'cuongdeptrai', '123456', 'cuong.dh8c@gmail.com', '1', '', null, null);
+
+-- ----------------------------
+-- Table structure for ward
+-- ----------------------------
+DROP TABLE IF EXISTS `ward`;
+CREATE TABLE `ward` (
+  `ward_id` int(11) NOT NULL,
+  `ward_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `district_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`ward_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of ward
+-- ----------------------------
