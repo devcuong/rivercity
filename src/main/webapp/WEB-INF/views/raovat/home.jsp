@@ -906,10 +906,7 @@
 										</div>
 										<div class="clear"></div>
 									</div>
-
 								</div>
-
-
 								<div class="vip5" rel="9668815">
 									<div class="p-main">
 										<div class="p-main-image-crop">
@@ -1222,182 +1219,12 @@
 
 					<div class="container-default">
 						<div id="ctl43_BodyContainer">
-							<div class="t_left-baiviet">
-								<div class="t_left-baiviet-header">
-									<div class="t_left-baiviet-header-left">
-										<div>
-											<div class="t_left-baiviet-header-left-1"></div>
-											<div class="t_left-baiviet-header-left-repeat">
-												<span id="ctl43_ctl00_Label1">Bài viết mới</span>
-											</div>
-											<div class="t_left-baiviet-header-left-2"></div>
-										</div>
-									</div>
-									<div class="t_left-baiviet-header-right">
-
-										<div class="t_left-baiviet-header-right-link"
-											style="border: none;">
-
-											<a href="tu-van-luat-bat-dong-san.html" title="Tư vấn luật"
-												style="font-size: 11px;"> Tư vấn luật</a>
-										</div>
-
-										<div class="t_left-baiviet-header-right-link">
-
-											<a href="xay-dung/index.html" title="Xây dựng"
-												style="font-size: 11px;"> Xây dựng</a>
-										</div>
-
-										<div class="t_left-baiviet-header-right-link">
-
-											<a href="kien-truc/index.html" title="Kiến trúc"
-												style="font-size: 11px;"> Kiến trúc</a>
-										</div>
-
-										<div class="t_left-baiviet-header-right-link">
-
-											<a href="noi-ngoai-that/index.html" title="Nội - Ngoại thất"
-												style="font-size: 11px;"> Nội - Ngoại thất</a>
-										</div>
-
-										<div class="t_left-baiviet-header-right-link">
-
-											<a href="phong-thuy/index.html" title="Phong thủy"
-												style="font-size: 11px;"> Phong thủy</a>
-										</div>
-
-										<div class="clear"></div>
-									</div>
-								</div>
+							fadsfa
+							<!-- <div class="t_left-baiviet">
+								zzz
 								<div class="line-home"></div>
-								<div class="t_left-baiviet-content">
-
-									<div class="group-news-border-backgroup">
-
-										<a
-											href="nha-pho/nha-ong-dien-tich-152-m2-co-be-boi-tien-nghi-nhu-khu-nghi-duong-ar78481.html">
-											<img style="border: 1px solid #ccc;"
-											src="../file1.batdongsan.com.vn/crop82x82.20160630104818758.nha-ong-dien-tich-152-m2-co-be-boi-tien-nghi-nhu-khu-nghi-duong.jpg"
-											alt="Nhà ống diện tích 152 m2 có bể bơi tiện nghi như khu nghỉ dưỡng">
-										</a>
-										<div class="group-news-title">
-											<a
-												href="nha-pho/nha-ong-dien-tich-152-m2-co-be-boi-tien-nghi-nhu-khu-nghi-duong-ar78481.html"
-												title="Nhà ống diện tích 152 m2 có bể bơi tiện nghi như khu nghỉ dưỡng">
-												Nhà ống diện tích 152 m2 có bể bơi tiện nghi như khu nghỉ
-												dưỡng </a>
-										</div>
-										<div class="group-news-summary">Ngôi nhà ở quận 10
-											(Tp.HCM) là dạng nhà ống có diện tích 152 m2 (mặt tiền 3,8m,
-											sâu 40m). Gia đình chủ nhà có 3 thế hệ, đây có thể xem là một
-											xã hội thu nhỏ với...</div>
-									</div>
-
-									<div class="group-news-border-backgroup">
-
-										<a
-											href="toan-canh-ngoi-nha/noi-rong-khong-gian-nha-voi-rem-mong-nhe-ar78461.html">
-											<img style="border: 1px solid #ccc;"
-											src="../file4.batdongsan.com.vn/crop/82x82/2016/06/29/skfAIqGF/20160629141341-4650.jpg"
-											alt="Nới rộng không gian nhà với rèm mỏng nhẹ">
-										</a>
-										<div class="group-news-title">
-											<a
-												href="toan-canh-ngoi-nha/noi-rong-khong-gian-nha-voi-rem-mong-nhe-ar78461.html"
-												title="Nới rộng không gian nhà với rèm mỏng nhẹ"> Nới
-												rộng không gian nhà với rèm mỏng nhẹ </a>
-										</div>
-										<div class="group-news-summary">Lớp rèm mỏng nhẹ sẽ giúp
-											ích rất nhiều trong các ngôi nhà nhỏ khi vừa giúp phân tách
-											không gian, vừa tăng hiệu ứng thị giác, tạo cảm giác không
-											gian nhà trở nên rộng rãi hơn.</div>
-									</div>
-
-									<div class="clear"></div>
-
-									<div class="group-news-border-backgroup">
-
-										<a
-											href="chung-cu/can-ho-18m2-dep-tien-nghi-nho-thiet-ke-tuyet-voi-ar78458.html">
-											<img style="border: 1px solid #ccc;"
-											src="../file1.batdongsan.com.vn/crop82x82.20160629111438148.can-ho-18m2-dep-tien-nghi-nho-thiet-ke-tuyet-voi.jpg"
-											alt="Căn hộ 18m2 đẹp tiện nghi nhờ thiết kế tuyệt vời">
-										</a>
-										<div class="group-news-title">
-											<a
-												href="chung-cu/can-ho-18m2-dep-tien-nghi-nho-thiet-ke-tuyet-voi-ar78458.html"
-												title="Căn hộ 18m2 đẹp tiện nghi nhờ thiết kế tuyệt vời">
-												Căn hộ 18m2 đẹp tiện nghi nhờ thiết kế tuyệt vời </a>
-										</div>
-										<div class="group-news-summary">Dù diện tích rất nhỏ,
-											chỉ vỏn vẹn 18m2 nhưng căn hộ này có đủ các khu vực chức năng
-											như phòng khách, bếp, bàn ăn, giường ngủ... Hơn nữa, nhờ ý
-											tưởng thiết kế tuyệt vời nên căn...</div>
-									</div>
-
-									<div class="group-news-border-backgroup">
-
-										<a
-											href="phong-thuy-toan-canh/cach-hoa-giai-khi-bo-tri-bon-rua-canh-bep-ar78457.html">
-											<img style="border: 1px solid #ccc;"
-											src="../file4.batdongsan.com.vn/crop/82x82/2016/06/29/skfAIqGF/20160629111207-0846.jpg"
-											alt="Cách hóa giải khi bố trí bồn rửa cạnh bếp">
-										</a>
-										<div class="group-news-title">
-											<a
-												href="phong-thuy-toan-canh/cach-hoa-giai-khi-bo-tri-bon-rua-canh-bep-ar78457.html"
-												title="Cách hóa giải khi bố trí bồn rửa cạnh bếp"> Cách
-												hóa giải khi bố trí bồn rửa cạnh bếp </a>
-										</div>
-										<div class="group-news-summary">Nhiều gia đình đang tạo
-											ra sự xung khắc gay gắt giữa lửa và nước trong phòng bếp của
-											gia đình khi bố trí bồn rửa cạnh bếp. Hãy tham khảo cách hóa
-											giải trong bài viết để hạn chế những...</div>
-									</div>
-
-									<div class="clear"></div>
-
-									<div style="clear: both"></div>
-									<div class="art-latest">
-										<div class="art-item">
-											<ul>
-
-												<li><a
-													href="phong-thuy-toan-canh/nhung-dau-hieu-phong-thuy-cua-mot-ngoi-nha-thinh-vuong-ar78448.html"
-													title="Những dấu hiệu phong thủy của một ngôi nhà thịnh vượng">
-														Những dấu hiệu phong thủy của một ngôi nhà thịnh vượng</a></li>
-
-												<li><a
-													href="phong-thuy-phong-ngu/bi-quyet-giup-khoi-goi-suc-song-cho-phong-ngu-ar78438.html"
-													title="Bí quyết giúp khơi gợi sức sống cho phòng ngủ">
-														Bí quyết giúp khơi gợi sức sống cho phòng ngủ</a></li>
-
-												<li><a
-													href="the-gioi-kien-truc/thiet-ke-moi-tuyet-dep-cho-thu-vien-thanh-pho-thien-tan-ar78437.html"
-													title="Thiết kế mới tuyệt đẹp cho thư viện thành phố Thiên Tân">
-														Thiết kế mới tuyệt đẹp cho thư viện thành phố Thiên Tân</a></li>
-
-												<li><a
-													href="kien-thuc-xay-dung/3-luu-y-co-ban-khi-thi-cong-cau-thang-bang-kinh-cuong-luc-ar78436.html"
-													title="3 lưu ý cơ bản khi thi công cầu thang bằng kính cường lực">
-														3 lưu ý cơ bản khi thi công cầu thang bằng kính cường lực</a></li>
-
-												<li><a
-													href="quyen-so-huu/co-duoc-ban-nha-thuoc-so-huu-rieng-ar78434.html"
-													title="Có được bán nhà thuộc sở hữu riêng?"> Có được
-														bán nhà thuộc sở hữu riêng?</a></li>
-
-												<li><a
-													href="nghia-vu-tai-chinh/quy-dinh-ve-tinh-tien-thue-dat-tien-su-dung-dat-cua-du-an-dau-tu-ar78422.html"
-													title="Quy định về tính tiền thuê đất, tiền sử dụng đất của dự án đầu tư">
-														Quy định về tính tiền thuê đất, tiền sử dụng đất của dự án
-														đầu tư</a></li>
-
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
+								
+							</div> -->
 						</div>
 
 					</div>

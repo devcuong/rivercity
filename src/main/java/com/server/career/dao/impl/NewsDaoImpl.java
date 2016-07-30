@@ -31,12 +31,10 @@ public class NewsDaoImpl implements NewsDao {
 
 		try {
 			// RowMapper
-			final RowMapper<NewsBean> mapper = new BeanPropertyRowMapper<NewsBean>(
-					NewsBean.class);
+			final RowMapper<NewsBean> mapper = new BeanPropertyRowMapper<NewsBean>(NewsBean.class);
 
 			// アプリ一覧情報（総件数）取得処理
-			newsBeans = namedParameterJdbcTemplate.query(
-					SqlFileReaderUtil.getSql(NEWS_SEL_ALL), mapper);
+			newsBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(NEWS_SEL_ALL), mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -52,13 +50,11 @@ public class NewsDaoImpl implements NewsDao {
 			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_ID, newsId);
 
 			// RowMapper
-			final RowMapper<NewsBean> mapper = new BeanPropertyRowMapper<NewsBean>(
-					NewsBean.class);
+			final RowMapper<NewsBean> mapper = new BeanPropertyRowMapper<NewsBean>(NewsBean.class);
 
 			// Return
-			newsBean = namedParameterJdbcTemplate
-					.queryForObject(SqlFileReaderUtil.getSql(NEWS_SEL_BY_ID),
-							parameter, mapper);
+			newsBean = namedParameterJdbcTemplate.queryForObject(SqlFileReaderUtil.getSql(NEWS_SEL_BY_ID), parameter,
+					mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -72,19 +68,13 @@ public class NewsDaoImpl implements NewsDao {
 		try {
 			// Parameter sql
 			final MapSqlParameterSource parameter = new MapSqlParameterSource();
-			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_TITLE,
-					newsBean.getNewsTitle());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_DESCRIPTION,
-					newsBean.getNewsDescription());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_IMAGE,
-					newsBean.getNewsImage());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_ALIAS,
-					newsBean.getNewsAlias());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_CONTENT,
-					newsBean.getNewsImage());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_TITLE, newsBean.getNewsTitle());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_DESCRIPTION, newsBean.getNewsDescription());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_IMAGE, newsBean.getNewsImage());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_ALIAS, newsBean.getNewsAlias());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_CONTENT, newsBean.getNewsImage());
 			// Return
-			newsAdd = namedParameterJdbcTemplate.update(
-					SqlFileReaderUtil.getSql(NEWS_INS), parameter);
+			newsAdd = namedParameterJdbcTemplate.update(SqlFileReaderUtil.getSql(NEWS_INS), parameter);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

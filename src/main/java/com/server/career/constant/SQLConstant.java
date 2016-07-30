@@ -36,4 +36,5 @@ public class SQLConstant {
 	public static final String SQL_PARAMETER_NEWS_ALIAS = "newsAlias";
 	public static final String SQL_PARAMETER_NEWS_CONTENT = "newsContent";
 	
+	
 }
