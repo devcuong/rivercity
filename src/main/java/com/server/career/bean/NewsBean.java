@@ -1,18 +1,19 @@
 package com.server.career.bean;
 
 public class NewsBean {
-	private Integer newsId;
+	private int newsId;
 	private String newsTitle;
 	private String newsDescription;
 	private String newsImage;
 	private String newsAlias;
 	private String newsContent;
 
-	public Integer getNewsId() {
+
+	public int getNewsId() {
 		return newsId;
 	}
 
-	public void setNewsId(Integer newsId) {
+	public void setNewsId(int newsId) {
 		this.newsId = newsId;
 	}
 

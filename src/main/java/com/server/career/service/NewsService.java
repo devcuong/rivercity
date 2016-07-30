@@ -10,4 +10,5 @@ import com.server.career.bean.NewsBean;
 public interface NewsService {
 	public List<NewsBean> getAllNews();
 	public NewsBean getNewsById(Integer newsId);
+	public int addNews(NewsBean newsBean);
 }
