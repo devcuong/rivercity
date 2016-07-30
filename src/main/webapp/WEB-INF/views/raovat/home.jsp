@@ -855,7 +855,7 @@
 						<div id="ctl39_BodyContainer">
 
 							<div class="product-list tin-danh-cho-ban">
-
+								
 								<div class="vip5" rel="9672385">
 									<div class="p-main">
 										<div class="p-main-image-crop">
@@ -907,7 +907,7 @@
 										<div class="clear"></div>
 									</div>
 								</div>
-								<div class="vip5" rel="9668815">
+								<!-- <div class="vip5" rel="9668815">
 									<div class="p-main">
 										<div class="p-main-image-crop">
 											<a class="product-avatar"
@@ -958,10 +958,9 @@
 										<div class="clear"></div>
 									</div>
 
-								</div>
+								</div> -->
 
-
-								<div class="vip5" rel="9353894">
+								<!-- <div class="vip5" rel="9353894">
 									<div class="p-main">
 										<div class="p-main-image-crop">
 											<a class="product-avatar"
@@ -1012,10 +1011,8 @@
 										<div class="clear"></div>
 									</div>
 
-								</div>
-
-
-								<div class="vip5" rel="9374595">
+								</div> -->
+								<!-- <div class="vip5" rel="9374595">
 									<div class="p-main">
 										<div class="p-main-image-crop">
 											<a class="product-avatar"
@@ -1067,10 +1064,8 @@
 										<div class="clear"></div>
 									</div>
 
-								</div>
-
-
-								<div class="vip5" rel="9169911">
+								</div> -->
+								<!-- <div class="vip5" rel="9169911">
 									<div class="p-main">
 										<div class="p-main-image-crop">
 											<a class="product-avatar"
@@ -1123,10 +1118,8 @@
 										<div class="clear"></div>
 									</div>
 
-								</div>
-
-
-								<div class="vip5" rel="9458827">
+								</div> -->
+								<!-- <div class="vip5" rel="9458827">
 									<div class="p-main">
 										<div class="p-main-image-crop">
 											<a class="product-avatar"
@@ -1177,7 +1170,7 @@
 										<div class="clear"></div>
 									</div>
 
-								</div>
+								</div> -->
 								<div class="otherlink">
 									<a
 										href="ban-dat-nen-du-an-xa-phuoc-hoa-prj-khu-do-thi-phuoc-hoa-goldenland.html"

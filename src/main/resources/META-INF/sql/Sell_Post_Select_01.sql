@@ -1,2 +1,1 @@
-SELECT *
-FROM sell_post
+select * from sell_post order by post_id desc limit 6;
