@@ -1,6 +1,5 @@
 package com.server.career.bean;
 
-
 public class SellPostBean {
 
 	private String postId;
@@ -28,6 +27,36 @@ public class SellPostBean {
 	private int postWard;
 
 	private int userId;
+	
+	private String provinceName;
+	
+	private String districtName;
+
+	private String postDate;
+	
+	public String getPostDate() {
+		return postDate;
+	}
+
+	public void setPostDate(String postDate) {
+		this.postDate = postDate;
+	}
+
+	public String getDistrictName() {
+		return districtName;
+	}
+
+	public void setDistrictName(String districtName) {
+		this.districtName = districtName;
+	}
+
+	public String getProvinceName() {
+		return provinceName;
+	}
+
+	public void setProvinceName(String provinceName) {
+		this.provinceName = provinceName;
+	}
 
 	public String getPostId() {
 		return this.postId;

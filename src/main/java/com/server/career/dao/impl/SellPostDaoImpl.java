@@ -20,6 +20,8 @@ public class SellPostDaoImpl implements SellPostDao {
 	
 	/** SQL. */
 	private static final String SELL_POST_SEL_TOP = "Sell_Post_Select_01.sql";
+	private static final String SELL_POST_SELL_SEL_VIP = "Sell_Post_Select_02.sql";
+	private static final String SELL_POST_RENT_SEL_VIP = "Sell_Post_Select_03.sql";
 	
 	@Override
 	public List<SellPostBean> getTopSellPost() {
@@ -31,6 +33,40 @@ public class SellPostDaoImpl implements SellPostDao {
 
 			// アプリ一覧情報（総件数）取得処理
 			sellPosts = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(SELL_POST_SEL_TOP), mapper);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return sellPosts;
+	}
+	
+	@Override
+	public List<SellPostBean> getVipSellPostTypeSell() {
+		List<SellPostBean> sellPosts = null;
+
+		try {
+			// RowMapper
+			final RowMapper<SellPostBean> mapper = new BeanPropertyRowMapper<SellPostBean>(SellPostBean.class);
+
+			// アプリ一覧情報（総件数）取得処理
+			sellPosts = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(SELL_POST_SELL_SEL_VIP), mapper);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return sellPosts;
+	}
+	
+	@Override
+	public List<SellPostBean> getVipSellPostTypeRent() {
+		List<SellPostBean> sellPosts = null;
+
+		try {
+			// RowMapper
+			final RowMapper<SellPostBean> mapper = new BeanPropertyRowMapper<SellPostBean>(SellPostBean.class);
+
+			// アプリ一覧情報（総件数）取得処理
+			sellPosts = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(SELL_POST_RENT_SEL_VIP), mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

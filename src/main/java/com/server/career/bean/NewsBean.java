@@ -3,11 +3,19 @@ package com.server.career.bean;
 public class NewsBean {
 	private int newsId;
 	private String newsTitle;
+	private String newsShortTitle;
 	private String newsDescription;
 	private String newsImage;
 	private String newsAlias;
 	private String newsContent;
 
+	public String getNewsShortTitle() {
+		return newsShortTitle;
+	}
+
+	public void setNewsShortTitle(String newsShortTitle) {
+		this.newsShortTitle = newsShortTitle;
+	}
 
 	public int getNewsId() {
 		return newsId;
@@ -57,5 +65,4 @@ public class NewsBean {
 		this.newsContent = newsContent;
 	}
 
-	
 }

@@ -2,7 +2,6 @@ package com.server.career.bean;
 
 public class LoginBean {
 	
-	
 	private Integer userId;
 	private String userName;
 	private String password;

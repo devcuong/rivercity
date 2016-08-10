@@ -9,4 +9,6 @@ import com.server.career.bean.SellPostBean;
 @Repository
 public interface SellPostDao {
 	public List<SellPostBean> getTopSellPost();
+	public List<SellPostBean> getVipSellPostTypeSell();
+	public List<SellPostBean> getVipSellPostTypeRent();
 }
