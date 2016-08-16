@@ -1,0 +1,1 @@
+select * from sell_post where post_type = 1 and post_is_vip = 1

@@ -64,7 +64,7 @@
 			<tiles:insertAttribute name="body" />
 			
 			<!-- MAINCOLUMN -->
-			<%-- <tiles:insertAttribute name="maincolumn" /> --%>
+			<tiles:insertAttribute name="maincolumn" />
 			<!-- Intro-->
 			<div id="Intro">
 				<div>

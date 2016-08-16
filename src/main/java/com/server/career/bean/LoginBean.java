@@ -1,6 +1,10 @@
 package com.server.career.bean;
 
 public class LoginBean {
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 706a9704656bd9f69f5378e7f8418befcab0ef14
 	private Integer userId;
 	private String userName;
 	private String password;

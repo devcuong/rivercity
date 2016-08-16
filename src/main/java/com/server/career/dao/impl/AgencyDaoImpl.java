@@ -21,6 +21,7 @@ public class AgencyDaoImpl implements AgencyDao {
 
 	/** SQL. */
 	private static final String AGENCY_SEL_ALL = "Agency_Select_01.sql";
+	private static final String REPRESENTATIVE_AGENCY_SEL_ALL = "Agency_Select_01.sql";
 
 	@Override
 	public List<AgentBean> getAllAgent() {
@@ -28,13 +29,27 @@ public class AgencyDaoImpl implements AgencyDao {
 
 		try {
 			// RowMapper
-			final RowMapper<AgentBean> mapper = new BeanPropertyRowMapper<AgentBean>(
-					AgentBean.class);
+			final RowMapper<AgentBean> mapper = new BeanPropertyRowMapper<AgentBean>(AgentBean.class);
 
 			// アプリ一覧情報（総件数）取得処理
-			agentBeans = namedParameterJdbcTemplate.query(
-					SqlFileReaderUtil.getSql(AGENCY_SEL_ALL),
-					mapper);
+			agentBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(AGENCY_SEL_ALL), mapper);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return agentBeans;
+	}
+
+	@Override
+	public List<AgentBean> getRepresentativeAgent() {
+		List<AgentBean> agentBeans = null;
+
+		try {
+			// RowMapper
+			final RowMapper<AgentBean> mapper = new BeanPropertyRowMapper<AgentBean>(AgentBean.class);
+
+			// アプリ一覧情報（総件数）取得処理
+			agentBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(REPRESENTATIVE_AGENCY_SEL_ALL), mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

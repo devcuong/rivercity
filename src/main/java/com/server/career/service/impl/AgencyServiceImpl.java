@@ -19,4 +19,9 @@ public class AgencyServiceImpl implements AgencyService {
 	public List<AgentBean> getAllAgent() {
 		return agencyDao.getAllAgent();
 	}
+	
+	@Override
+	public List<AgentBean> getRepresentativeAgent() {
+		return agencyDao.getRepresentativeAgent();
+	}
 }

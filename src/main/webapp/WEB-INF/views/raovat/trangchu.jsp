@@ -667,166 +667,37 @@
 
 				<div class="news-list-border-background">
 					<ul class="news-list-thumb">
-
-						<li style="display: block;" id="li_0"><a
-							href="chinh-sach-quan-ly/bo-xay-dung-yeu-cau-xu-ly-sai-pham-tai-du-an-golden-west-le-van-thiem-ar78479.html"
-							title="Bộ Xây dựng yêu cầu xử lý sai phạm tại dự án Golden West Lê Văn Thiêm">
-								<img class="imagethumbnail"
-								alt="Bộ Xây dựng yêu cầu xử lý sai phạm tại dự án Golden West Lê Văn Thiêm"
-								src="../file4.batdongsan.com.vn/crop/210x160/2016/06/30/b9sp0zUm/20160630104325-68fb.jpg"
-								style="float: left;">
-						</a>
-							<div class="thumb-title">
-								<a
+						<c:forEach var="sNewsBean" items="${newsBean}" varStatus="loop">
+							<c:if test="${loop.index == 0}">
+								<li style="display: block;" id="li_0"><a
 									href="chinh-sach-quan-ly/bo-xay-dung-yeu-cau-xu-ly-sai-pham-tai-du-an-golden-west-le-van-thiem-ar78479.html"
-									title="Bộ Xây dựng yêu cầu xử lý sai phạm tại dự án Golden West Lê Văn Thiêm">Bộ
-									Xây dựng yêu cầu xử lý sai phạm tại dự án Golden West Lê Văn
-									Thiêm</a>
-							</div>
-							<div class="thumb-summary">Thanh tra Bộ Xây dựng vừa có văn
-								bản gửi UBND TP.Hà Nội liên quan đến những sai phạm tại dự án
-								Golden West Lê Văn Thiêm do Công ty CP Phát triển thương mại
-								Việt Nam (Vietradico) làm chủ đầu tư.</div></li>
-
-						<li style="display: none;" id="li_1"><a
-							href="tin-thi-truong/nhung-thuong-vu-thau-tom-khach-san-khung-cua-cac-dai-gia-dia-oc-ar78478.html"
-							title="Những thương vụ thâu tóm khách sạn &quot;khủng&quot; của các đại gia địa ốc">
-								<img class="imagethumbnail"
-								alt="Những thương vụ thâu tóm khách sạn &quot;khủng&quot; của các đại gia địa ốc"
-								src="../file4.batdongsan.com.vn/crop/210x160/2016/06/30/b9sp0zUm/20160630094959-c25f.jpg"
-								style="float: left;">
-						</a>
-							<div class="thumb-title">
-								<a
-									href="tin-thi-truong/nhung-thuong-vu-thau-tom-khach-san-khung-cua-cac-dai-gia-dia-oc-ar78478.html"
-									title="Những thương vụ thâu tóm khách sạn &quot;khủng&quot; của các đại gia địa ốc">Những
-									thương vụ thâu tóm khách sạn "khủng" của các đại gia địa ốc</a>
-							</div>
-							<div class="thumb-summary">Trong 6 tháng đầu năm, thị
-								trường bất động sản (BĐS) đã chứng kiến hàng loạt thương vụ mua
-								bán và sáp nhập (M&amp;A) trong lĩnh vực khách sạn, đáng chú ý
-								có những thương vụ lên tới cả trăm triệu USD.</div></li>
-
-						<li style="display: none;" id="li_2"><a
-							href="tin-thi-truong/so-huu-can-ho-trung-tam-quan-7-chi-voi-so-tien-tich-luy-399-trieu-dong-ar78477.html"
-							title="Sở hữu căn hộ trung tâm quận 7 chỉ với số tiền tích luỹ 399 triệu đồng">
-								<img class="imagethumbnail"
-								alt="Sở hữu căn hộ trung tâm quận 7 chỉ với số tiền tích luỹ 399 triệu đồng"
-								src="../file4.batdongsan.com.vn/crop/210x160/2016/06/30/b9sp0zUm/20160630085939-e2a4.jpg"
-								style="float: left;">
-						</a>
-							<div class="thumb-title">
-								<a
-									href="tin-thi-truong/so-huu-can-ho-trung-tam-quan-7-chi-voi-so-tien-tich-luy-399-trieu-dong-ar78477.html"
-									title="Sở hữu căn hộ trung tâm quận 7 chỉ với số tiền tích luỹ 399 triệu đồng">Sở
-									hữu căn hộ trung tâm quận 7 chỉ với số tiền tích luỹ 399 triệu
-									đồng</a>
-							</div>
-							<div class="thumb-summary">Từ trước đến nay, quận 7 được
-								coi là khu vưc an cư lý tưởng với đầy đủ tiện ích đẳng cấp từ
-								vui chơi, mua sắm, giải trí, đến bệnh viên, trường học... Giờ
-								đây, chỉ cần với số tiền tích lũy 399 triệu đồng, khách hàng đã
-								có thể sở hữu ngay căn hộ ở trung tâm...</div></li>
-
-						<li style="display: none;" id="li_3"><a
-							href="tin-thi-truong/ban-can-tim-kenh-dau-tu-hieu-qua-va-an-toan-ar78475.html"
-							title="Bạn cần tìm kênh đầu tư hiệu quả và an toàn?"> <img
-								class="imagethumbnail"
-								alt="Bạn cần tìm kênh đầu tư hiệu quả và an toàn?"
-								src="../file4.batdongsan.com.vn/crop/210x160/2016/06/30/b9sp0zUm/20160630084007-597d.jpg"
-								style="float: left;">
-						</a>
-							<div class="thumb-title">
-								<a
-									href="tin-thi-truong/ban-can-tim-kenh-dau-tu-hieu-qua-va-an-toan-ar78475.html"
-									title="Bạn cần tìm kênh đầu tư hiệu quả và an toàn?">Bạn
-									cần tìm kênh đầu tư hiệu quả và an toàn?</a>
-							</div>
-							<div class="thumb-summary">Theo nhận định của các chuyên
-								gia đầu ngành về kinh tế và bất động sản, kênh đầu tư sinh lời
-								cao, an toàn, hấp dẫn nhất trên thị trường hiện nay chính là bất
-								động sản nghỉ dưỡng.</div></li>
-
-						<li style="display: none;" id="li_4"><a
-							href="tin-thi-truong/khu-do-thi-thanh-pho-giao-luu-du-an-lon-nhat-khu-vuc-phia-tay-ha-noi-ar78476.html"
-							title="Khu đô thị Thành phố giao lưu – dự án lớn nhất khu vực phía Tây Hà Nội">
-								<img class="imagethumbnail"
-								alt="Khu đô thị Thành phố giao lưu – dự án lớn nhất khu vực phía Tây Hà Nội"
-								src="../file4.batdongsan.com.vn/crop/210x160/2016/06/30/b9sp0zUm/20160630084557-5933.jpg"
-								style="float: left;">
-						</a>
-							<div class="thumb-title">
-								<a
-									href="tin-thi-truong/khu-do-thi-thanh-pho-giao-luu-du-an-lon-nhat-khu-vuc-phia-tay-ha-noi-ar78476.html"
-									title="Khu đô thị Thành phố giao lưu – dự án lớn nhất khu vực phía Tây Hà Nội">Khu
-									đô thị Thành phố giao lưu – dự án lớn nhất khu vực phía Tây Hà
-									Nội</a>
-							</div>
-							<div class="thumb-summary">Khu đô thị Thành phố giao lưu
-								trên đường Phạm Văn Đồng, quận Bắc Từ Liêm là một trong những dự
-								án bất động sản lớn nhất đang được triển khai ở khu vực phía Tây
-								Hà Nội. Dự án có tổng diện tích 90ha, với điểm nhấn đặc biệt là
-								hồ nước rộng 15ha ở trung tâm khu...</div></li>
-
-						<li style="display: none;" id="li_5"><a
-							href="tin-thi-truong/bat-dong-san-se-bien-dong-ra-sao-khi-anh-roi-khoi-eu-ar78474.html"
-							title="Bất động sản sẽ biến động ra sao khi Anh rời khỏi EU?">
-								<img class="imagethumbnail"
-								alt="Bất động sản sẽ biến động ra sao khi Anh rời khỏi EU?"
-								src="../file4.batdongsan.com.vn/crop/210x160/2016/06/30/b9sp0zUm/20160630074008-9b47.jpg"
-								style="float: left;">
-						</a>
-							<div class="thumb-title">
-								<a
-									href="tin-thi-truong/bat-dong-san-se-bien-dong-ra-sao-khi-anh-roi-khoi-eu-ar78474.html"
-									title="Bất động sản sẽ biến động ra sao khi Anh rời khỏi EU?">Bất
-									động sản sẽ biến động ra sao khi Anh rời khỏi EU?</a>
-							</div>
-							<div class="thumb-summary">Các chuyên gia JLL cho biết,
-								Brexit sẽ mang lại cơ hội ngắn hạn cho các nhà đầu tư bất động
-								sản (BĐS) quốc tế nhưng cũng gây ra sự suy yếu về nhu cầu nhà ở
-								đi cùng với sự hạn chế về dòng vốn.</div></li>
-
+									title="${sNewsBean.newsShortTitle}">
+										<img class="imagethumbnail"
+										alt="${sNewsBean.newsShortTitle}"
+										src="${sNewsBean.newsImage}"
+										style="float: left;">
+								</a>
+									<div class="thumb-title">
+										<a
+											href="chinh-sach-quan-ly/bo-xay-dung-yeu-cau-xu-ly-sai-pham-tai-du-an-golden-west-le-van-thiem-ar78479.html"
+											title="${sNewsBean.newsShortTitle}">${sNewsBean.newsShortTitle}</a>
+									</div>
+									<div class="thumb-summary">${sNewsBean.newsDescription}</div></li>
+							</c:if>
+						</c:forEach>
 					</ul>
 
 					<div style="clear: both;"></div>
 					<div class="news-slide-show-item">
 						<div class="news-list">
 							<ul>
-
-								<li class="li_0"><a
-									href="tin-thi-truong/khu-do-thi-thanh-pho-giao-luu-du-an-lon-nhat-khu-vuc-phia-tay-ha-noi-ar78476.html"
-									title="Khu đô thị Thành phố giao lưu – dự án lớn nhất khu vực phía Tây Hà Nội">Khu
-										đô thị Thành phố giao lưu – dự án lớn nhất khu vực phía Tây
-										Hà...</a></li>
-
-								<li class="li_1"><a
-									href="tin-thi-truong/ban-can-tim-kenh-dau-tu-hieu-qua-va-an-toan-ar78475.html"
-									title="Bạn cần tìm kênh đầu tư hiệu quả và an toàn?">Bạn
-										cần tìm kênh đầu tư hiệu quả và an toàn?</a></li>
-
-								<li class="li_2"><a
-									href="tin-thi-truong/so-huu-can-ho-trung-tam-quan-7-chi-voi-so-tien-tich-luy-399-trieu-dong-ar78477.html"
-									title="Sở hữu căn hộ trung tâm quận 7 chỉ với số tiền tích luỹ 399 triệu đồng">Sở
-										hữu căn hộ trung tâm quận 7 chỉ với số tiền tích luỹ 399
-										triệu...</a></li>
-
-								<li class="li_3"><a
-									href="tin-thi-truong/nhung-thuong-vu-thau-tom-khach-san-khung-cua-cac-dai-gia-dia-oc-ar78478.html"
-									title="Những thương vụ thâu tóm khách sạn &quot;khủng&quot; của các đại gia địa ốc">Những
-										thương vụ thâu tóm khách sạn "khủng" của các đại gia địa ốc</a></li>
-
-								<li class="li_4"><a
-									href="chinh-sach-quan-ly/bo-xay-dung-yeu-cau-xu-ly-sai-pham-tai-du-an-golden-west-le-van-thiem-ar78479.html"
-									title="Bộ Xây dựng yêu cầu xử lý sai phạm tại dự án Golden West Lê Văn Thiêm">Bộ
-										Xây dựng yêu cầu xử lý sai phạm tại dự án Golden West Lê Văn
-										Thiêm</a></li>
-
-								<li class="li_5"><a
-									href="tin-thi-truong/bat-dong-san-se-bien-dong-ra-sao-khi-anh-roi-khoi-eu-ar78474.html"
-									title="Bất động sản sẽ biến động ra sao khi Anh rời khỏi EU?">Bất
-										động sản sẽ biến động ra sao khi Anh rời khỏi EU?</a></li>
-
+								<c:forEach var="sNewsBean" items="${newsBean}" varStatus="loop">
+									<c:if test="${loop.index > 0}">
+										<li class="li_0"><a
+											href="tin-thi-truong/khu-do-thi-thanh-pho-giao-luu-du-an-lon-nhat-khu-vuc-phia-tay-ha-noi-ar78476.html"
+											title="${sNewsBean.newsShortTitle}">${sNewsBean.newsShortTitle}</a></li>
+									</c:if>
+								</c:forEach>
 							</ul>
 						</div>
 					</div>
@@ -855,329 +726,58 @@
 						<div id="ctl39_BodyContainer">
 
 							<div class="product-list tin-danh-cho-ban">
+								<c:forEach var="sSellBean" items="${sellBean}">
+									<div class="vip5" rel="9672385">
+										<div class="p-main">
+											<div class="p-main-image-crop">
+												<a class="product-avatar"
+													href="ban-can-ho-chung-cu-duong-cau-buou-phuong-kien-hung-prj-sails-tower/vao-o-ngay-goc-3-phong-ngu-107-m2-gia-chi-1-55-ty-ha-dong-pr9672385.html"
+													onclick=""> <img class="product-avatar-img"
+													src="${sSellBean.postImage}" alt="${sSellBean.postTitle}">
 
-								<div class="vip5" rel="9672385">
-									<div class="p-main">
-										<div class="p-main-image-crop">
-											<a class="product-avatar"
-												href="ban-can-ho-chung-cu-duong-cau-buou-phuong-kien-hung-prj-sails-tower/vao-o-ngay-goc-3-phong-ngu-107-m2-gia-chi-1-55-ty-ha-dong-pr9672385.html"
-												onclick=""> <img class="product-avatar-img"
-												src="../file4.batdongsan.com.vn/crop/120x90/2016/06/25/20160625101233-0d21.jpg"
-												alt="Vào ở ngay căn góc 3 phòng ngủ, 107 m2 giá chỉ 1,55 tỷ, Sails Tower Hà Đông">
-
-											</a>
-										</div>
-										<div class="p-content">
-											<div class="p-title">
-												<h3>
-													<a
-														href="ban-can-ho-chung-cu-duong-cau-buou-phuong-kien-hung-prj-sails-tower/vao-o-ngay-goc-3-phong-ngu-107-m2-gia-chi-1-55-ty-ha-dong-pr9672385.html"
-														title="Vào ở ngay căn góc 3 phòng ngủ, 107 m2 giá chỉ 1,55 tỷ, Sails Tower Hà Đông">
-														Vào ở ngay căn góc 3 phòng ngủ, 107 m2 giá chỉ 1,55 tỷ,
-														Sails Tower Hà Đông </a>
-												</h3>
+												</a>
 											</div>
+											<div class="p-content">
+												<div class="p-title">
+													<h3>
+														<a
+															href="ban-can-ho-chung-cu-duong-cau-buou-phuong-kien-hung-prj-sails-tower/vao-o-ngay-goc-3-phong-ngu-107-m2-gia-chi-1-55-ty-ha-dong-pr9672385.html"
+															title="Vào ở ngay căn góc 3 phòng ngủ, 107 m2 giá chỉ 1,55 tỷ, Sails Tower Hà Đông">
+															${sSellBean.postTitle}</a>
+													</h3>
+												</div>
 
-										</div>
-										<div class="p-bottom-crop">
-											<div class="p-bottom-left">
-												<div>
-													<div class="left">Giá</div>
-													:&nbsp;1.55 tỷ
-												</div>
-												<div>
-													<div class="left">Diện tích</div>
-													:&nbsp;107 m²
-												</div>
-												<div>
-													<div class="fleft">
-														<div class="left">Quận/huyện</div>
-														:&nbsp;<a class="link_blue"
-															href="ban-can-ho-chung-cu-ha-dong.html"
-															title="Bán căn hộ chung cư tại Hà Đông">Hà Đông</a>, <a
-															class="link_blue" href="ban-can-ho-chung-cu-ha-noi.html"
-															title="Bán căn hộ chung cư tại Hà Nội">Hà Nội</a>
+											</div>
+											<div class="p-bottom-crop">
+												<div class="p-bottom-left">
+													<div>
+														<div class="left">Giá</div>
+														:&nbsp;${sSellBean.postPrice} tỷ
 													</div>
-													<div class="p-bottom-right font09">30/06/2016</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-
-										</div>
-										<div class="clear"></div>
-									</div>
-								</div>
-								<div class="vip5" rel="9668815">
-									<div class="p-main">
-										<div class="p-main-image-crop">
-											<a class="product-avatar"
-												href="ban-nha-rieng-duong-tuu-liet-xa-tam-hiep-6/h-thanh-tri-dt-49-m2-x-4-5-tang-sdcc-gia-2-35-ty-pr9668815.html"
-												onclick=""> <img class="product-avatar-img"
-												src="../file4.batdongsan.com.vn/crop/120x90/2016/06/24/20160624152351-e3f0.jpg"
-												alt="Bán nhà Tựu Liệt, H. Thanh Trì, DT 49 m2 x 4,5 tầng, SĐCC, giá 2.35 tỷ">
-
-											</a>
-										</div>
-										<div class="p-content">
-											<div class="p-title">
-												<h3>
-													<a
-														href="ban-nha-rieng-duong-tuu-liet-xa-tam-hiep-6/h-thanh-tri-dt-49-m2-x-4-5-tang-sdcc-gia-2-35-ty-pr9668815.html"
-														title="Bán nhà Tựu Liệt, H. Thanh Trì, DT 49 m2 x 4,5 tầng, SĐCC, giá 2.35 tỷ">
-														Bán nhà Tựu Liệt, H. Thanh Trì, DT 49 m2 x 4,5 tầng, SĐCC,
-														giá 2.35 tỷ </a>
-												</h3>
-											</div>
-
-										</div>
-										<div class="p-bottom-crop">
-											<div class="p-bottom-left">
-												<div>
-													<div class="left">Giá</div>
-													:&nbsp;2.35 tỷ
-												</div>
-												<div>
-													<div class="left">Diện tích</div>
-													:&nbsp;49 m²
-												</div>
-												<div>
-													<div class="fleft">
-														<div class="left">Quận/huyện</div>
-														:&nbsp;<a class="link_blue"
-															href="ban-nha-rieng-thanh-tri.html"
-															title="Bán nhà riêng tại Thanh Trì">Thanh Trì</a>, <a
-															class="link_blue" href="ban-nha-rieng-ha-noi.html"
-															title="Bán nhà riêng tại Hà Nội">Hà Nội</a>
+													<div>
+														<div class="left">Diện tích</div>
+														:&nbsp;${sSellBean.postArea} m²
 													</div>
-													<div class="p-bottom-right font09">30/06/2016</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-
-										</div>
-										<div class="clear"></div>
-									</div>
-
-								</div>
-
-
-								<div class="vip5" rel="9353894">
-									<div class="p-main">
-										<div class="p-main-image-crop">
-											<a class="product-avatar"
-												href="ban-nha-mat-pho-pho-thach-lam_1-phuong-hiep-tan/gap-mt-lam-8x22m-13-2-ty-ngay-truong-hoc-dong-khoi-pr9353894.html"
-												onclick=""> <img class="product-avatar-img"
-												src="../file4.batdongsan.com.vn/crop/120x90/2016/05/17/20160517094351-8b9e.jpg"
-												alt="Bán gấp MT Thạch Lam, 8x22m, 13.2 tỷ, ngay trường học Đồng Khởi">
-
-											</a>
-										</div>
-										<div class="p-content">
-											<div class="p-title">
-												<h3>
-													<a
-														href="ban-nha-mat-pho-pho-thach-lam_1-phuong-hiep-tan/gap-mt-lam-8x22m-13-2-ty-ngay-truong-hoc-dong-khoi-pr9353894.html"
-														title="Bán gấp MT Thạch Lam, 8x22m, 13.2 tỷ, ngay trường học Đồng Khởi">
-														Bán gấp MT Thạch Lam, 8x22m, 13.2 tỷ, ngay trường học Đồng
-														Khởi </a>
-												</h3>
-											</div>
-
-										</div>
-										<div class="p-bottom-crop">
-											<div class="p-bottom-left">
-												<div>
-													<div class="left">Giá</div>
-													:&nbsp;13.2 tỷ
-												</div>
-												<div>
-													<div class="left">Diện tích</div>
-													:&nbsp;176 m²
-												</div>
-												<div>
-													<div class="fleft">
-														<div class="left">Quận/huyện</div>
-														:&nbsp;<a class="link_blue"
-															href="ban-nha-mat-pho-tan-phu.html"
-															title="Bán nhà mặt phố tại Tân Phú">Tân Phú</a>, <a
-															class="link_blue" href="ban-nha-mat-pho-tp-hcm.html"
-															title="Bán nhà mặt phố tại Hồ Chí Minh">Hồ Chí Minh</a>
+													<div>
+														<div class="fleft">
+															<div class="left">Quận/huyện</div>
+															:&nbsp;<a class="link_blue"
+																href="ban-can-ho-chung-cu-ha-dong.html"
+																title="Bán căn hộ chung cư tại Hà Đông">${sSellBean.districtName}</a>,
+															<a class="link_blue"
+																href="ban-can-ho-chung-cu-ha-noi.html"
+																title="Bán căn hộ chung cư tại Hà Nội">${sSellBean.provinceName}</a>
+														</div>
+														<div class="p-bottom-right font09">${sSellBean.postDate}</div>
+														<div class="clear"></div>
 													</div>
-													<div class="p-bottom-right font09">30/06/2016</div>
-													<div class="clear"></div>
 												</div>
-											</div>
 
+											</div>
+											<div class="clear"></div>
 										</div>
-										<div class="clear"></div>
 									</div>
-
-								</div>
-
-
-								<div class="vip5" rel="9374595">
-									<div class="p-main">
-										<div class="p-main-image-crop">
-											<a class="product-avatar"
-												href="ban-can-ho-chung-cu-duong-to-huu-xa-trung-van-prj-ecolife-capitol/du-an-xanh-nhat-khu-vuc-gia-cdt-tang-dep-dep-lh-ngay-091-740-2828-pr9374595.html"
-												onclick=""> <img class="product-avatar-img"
-												src="../file4.batdongsan.com.vn/crop/120x90/2016/05/19/20160519100624-3efb.jpg"
-												alt="Dự án xanh nhất khu vực Ecolife Capitol giá CĐT, tầng đẹp, căn đẹp LH ngay 091.740.2828">
-
-											</a>
-										</div>
-										<div class="p-content">
-											<div class="p-title">
-												<h3>
-													<a
-														href="ban-can-ho-chung-cu-duong-to-huu-xa-trung-van-prj-ecolife-capitol/du-an-xanh-nhat-khu-vuc-gia-cdt-tang-dep-dep-lh-ngay-091-740-2828-pr9374595.html"
-														title="Dự án xanh nhất khu vực Ecolife Capitol giá CĐT, tầng đẹp, căn đẹp LH ngay 091.740.2828">
-														Dự án xanh nhất khu vực Ecolife Capitol giá CĐT, tầng đẹp,
-														căn đẹp LH ngay 091.740.2828 </a>
-												</h3>
-											</div>
-
-										</div>
-										<div class="p-bottom-crop">
-											<div class="p-bottom-left">
-												<div>
-													<div class="left">Giá</div>
-													:&nbsp;1.3 tỷ
-												</div>
-												<div>
-													<div class="left">Diện tích</div>
-													:&nbsp;75 m²
-												</div>
-												<div>
-													<div class="fleft">
-														<div class="left">Quận/huyện</div>
-														:&nbsp;<a class="link_blue"
-															href="ban-can-ho-chung-cu-nam-tu-liem.html"
-															title="Bán căn hộ chung cư tại Nam Từ Liêm">Nam Từ
-															Liêm</a>, <a class="link_blue"
-															href="ban-can-ho-chung-cu-ha-noi.html"
-															title="Bán căn hộ chung cư tại Hà Nội">Hà Nội</a>
-													</div>
-													<div class="p-bottom-right font09">30/06/2016</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-
-										</div>
-										<div class="clear"></div>
-									</div>
-
-								</div>
-
-
-								<div class="vip5" rel="9169911">
-									<div class="p-main">
-										<div class="p-main-image-crop">
-											<a class="product-avatar"
-												href="ban-nha-biet-thu-lien-ke-phuong-thach-ban-1-prj-ha-noi-garden-city/chinh-chu-can-cat-lo-can-goc-dep-nhat-du-an-long-bien-lh-0944-213-872-pr9169911.html"
-												onclick=""> <img class="product-avatar-img"
-												src="../file4.batdongsan.com.vn/crop/120x90/2016/04/21/20160421092820-3026.jpg"
-												alt="Chính chủ cần bán cắt lỗ biệt thự căn góc đẹp nhất dự án Long Biên. LH: 0944 213 872">
-
-											</a>
-										</div>
-										<div class="p-content">
-											<div class="p-title">
-												<h3>
-													<a
-														href="ban-nha-biet-thu-lien-ke-phuong-thach-ban-1-prj-ha-noi-garden-city/chinh-chu-can-cat-lo-can-goc-dep-nhat-du-an-long-bien-lh-0944-213-872-pr9169911.html"
-														title="Chính chủ cần bán cắt lỗ biệt thự căn góc đẹp nhất dự án Long Biên. LH: 0944 213 872">
-														Chính chủ cần bán cắt lỗ biệt thự căn góc đẹp
-														nhất dự án Long Biên. LH: 0944 213 872 </a>
-												</h3>
-											</div>
-
-										</div>
-										<div class="p-bottom-crop">
-											<div class="p-bottom-left">
-												<div>
-													<div class="left">Giá</div>
-													:&nbsp;11.5 tỷ
-												</div>
-												<div>
-													<div class="left">Diện tích</div>
-													:&nbsp;244 m²
-												</div>
-												<div>
-													<div class="fleft">
-														<div class="left">Quận/huyện</div>
-														:&nbsp;<a class="link_blue"
-															href="ban-nha-biet-thu-lien-ke-long-bien.html"
-															title="Bán nhà biệt thự, liền kề tại Long Biên">Long
-															Biên</a>, <a class="link_blue"
-															href="ban-nha-biet-thu-lien-ke-ha-noi.html"
-															title="Bán nhà biệt thự, liền kề tại Hà Nội">Hà
-															Nội</a>
-													</div>
-													<div class="p-bottom-right font09">30/06/2016</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-
-										</div>
-										<div class="clear"></div>
-									</div>
-
-								</div>
-
-
-								<div class="vip5" rel="9458827">
-									<div class="p-main">
-										<div class="p-main-image-crop">
-											<a class="product-avatar"
-												href="ban-dat-nen-du-an-xa-phuoc-hoa-prj-khu-do-thi-phuoc-hoa-goldenland/tai-dinh-cu-kcn-tan-binh-pr9458827.html"
-												onclick=""> <img class="product-avatar-img"
-												src="../file4.batdongsan.com.vn/crop/120x90/2016/05/30/20160530184214-714f.jpg"
-												alt="Đất nền tái định cư KCN Tân Bình">
-
-											</a>
-										</div>
-										<div class="p-content">
-											<div class="p-title">
-												<h3>
-													<a
-														href="ban-dat-nen-du-an-xa-phuoc-hoa-prj-khu-do-thi-phuoc-hoa-goldenland/tai-dinh-cu-kcn-tan-binh-pr9458827.html"
-														title="Đất nền tái định cư KCN Tân Bình"> Đất nền tái
-														định cư KCN Tân Bình </a>
-												</h3>
-											</div>
-
-										</div>
-										<div class="p-bottom-crop">
-											<div class="p-bottom-left">
-												<div>
-													<div class="left">Giá</div>
-													:&nbsp;173 triệu
-												</div>
-												<div>
-													<div class="left">Diện tích</div>
-													:&nbsp;100 m²
-												</div>
-												<div>
-													<div class="fleft">
-														<div class="left">Quận/huyện</div>
-														:&nbsp;<a class="link_blue"
-															href="ban-dat-nen-du-an-phu-giao-bd.html"
-															title="Bán đất nền dự án tại Phú Giáo">Phú Giáo</a>, <a
-															class="link_blue"
-															href="ban-dat-nen-du-an-binh-duong.html"
-															title="Bán đất nền dự án tại Bình Dương">Bình Dương</a>
-													</div>
-													<div class="p-bottom-right font09">30/06/2016</div>
-													<div class="clear"></div>
-												</div>
-											</div>
-
-										</div>
-										<div class="clear"></div>
-									</div>
-
-								</div>
+								</c:forEach>
 								<div class="otherlink">
 									<a
 										href="ban-dat-nen-du-an-xa-phuoc-hoa-prj-khu-do-thi-phuoc-hoa-goldenland.html"
@@ -1220,11 +820,6 @@
 					<div class="container-default">
 						<div id="ctl43_BodyContainer">
 							fadsfa
-							<!-- <div class="t_left-baiviet">
-								zzz
-								<div class="line-home"></div>
-								
-							</div> -->
 						</div>
 
 					</div>
@@ -1321,49 +916,17 @@
 				<div class="container-common">
 					<div id="ctl37_HeaderContainer" class="box-header">
 						<div class="name_tit" align="center">
-							<h3 style="color: White;">Tiêu điểm tuần qua</h3>
+							<h3 style="color: White;">Nhà đất bán vip</h3>
 						</div>
 					</div>
 					<div id="ctl37_BodyContainer" class="bor_box">
 
 						<div class="list">
 							<ul>
-
-								<li><a class="controls-view-date-contents-link"
-									title="HUD hủy hợp đồng giao dịch với Công ty CP địa ốc Thăng Long"
-									href="tin-thi-truong.html"> HUD hủy hợp đồng giao dịch với
-										Công ty CP địa ốc Thăng...</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Nóng đất nền phía Tây Thủ đô"
-									href="tin-thi-truong/nong-dat-nen-phia-tay-thu-do-ar78360.html">
-
-										Nóng đất nền phía Tây Thủ đô</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Nỗi niềm người đi mua đất"
-									href="tin-thi-truong/noi-niem-nguoi-di-mua-dat-ar78355.html">
-
-										Nỗi niềm người đi mua đất</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Nguy cơ tái diễn &quot;lệch pha&quot; nguồn cung bất động sản"
-									href="tin-thi-truong/nguy-co-tai-dien-lech-pha-nguon-cung-bat-dong-san-ar78351.html">
-
-										Nguy cơ tái diễn "lệch pha" nguồn cung bất động sản</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="TTBĐS: &quot;Nóng&quot; nhưng không có cơ sở hình thành bong bóng"
-									href="tin-thi-truong/ttbds-nong-nhung-khong-co-co-so-hinh-thanh-bong-bong-ar78346.html">
-
-										TTBĐS: "Nóng" nhưng không có cơ sở hình thành bong...</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Dân thắng kiện, dự án Gateway Thảo Điền mất đất mặt tiền"
-									href="tin-thi-truong/dan-thang-kien-du-an-gateway-thao-dien-mat-dat-mat-tien-ar78341.html">
-
-										Dân thắng kiện, dự án Gateway Thảo Điền mất đất mặt...</a></li>
-
+								<c:forEach var="sVipBean" items="${vipSellBean}">
+									<li><a class="controls-view-date-contents-link"
+										title="${sVipBean.postTitle}" href="tin-thi-truong.html">${sVipBean.postTitle}</a></li>
+								</c:forEach>
 							</ul>
 						</div>
 					</div>
@@ -1374,173 +937,28 @@
 				<div class="container-common">
 					<div id="ctl42_HeaderContainer" class="box-header">
 						<div class="name_tit" align="center">
-							<h3 style="color: White;">Lời khuyên</h3>
+							<h3 style="color: White;">Nhà đất cho thuê vip</h3>
 						</div>
 					</div>
 					<div id="ctl42_BodyContainer" class="bor_box">
 
 						<div class="list">
 							<ul>
-
-								<li><a class="controls-view-date-contents-link"
-									title="4 sai lầm phổ biến khi mua bất động sản"
-									href="loi-khuyen-cho-nguoi-mua/4-sai-lam-pho-bien-khi-mua-bat-dong-san-ar78446.html">
-
-										4 sai lầm phổ biến khi mua bất động sản</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Những điểm xấu cần tránh khi chọn mua nhà"
-									href="loi-khuyen-cho-nguoi-mua/nhung-diem-xau-can-tranh-khi-chon-mua-nha-ar78375.html">
-
-										Những điểm xấu cần tránh khi chọn mua nhà</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Người mua nhà cần lưu ý gì trước khi đặt bút ký kết với chủ đầu tư?"
-									href="loi-khuyen-cho-nguoi-mua/nguoi-mua-nha-can-luu-y-gi-truoc-khi-dat-but-ky-ket-voi-chu-dau-tu-ar78349.html">
-
-										Người mua nhà cần lưu ý gì trước khi đặt bút ký kết...</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Tuyệt chiêu bán căn hộ nhanh chóng và hiệu quả"
-									href="loi-khuyen-cho-nguoi-ban/tuyet-chieu-ban-can-ho-nhanh-chong-va-hieu-qua-ar78301.html">
-
-										Tuyệt chiêu bán căn hộ nhanh chóng và hiệu quả</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Mua " nhà="" trên="" giấy':="" xuống="" tiền="" lúc=""
-									nào="" là="" hợp="" lý?'=""
-									href="loi-khuyen-cho-nguoi-mua/mua-nha-tren-giay-xuong-tien-luc-nao-la-hop-ly-ar78282.html">
-
-										Mua 'nhà trên giấy': Xuống tiền lúc nào là hợp lý?</a></li>
-
-								<li><a class="controls-view-date-contents-link"
-									title="Một số vấn đề cần lưu ý khi mua căn hộ giá rẻ"
-									href="loi-khuyen-cho-nguoi-mua/mot-so-van-de-can-luu-y-khi-mua-can-ho-gia-re-ar78190.html">
-
-										Một số vấn đề cần lưu ý khi mua căn hộ giá rẻ</a></li>
-
+								<c:forEach var="sVipBean" items="${vipRentBean}">
+									<li><a class="controls-view-date-contents-link"
+										title="${sVipBean.postTitle}" href="tin-thi-truong.html">${sVipBean.postTitle}</a></li>
+								</c:forEach>
 							</ul>
 						</div>
 					</div>
 					<div id="ctl42_FooterContainer"></div>
 				</div>
 				<div style="clear: both; margin-bottom: 10px;"></div>
-
-				<div class="container-common">
-					<div id="ctl48_HeaderContainer" class="box-header">
-						<div class="name_tit" align="center">
-							<h3 style="color: White;">Treo tranh phong thủy</h3>
-						</div>
-					</div>
-					<div id="ctl48_BodyContainer" class="bor_box">
-
-
-
-						<div style="text-align: center; padding-top: 5px;"></div>
-						<div class="list">
-
-							<div class="aligncenter">
-								<a
-									href="phong-thuy-phong-ngu/chon-tranh-phong-thuy-theo-menh-de-treo-trong-phong-ngu-ar76514.html"><img
-									src="../file4.batdongsan.com.vn/crop/200x140/2016/03/21/ar1bbLYR/20160321141104-4e73.jpg"
-									alt="Chọn tranh phong thủy theo mệnh để treo trong phòng ngủ"
-									title="Chọn tranh phong thủy theo mệnh để treo trong phòng ngủ"></a>
-							</div>
-							<div
-								style="display: block; margin: 5px 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
-								<a
-									href="phong-thuy-phong-ngu/chon-tranh-phong-thuy-theo-menh-de-treo-trong-phong-ngu-ar76514.html"
-									style="color: #055699 !important; font-weight: bold;">Chọn
-									tranh phong thủy theo mệnh để treo trong phòng ngủ</a>
-							</div>
-							<ul>
-								<li><a
-									href="phong-thuy-toan-canh/treo-tranh-phong-thuy-cat-tuong-phu-quy-nam-2016-ar75170.html"
-									title="Treo tranh phong thủy cát tường, phú quý năm 2016">Treo
-										tranh phong thủy cát tường, phú quý năm 2016</a></li>
-
-								<li><a
-									href="phong-thuy-phong-khach/treo-tranh-trong-phong-khach-can-chu-y-toi-phuong-vi-ar74525.html"
-									title="Treo tranh trong phòng khách cần chú ý tới phương vị">Treo
-										tranh trong phòng khách cần chú ý tới phương vị</a></li>
-
-								<li><a
-									href="tu-van-phong-thuy/tu-van-cach-treo-tranh-voi-hop-phong-thuy-ar74259.html"
-									title="Tư vấn cách treo tranh voi hợp phong thủy">Tư vấn
-										cách treo tranh voi hợp phong thủy</a></li>
-
-								<li><a
-									href="phong-thuy-toan-canh/cach-treo-tranh-ky-lan-ar73334.html"
-									title="Cách treo tranh kỳ lân">Cách treo tranh kỳ lân</a></li>
-
-								<li><a
-									href="phong-thuy-toan-canh/cach-treo-tranh-hoa-lan-ar73309.html"
-									title="Cách treo tranh hoa lan">Cách treo tranh hoa lan</a></li>
-							</ul>
-						</div>
-					</div>
-					<div id="ctl48_FooterContainer"></div>
-				</div>
-				<div style="clear: both; margin-bottom: 10px;"></div>
-
-				<div class="container-common">
-					<div id="ctl50_HeaderContainer" class="box-header">
-						<div class="name_tit" align="center">
-							<h4>TƯ VẤN NỘI - NGOẠI THẤT</h4>
-						</div>
-					</div>
-					<div id="ctl50_BodyContainer" class="bor_box">
-
-						<div class="tuvan">
-							<img src="Images/icon_user.png" alt="">
-							<p>
-								<strong>Tư vấn nội - ngoại thất từ chuyên gia</strong>
-							</p>
-							<div>&nbsp;</div>
-						</div>
-						<div class="list">
-							<ul>
-								<li><a
-									href="tu-van-noi-ngoai-that/bi-quyet-de-so-huu-ngoi-nha-dep-toan-dien-ar78210.html"
-									title="Bí quyết để sở hữu ngôi nhà đẹp toàn diện">Bí quyết
-										để sở hữu ngôi nhà đẹp toàn diện</a></li>
-
-								<li><a
-									href="tu-van-noi-ngoai-that/tu-van-bo-tri-noi-that-can-ho-hien-dai-cho-chu-nha-9x-dt-57m2-ar77691.html"
-									title="Tư vấn bố trí nội thất căn hộ hiện đại cho chủ nhà 9x, DT 57m2">Tư
-										vấn bố trí nội thất căn hộ hiện đại cho chủ nhà 9x, DT 57m2</a></li>
-
-								<li><a
-									href="tu-van-noi-ngoai-that/tu-van-thiet-ke-va-bo-tri-noi-that-cho-can-nha-15m-ar77497.html"
-									title="Tư vấn thiết kế và bố trí nội thất cho căn nhà 15m²">Tư
-										vấn thiết kế và bố trí nội thất cho căn nhà 15m²</a></li>
-
-								<li><a
-									href="tu-van-noi-ngoai-that/it-tien-van-cai-tao-duoc-bep-dep-ar77036.html"
-									title="Ít tiền vẫn cải tạo được bếp đẹp">Ít tiền vẫn cải
-										tạo được bếp đẹp</a></li>
-
-								<li><a
-									href="tu-van-noi-ngoai-that/tu-van-thiet-ke-va-bo-tri-noi-that-cho-nha-ong-2-tang-dt-40m-ar77007.html"
-									title="Tư vấn thiết kế và bố trí nội thất cho nhà ống 2 tầng, DT 40m²">Tư
-										vấn thiết kế và bố trí nội thất cho nhà ống 2 tầng, DT 40m²</a></li>
-
-								<li><a
-									href="tu-van-noi-ngoai-that/tu-van-cai-tao-them-phong-ngu-cho-can-ho-73m2-ar76861.html"
-									title="Tư vấn cải tạo thêm phòng ngủ cho căn hộ 73m2">Tư
-										vấn cải tạo thêm phòng ngủ cho căn hộ 73m2</a></li>
-							</ul>
-						</div>
-					</div>
-					<div id="ctl50_FooterContainer"></div>
-				</div>
-				<div style="clear: both; margin-bottom: 10px;"></div>
-
 				<div class="container-faq">
 					<div id="ctl54_HeaderContainer" class="box-header box-header-bg"
 						style="margin-top: 1px;">
 						<div class="name_tit" align="center" style="padding-top: 0px;">
-							<h4>Hỏi - Đáp</h4>
+							<h4>Web nhà đất nổi bật</h4>
 						</div>
 					</div>
 					<div id="ctl54_BodyContainer" class="bor_box box-content-bg"
@@ -1581,8 +999,6 @@
 
 							</ul>
 						</div>
-
-
 						<div class="faq_box">
 							<label> Gửi câu hỏi của bạn tại đây</label>
 							<textarea name="txtContent" rows="2" cols="20" id="txtContent"></textarea>
