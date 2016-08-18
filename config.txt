@@ -1,0 +1,23 @@
+﻿IP Address:
+108.61.181.189
+Username:
+root
+Password:
+m4[JxfsBgQd.w4{g
+systemctl restart mariadb
+systemctl [stop|start|restart|reload] iptables
+<tomcat-users>
+<role rolename="manager-script"/>
+<role rolename="manager-gui"/>
+<role rolename="admin-gui"/>
+<user username="admin" password="mybestpassword" roles="manager-gui,admin-gui,manager-script"/>
+</tomcat-users>
+
+GRANT ALL PRIVILEGES ON *.* TO root@'localhost' IDENTIFIED BY 'cuong1503' WITH GRANT OPTION
+
+113.172.56.112
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.100.%' IDENTIFIED BY 'my-new-password' WITH GRANT OPTION; 
+#skip-networking
+    /etc/my.cnf
+    ->comment lai #bind-address = <some ip-address>
