@@ -61,8 +61,7 @@
 		template="/WEB-INF/template/raovat/trangcon/template.jsp">
 		<put-attribute name="top"
 			value="/WEB-INF/template/raovat/trangchu/top.jsp" />
-		<put-attribute name="menu"
-			value="/WEB-INF/template/raovat/trangchu/menu.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/template/raovat/trangchu/menu.jsp" />
 		<put-attribute name="maincolumn"
 			value="/WEB-INF/template/raovat/trangcon/maincolumn.jsp" />
 		<put-attribute name="footer"
