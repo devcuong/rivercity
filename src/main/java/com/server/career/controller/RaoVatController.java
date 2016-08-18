@@ -13,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.server.career.bean.AgentBean;
 import com.server.career.bean.NewsBean;
+import com.server.career.bean.NewsCategoryBean;
 import com.server.career.bean.ProjectBean;
 import com.server.career.bean.SellPostBean;
 import com.server.career.service.AgencyService;
+import com.server.career.service.NewsCategoryService;
 import com.server.career.service.NewsService;
 import com.server.career.service.ProjectService;
 import com.server.career.service.SellPostService;
@@ -34,6 +36,9 @@ public class RaoVatController {
 
 	@Autowired
 	private AgencyService agencyService;
+	
+	@Autowired
+	private NewsCategoryService newsCategoryService;
 
 	@RequestMapping(value = { "/raovat" }, method = RequestMethod.GET)
 	public String trangChu(Map<String, Object> model, HttpServletRequest request) {
@@ -54,7 +59,7 @@ public class RaoVatController {
 		return "raovat/trangchu";
 	}
 
-	@RequestMapping(value = { "/raovat/tintuc/{urlSubPage}" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/raovat/tin-tuc/{urlSubPage}" }, method = RequestMethod.GET)
 	public String trangCon(@PathVariable("urlSubPage") String urlSubPage,
 			Map<String, Object> model, HttpServletRequest request) {
 		if (urlSubPage != null) {
@@ -62,14 +67,21 @@ public class RaoVatController {
 			String lastName = nameArray[nameArray.length - 1];
 			String[] idArray = lastName.split("\\.");
 			String id = idArray[0];
+			
+			// Lay tin tuc nguoi dung doc
 			NewsBean newsBean = newsService.getNewsById(Integer.parseInt(id));
+			// Lay cac tin tuc xem nhieu nhat
+			List<NewsBean> newsBeans = newsService.getMostViewNews();
+			// Lay cac the loai tin tuc duoc chu y nhat
+			List<NewsCategoryBean> newsCategoryBeans = newsCategoryService.getMostViewCategory();
+			
 			// Tin tuc chinh
 			model.put("newsMain", newsBean);
-
-			List<NewsBean> newsBeans = newsService.getAllNews();
-			// Danh sach cac tin tuc khac
+			// Danh sach cac tin tuc xem nhieu nhat
 			model.put("news", newsBeans);
-
+			// Danh sach cac the loai tin duoc xem nhieu nhat
+			model.put("categoryNews", newsCategoryBeans);
+			
 			return "raovat/trangcon";
 		}
 		return "raovat/trangcon";

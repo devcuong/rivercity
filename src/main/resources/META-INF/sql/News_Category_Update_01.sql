@@ -1,0 +1,1 @@
+UPDATE news_category SET category_view_count = :categoryViewCount  WHERE news_category_id = :newsCategoryId

@@ -6,8 +6,7 @@
 
 	<definition name="defaultTemplate" template="/WEB-INF/template/home/template.jsp">
 		<put-attribute name="menu" value="/WEB-INF/template/home/menu.jsp" />
-		<put-attribute name="footer"
-			value="/WEB-INF/template/home/footer.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/template/home/footer.jsp" />
 	</definition>
 	<definition name="gioithieuTemplate" template="/WEB-INF/template/gioithieu/template.jsp">
 		<put-attribute name="menu"
@@ -53,6 +52,19 @@
 			value="/WEB-INF/template/raovat/trangchu/menu.jsp" />
 		<put-attribute name="maincolumn"
 			value="/WEB-INF/template/raovat/trangchu/maincolumn.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/template/raovat/trangchu/footer.jsp" />
+		<put-attribute name="bottom"
+			value="/WEB-INF/template/raovat/trangchu/bottom.jsp" />
+	</definition>
+	<definition name="trangconRaovatTemplate"
+		template="/WEB-INF/template/raovat/trangcon/template.jsp">
+		<put-attribute name="top"
+			value="/WEB-INF/template/raovat/trangchu/top.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/template/raovat/trangchu/menu.jsp" />
+		<put-attribute name="maincolumn"
+			value="/WEB-INF/template/raovat/trangcon/maincolumn.jsp" />
 		<put-attribute name="footer"
 			value="/WEB-INF/template/raovat/trangchu/footer.jsp" />
 		<put-attribute name="bottom"

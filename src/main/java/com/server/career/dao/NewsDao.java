@@ -11,4 +11,6 @@ public interface NewsDao {
 	public List<NewsBean> getAllNews();
 	public NewsBean getNewsById(Integer newsId);
 	public int addNews(NewsBean newsBean);
+	public List<NewsBean> getMostViewNews();
+	public int updateCountViews(Integer newsId, Integer countViews);
 }

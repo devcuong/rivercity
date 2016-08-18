@@ -2,12 +2,30 @@ package com.server.career.bean;
 
 public class NewsBean {
 	private int newsId;
+	private int newsViewCount;
 	private String newsTitle;
 	private String newsShortTitle;
 	private String newsDescription;
 	private String newsImage;
 	private String newsAlias;
 	private String newsContent;
+	private String newsDate;
+
+	public int getNewsViewCount() {
+		return newsViewCount;
+	}
+
+	public void setNewsViewCount(int newsViewCount) {
+		this.newsViewCount = newsViewCount;
+	}
+
+	public String getNewsDate() {
+		return newsDate;
+	}
+
+	public void setNewsDate(String newsDate) {
+		this.newsDate = newsDate;
+	}
 
 	public String getNewsShortTitle() {
 		return newsShortTitle;
