@@ -15,7 +15,7 @@ public class SQLConstant {
 	public static final String SQL_PARAMETER_NEWS_ID = "newsId";
 	public static final String SQL_PARAMETER_USERNAME = "username";
 	public static final String SQL_PARAMETER_PASSWORD = "password";
-	
+
 	/**
 	 * Tham số thêm slide trang chủ rivercity
 	 */
@@ -26,7 +26,7 @@ public class SQLConstant {
 	public static final String SQL_PARAMETER_INFOR_NAME = "inforName";
 	public static final String SQL_PARAMETER_INFOR_ALIAS = "inforAlias";
 	public static final String SQL_PARAMETER_INFOR_CONTENT = "inforContent";
-	
+
 	/**
 	 * Tham số cho câu sql thêm tin tức
 	 */
@@ -35,12 +35,12 @@ public class SQLConstant {
 	public static final String SQL_PARAMETER_NEWS_IMAGE = "newsImage";
 	public static final String SQL_PARAMETER_NEWS_ALIAS = "newsAlias";
 	public static final String SQL_PARAMETER_NEWS_CONTENT = "newsContent";
-	
+
 	/**
 	 * Tham số cho câu sql cập nhật số lần xem tin tức
 	 */
 	public static final String SQL_PARAMETER_NEWS_VIEWS_COUNT = "newsViewCount";
-	
+
 	/**
 	 * Tham số cho câu sql cập nhật số lần xem thể loại tin tức
 	 */

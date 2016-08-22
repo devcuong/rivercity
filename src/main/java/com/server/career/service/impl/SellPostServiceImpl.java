@@ -21,9 +21,9 @@ public class SellPostServiceImpl implements SellPostService {
 		List<SellPostBean> sellPostBeans = sellPostDao.getTopSellPost();
 		if (sellPostBeans != null) {
 			for (int i = 0; i < sellPostBeans.size(); i++) {
-;				String postDate = TimeHandleUtil.getDate(sellPostBeans.get(i).getPostDate());
-				sellPostBeans.get(i)
-						.setPostDate(postDate);
+				;
+				String postDate = TimeHandleUtil.getDate(sellPostBeans.get(i).getPostDate());
+				sellPostBeans.get(i).setPostDate(postDate);
 			}
 		}
 		return sellPostBeans;

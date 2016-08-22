@@ -16,27 +16,23 @@ import com.server.career.service.InvestorService;
 @Service
 public class InvestorServiceImpl implements InvestorService {
 
-	private static final Logger logger = Logger
-			.getLogger(InvestorService.class);
-	
+	private static final Logger logger = Logger.getLogger(InvestorService.class);
+
 	@Autowired
 	private InvestorDao investerDao;
 
-	public List<InformationInvestorBean> getInvestorByInformationNormalId(
-			Integer informationSpecialId) {
-		return investerDao
-				.getInvestorByInformationSpecialId(informationSpecialId);
+	public List<InformationInvestorBean> getInvestorByInformationNormalId(Integer informationSpecialId) {
+		return investerDao.getInvestorByInformationSpecialId(informationSpecialId);
 	}
 
 	@Override
-	public List<InformationInvestorBean> AddAllInvester(
-			List<InformationNormalBean> informationNormalBeans) {
+	public List<InformationInvestorBean> AddAllInvester(List<InformationNormalBean> informationNormalBeans) {
 		List<InformationInvestorBean> allInformationInvestorBean = new ArrayList<InformationInvestorBean>();
 		try {
-			
+
 			for (int i = 0; i < informationNormalBeans.size(); i++) {
-				List<InformationInvestorBean> informationInvestorBean = getInvestorByInformationNormalId(informationNormalBeans
-						.get(i).getInforId());
+				List<InformationInvestorBean> informationInvestorBean = getInvestorByInformationNormalId(
+						informationNormalBeans.get(i).getInforId());
 				allInformationInvestorBean.addAll(informationInvestorBean);
 				allInformationInvestorBean.removeAll(Collections.singleton(null));
 			}
@@ -45,7 +41,6 @@ public class InvestorServiceImpl implements InvestorService {
 			logger.error(e.getMessage());
 			return null;
 		}
-	
-		
+
 	}
 }

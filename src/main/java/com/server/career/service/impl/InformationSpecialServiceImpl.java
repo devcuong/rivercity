@@ -14,7 +14,7 @@ public class InformationSpecialServiceImpl implements InformationSpecialService 
 
 	@Autowired
 	private InformationSpecialDao informationSpecialDao;
-	
+
 	public List<InformationSpecialBean> getAllInformationSpecial() {
 		return informationSpecialDao.getAllInformationSpecial();
 	}

@@ -23,25 +23,22 @@ public class InvestorDaoImpl implements InvestorDao {
 
 	/** SQL. */
 	private static final String INVESTER_SEL_BY_ID = "Invester_Select_01.sql";
-	
-	public List<InformationInvestorBean> getInvestorByInformationSpecialId(
-			Integer informationSpecialId) {
+
+	public List<InformationInvestorBean> getInvestorByInformationSpecialId(Integer informationSpecialId) {
 		List<InformationInvestorBean> informationInvesterBeans = null;
 
 		try {
 			// Parameter
 			final MapSqlParameterSource parameter = new MapSqlParameterSource();
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFORMATION_SPECIAL_ID,
-					informationSpecialId);
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFORMATION_SPECIAL_ID, informationSpecialId);
 
 			// RowMapper
 			final RowMapper<InformationInvestorBean> mapper = new BeanPropertyRowMapper<InformationInvestorBean>(
 					InformationInvestorBean.class);
 
 			// JDBC
-			informationInvesterBeans = namedParameterJdbcTemplate.query(
-					SqlFileReaderUtil.getSql(INVESTER_SEL_BY_ID), parameter,
-					mapper);
+			informationInvesterBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(INVESTER_SEL_BY_ID),
+					parameter, mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -37,11 +37,11 @@ public class StringHandleUtil {
 
 		// Convert from list to string
 		if (listOriginal != null) {
-			
+
 			stringConvertTo = "";
-			
-			for(String s: listOriginal){
-				stringConvertTo += s+StringConstant.STRING_PARAMETER_COMMA;
+
+			for (String s : listOriginal) {
+				stringConvertTo += s + StringConstant.STRING_PARAMETER_COMMA;
 			}
 		}
 

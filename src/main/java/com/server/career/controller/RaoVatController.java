@@ -36,7 +36,7 @@ public class RaoVatController {
 
 	@Autowired
 	private AgencyService agencyService;
-	
+
 	@Autowired
 	private NewsCategoryService newsCategoryService;
 
@@ -60,20 +60,22 @@ public class RaoVatController {
 	}
 
 	@RequestMapping(value = { "/raovat/tin-tuc/{urlSubPage}" }, method = RequestMethod.GET)
-	public String trangCon(@PathVariable("urlSubPage") String urlSubPage,
-			Map<String, Object> model, HttpServletRequest request) {
+	public String trangCon(@PathVariable("urlSubPage") String urlSubPage, Map<String, Object> model,
+			HttpServletRequest request) {
 		if (urlSubPage != null) {
 			String[] nameArray = urlSubPage.split("\\-");
 			String lastName = nameArray[nameArray.length - 1];
 			String[] idArray = lastName.split("\\.");
 			String id = idArray[0];
-			
+
 			// Lay tin tuc nguoi dung doc
 			NewsBean newsBean = newsService.getNewsById(Integer.parseInt(id));
 			// Lay cac tin tuc xem nhieu nhat
 			List<NewsBean> newsBeans = newsService.getMostViewNews();
 			// Lay cac the loai tin tuc duoc chu y nhat
 			List<NewsCategoryBean> newsCategoryBeans = newsCategoryService.getMostViewCategory();
+			// Danh sach tin tuc moi nhat
+			List<NewsBean> lastestNews = newsService.getLastestNews();
 			
 			// Tin tuc chinh
 			model.put("newsMain", newsBean);
@@ -81,9 +83,18 @@ public class RaoVatController {
 			model.put("news", newsBeans);
 			// Danh sach cac the loai tin duoc xem nhieu nhat
 			model.put("categoryNews", newsCategoryBeans);
-			
+			// Danh sach cac tin moi nhat
+			model.put("lastestNews", lastestNews);
 			return "raovat/trangcon";
 		}
 		return "raovat/trangcon";
+	}
+	@RequestMapping(value = { "/raovat/tin-rao/{urlSubPage}" }, method = RequestMethod.GET)
+	public String trangRao(@PathVariable("urlSubPage") String urlSubPage, Map<String, Object> model,
+			HttpServletRequest request) {
+		if (urlSubPage != null) {
+			
+		}
+		return "raovat/trangrao";
 	}
 }

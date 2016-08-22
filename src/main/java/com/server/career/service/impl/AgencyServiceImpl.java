@@ -14,12 +14,12 @@ public class AgencyServiceImpl implements AgencyService {
 
 	@Autowired
 	private AgencyDao agencyDao;
-	
+
 	@Override
 	public List<AgentBean> getAllAgent() {
 		return agencyDao.getAllAgent();
 	}
-	
+
 	@Override
 	public List<AgentBean> getRepresentativeAgent() {
 		return agencyDao.getRepresentativeAgent();

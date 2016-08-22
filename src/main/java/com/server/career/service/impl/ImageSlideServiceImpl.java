@@ -14,7 +14,7 @@ public class ImageSlideServiceImpl implements ImageSlideService {
 
 	@Autowired
 	private ImageSlideDao imageSlideDao;
-	
+
 	public List<ImageSlideBean> getAllImageSlide() {
 		return imageSlideDao.getAllImageSlide();
 	}

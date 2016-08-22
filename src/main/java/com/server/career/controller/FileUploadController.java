@@ -27,9 +27,8 @@ public class FileUploadController {
 	}
 
 	@RequestMapping(value = "/quantri/savefiles", method = RequestMethod.POST)
-	public String crunchifySave(
-			@ModelAttribute("uploadForm") CrunchifyFileUpload uploadForm,
-			Model map) throws IllegalStateException, IOException {
+	public String crunchifySave(@ModelAttribute("uploadForm") CrunchifyFileUpload uploadForm, Model map)
+			throws IllegalStateException, IOException {
 		String saveDirectory = WebConstant.IMAGES_SERVER_PATH;
 
 		List<MultipartFile> crunchifyFiles = uploadForm.getFiles();
@@ -41,8 +40,7 @@ public class FileUploadController {
 
 				String fileName = multipartFile.getOriginalFilename();
 				if (!"".equalsIgnoreCase(fileName)) {
-					multipartFile
-							.transferTo(new File(saveDirectory + fileName));
+					multipartFile.transferTo(new File(saveDirectory + fileName));
 					fileNames.add(fileName);
 				}
 			}
@@ -51,40 +49,40 @@ public class FileUploadController {
 		map.addAttribute("files", fileNames);
 		return "admin/uploadfilesuccess";
 	}
-	
+
 	@RequestMapping(value = "/quantri/danhsachfile", method = RequestMethod.GET)
-	public String fileFolder(Map<String, Object> model, HttpServletRequest request) throws IllegalStateException, IOException {
-		
+	public String fileFolder(Map<String, Object> model, HttpServletRequest request)
+			throws IllegalStateException, IOException {
+
 		String delete = request.getParameter("delete");
-		if(delete == null){
+		if (delete == null) {
 			String saveDirectory = WebConstant.IMAGES_SERVER_PATH;
 			final File folder = new File(saveDirectory);
 			List<String> lstFile = listFilesForFolder(folder);
 			model.put("fileName", lstFile);
 			return "admin/danhsachfile";
-		}
-		else{
+		} else {
 			byte[] deleteImageString = Base64.decodeBase64(delete.trim());
-			String[] deleteImage = (new String(deleteImageString,"UTF-8")).split(":");
+			String[] deleteImage = (new String(deleteImageString, "UTF-8")).split(":");
 			String imageName = deleteImage[0];
-			File fileDelete = new File(WebConstant.IMAGES_SERVER_PATH+imageName);
-			if(fileDelete.delete()){
+			File fileDelete = new File(WebConstant.IMAGES_SERVER_PATH + imageName);
+			if (fileDelete.delete()) {
 				return "redirect:/quantri/danhsachfile";
 			}
 		}
 		return "admin/danhsachfile";
-		
+
 	}
-	
+
 	public List<String> listFilesForFolder(final File folder) {
 		List<String> lstFile = new ArrayList<String>();
-	    for (final File fileEntry : folder.listFiles()) {
-	        if (fileEntry.isDirectory()) {
-	            listFilesForFolder(fileEntry);
-	        } else {
-	        	lstFile.add(fileEntry.getName());
-	        }
-	    }
-	    return lstFile;
+		for (final File fileEntry : folder.listFiles()) {
+			if (fileEntry.isDirectory()) {
+				listFilesForFolder(fileEntry);
+			} else {
+				lstFile.add(fileEntry.getName());
+			}
+		}
+		return lstFile;
 	}
 }

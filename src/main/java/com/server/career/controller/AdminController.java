@@ -85,8 +85,8 @@ public class AdminController {
 				if (addNews == 0)
 					throw new Exception("Khong them duoc tin tuc");
 			} else {
-					List<NewsBean> news = newsService.getAllNews();
-					model.put("adminNews", news);
+				List<NewsBean> news = newsService.getAllNews();
+				model.put("adminNews", news);
 			}
 			return "admin/tintuc";
 		} catch (Exception e) {

@@ -24,14 +24,15 @@ public class NewsCategoryDaoImpl implements NewsCategoryDao {
 	/** SQL. */
 	private static final String NEWS_CATEGORY_SEL_MOST_VIEW = "News_Category_Select_01.sql";
 	private static final String NEWS_CATEGORY_COUNT_VIEW = "News_Category_Update_01.sql";
-	
+	private static final String NEWS_CATEGORY_SEL_BY_ID = "News_Category_Select_02.sql";
 	@Override
 	public List<NewsCategoryBean> getMostViewCategory() {
 		List<NewsCategoryBean> newsBeans = null;
 
 		try {
 			// RowMapper
-			final RowMapper<NewsCategoryBean> mapper = new BeanPropertyRowMapper<NewsCategoryBean>(NewsCategoryBean.class);
+			final RowMapper<NewsCategoryBean> mapper = new BeanPropertyRowMapper<NewsCategoryBean>(
+					NewsCategoryBean.class);
 
 			newsBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(NEWS_CATEGORY_SEL_MOST_VIEW), mapper);
 		} catch (Exception e) {
@@ -39,22 +40,44 @@ public class NewsCategoryDaoImpl implements NewsCategoryDao {
 		}
 		return newsBeans;
 	}
-	
+
 	@Override
-	public int updateCountViewCategory(Integer newsId, Integer countViews) {
+	public int updateCountViewCategory(Integer categoryId, Integer countViews) {
 		int categoryUpdate = 0;
 		try {
 			// Parameter sql
 			final MapSqlParameterSource parameter = new MapSqlParameterSource();
-			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_ID, newsId);
-			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_VIEWS_COUNT, countViews);
-			
-			categoryUpdate = namedParameterJdbcTemplate.update(SqlFileReaderUtil.getSql(NEWS_CATEGORY_COUNT_VIEW), parameter);
+			parameter.addValue(SQLConstant.SQL_PARAMETER_CATEGORY_ID, categoryId);
+			parameter.addValue(SQLConstant.SQL_PARAMETER_CATEGORY_VIEWS_COUNT, countViews);
+
+			categoryUpdate = namedParameterJdbcTemplate.update(SqlFileReaderUtil.getSql(NEWS_CATEGORY_COUNT_VIEW),
+					parameter);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		// Return
 		return categoryUpdate;
+	}
+
+	@Override
+	public NewsCategoryBean getCategoryById(Integer categoryId) {
+		NewsCategoryBean categoryBean = null;
+		try {
+			// Parameter sql
+			final MapSqlParameterSource parameter = new MapSqlParameterSource();
+			parameter.addValue(SQLConstant.SQL_PARAMETER_CATEGORY_ID, categoryId);
+
+			// RowMapper
+			final RowMapper<NewsCategoryBean> mapper = new BeanPropertyRowMapper<NewsCategoryBean>(NewsCategoryBean.class);
+
+			// Return
+			categoryBean = namedParameterJdbcTemplate.queryForObject(SqlFileReaderUtil.getSql(NEWS_CATEGORY_SEL_BY_ID), parameter,
+					mapper);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return categoryBean;
 	}
 
 }

@@ -31,9 +31,8 @@ public class InformationSpecialDaoImpl implements InformationSpecialDao {
 					InformationSpecialBean.class);
 
 			// アプリ一覧情報（総件数）取得処理
-			informationSpecialBeans = namedParameterJdbcTemplate.query(
-					SqlFileReaderUtil.getSql(INFORMATION_SPECIAL_SEL_ALL),
-					mapper);
+			informationSpecialBeans = namedParameterJdbcTemplate
+					.query(SqlFileReaderUtil.getSql(INFORMATION_SPECIAL_SEL_ALL), mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

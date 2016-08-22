@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MasteriController {
 
-	@RequestMapping(value = { "/masteri" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
 	public String trangChu(Map<String, Object> model, HttpServletRequest request) {
 		return "masteri/trangchu";
 	}

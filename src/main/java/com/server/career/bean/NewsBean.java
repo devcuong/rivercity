@@ -10,6 +10,15 @@ public class NewsBean {
 	private String newsAlias;
 	private String newsContent;
 	private String newsDate;
+	private Integer newsCategory;
+	
+	public Integer getNewsCategory() {
+		return newsCategory;
+	}
+
+	public void setNewsCategory(Integer newsCategory) {
+		this.newsCategory = newsCategory;
+	}
 
 	public int getNewsViewCount() {
 		return newsViewCount;

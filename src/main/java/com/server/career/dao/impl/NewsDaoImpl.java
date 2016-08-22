@@ -27,6 +27,7 @@ public class NewsDaoImpl implements NewsDao {
 	private static final String NEWS_SEL_MOST_VIEW = "News_Select_3.sql";
 	private static final String NEWS_INS = "News_Insert_01.sql";
 	private static final String NEWS_UPDATE_COUNT_VIEWS = "News_Update_01.sql";
+	private static final String NEWS_SEL_LASTEST = "News_Select_4.sql";
 
 	public List<NewsBean> getAllNews() {
 		List<NewsBean> newsBeans = null;
@@ -83,7 +84,7 @@ public class NewsDaoImpl implements NewsDao {
 
 		return newsAdd;
 	}
-	
+
 	@Override
 	public List<NewsBean> getMostViewNews() {
 		List<NewsBean> newsBeans = null;
@@ -99,7 +100,7 @@ public class NewsDaoImpl implements NewsDao {
 		}
 		return newsBeans;
 	}
-	
+
 	@Override
 	public int updateCountViews(Integer newsId, Integer countViews) {
 		int newsUpdate = 0;
@@ -109,12 +110,29 @@ public class NewsDaoImpl implements NewsDao {
 			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_ID, newsId);
 			parameter.addValue(SQLConstant.SQL_PARAMETER_NEWS_VIEWS_COUNT, countViews);
 			// Return
-			newsUpdate = namedParameterJdbcTemplate.update(SqlFileReaderUtil.getSql(NEWS_UPDATE_COUNT_VIEWS), parameter);
+			newsUpdate = namedParameterJdbcTemplate.update(SqlFileReaderUtil.getSql(NEWS_UPDATE_COUNT_VIEWS),
+					parameter);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 		return newsUpdate;
+	}
+	
+	@Override
+	public List<NewsBean> getLastestNews() {
+		List<NewsBean> newsBeans = null;
+
+		try {
+			// RowMapper
+			final RowMapper<NewsBean> mapper = new BeanPropertyRowMapper<NewsBean>(NewsBean.class);
+
+			// アプリ一覧情報（総件数）取得処理
+			newsBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(NEWS_SEL_LASTEST), mapper);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return newsBeans;
 	}
 
 }

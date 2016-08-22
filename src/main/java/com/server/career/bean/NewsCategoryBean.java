@@ -3,7 +3,7 @@ package com.server.career.bean;
 public class NewsCategoryBean {
 	private int newsCategoryId;
 	private String newsCategoryName;
-	private int categoryCountView;
+	private int categoryViewCount;
 
 	public int getNewsCategoryId() {
 		return newsCategoryId;
@@ -21,12 +21,14 @@ public class NewsCategoryBean {
 		this.newsCategoryName = newsCategoryName;
 	}
 
-	public int getCategoryCountView() {
-		return categoryCountView;
+	public int getCategoryViewCount() {
+		return categoryViewCount;
 	}
 
-	public void setCategoryCountView(int categoryCountView) {
-		this.categoryCountView = categoryCountView;
+	public void setCategoryViewCount(int categoryViewCount) {
+		this.categoryViewCount = categoryViewCount;
 	}
+
+	
 
 }

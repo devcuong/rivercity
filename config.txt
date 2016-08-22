@@ -4,6 +4,7 @@ Username:
 root
 Password:
 m4[JxfsBgQd.w4{g
+m4[JxfsBgQd.w4{g
 systemctl restart mariadb
 systemctl [stop|start|restart|reload] iptables
 <tomcat-users>
@@ -21,3 +22,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.100.%' IDENTIFIED BY 'my-new-pass
 #skip-networking
     /etc/my.cnf
     ->comment lai #bind-address = <some ip-address>
+# cd /usr/local/tomcat7
+java -version
+http://tecadmin.net/install-java-8-on-centos-rhel-and-fedora/

@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<tiles:insertDefinition name="trangconRaovatTemplate">
+<tiles:insertDefinition name="trangconTemplate">
 	<tiles:putAttribute name="body">
 		<div class="body-left">
 			<div id="Breadcrumb"></div>
@@ -120,7 +120,7 @@
 					<div class="otherline" style="width: 80%;">&nbsp;</div>
 					<c:forEach var="news" items="${news}">
 					<a class="font-link-box-item iconlist"
-						href="http://batdongsan.com.vn/tin-thi-truong/doanh-nghiep-bds-cam-den-chay-truoc-thang-ngau-ar79229"
+						href="${news.newsAlias}-${news.newsId}.html"
 						title="${news.newsShortTitle}">
 						${news.newsShortTitle}<i>(${news.newsDate})</i>
 					</a> 
@@ -131,9 +131,9 @@
 				<div class="othernews">
 					<h3 class="normalblue" style="white-space: nowrap;">Tin mới nhất</h3>
 					<div class="otherline" style="width: 86%;">&nbsp;</div>
-					<c:forEach var="news" items="${news}">
+					<c:forEach var="news" items="${lastestNews}">
 					<a class="font-link-box-item iconlist"
-						href="http://batdongsan.com.vn/tin-thi-truong/doanh-nghiep-bds-cam-den-chay-truoc-thang-ngau-ar79229"
+						href="${news.newsAlias}-${news.newsId}.html"
 						title="${news.newsShortTitle}">
 						${news.newsShortTitle}<i>(${news.newsDate})</i>
 					</a> 

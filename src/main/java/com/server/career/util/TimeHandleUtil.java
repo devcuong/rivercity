@@ -10,8 +10,7 @@ import com.server.career.constant.WebConstant;
 public class TimeHandleUtil {
 	public static String getDate(String dateTime) {
 		SimpleDateFormat formatOriginal = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT_SQL);
-		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT,
-				Locale.ENGLISH);
+		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT, Locale.ENGLISH);
 		Date date;
 		String sdate = null;
 		try {
@@ -20,14 +19,13 @@ public class TimeHandleUtil {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		
+
 		return sdate;
 	}
-	
+
 	public static String getDateSQL(String dateTime) {
 		SimpleDateFormat formatOriginal = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT);
-		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT_SQL,
-				Locale.ENGLISH);
+		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT_SQL, Locale.ENGLISH);
 		Date date;
 		String sdate = null;
 		try {
@@ -38,11 +36,10 @@ public class TimeHandleUtil {
 		}
 		return sdate;
 	}
-	
+
 	public static String getTimeForTimePicker(String dateTime) {
 		SimpleDateFormat formatOriginal = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT_SQL);
-		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_PICKER_FORMAT,
-				Locale.ENGLISH);
+		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_PICKER_FORMAT, Locale.ENGLISH);
 		Date date;
 		String sdate = null;
 		try {
@@ -53,11 +50,10 @@ public class TimeHandleUtil {
 		}
 		return sdate;
 	}
-	
+
 	public static String getTimeFromTimePickerToSql(String dateTime) {
 		SimpleDateFormat formatOriginal = new SimpleDateFormat(WebConstant.COMMON_TIME_PICKER_FORMAT);
-		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT_SQL,
-				Locale.ENGLISH);
+		SimpleDateFormat formatter = new SimpleDateFormat(WebConstant.COMMON_TIME_FORMAT_SQL, Locale.ENGLISH);
 		Date date;
 		String sdate = null;
 		try {
@@ -68,5 +64,5 @@ public class TimeHandleUtil {
 		}
 		return sdate;
 	}
-	
+
 }
