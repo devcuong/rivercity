@@ -461,7 +461,7 @@ strong, b {
         }
 
 .header-bottom-right {
-    background: url('../../file4.batdongsan.com.vn/images/httc/hotrotaichinh.jpg') no-repeat;
+    background: url('http://file4.batdongsan.com.vn/images/httc/hotrotaichinh.jpg') no-repeat;
     height: 45px;
     width: 164px !important;
     position: absolute;
@@ -2054,7 +2054,7 @@ a.link_blue:link {
         }
 
 .linktoall {
-    background-image: url(../../file4.batdongsan.com.vn/images/broker_view_all.jpg);
+    background-image: url(http://file4.batdongsan.com.vn/images/broker_view_all.jpg);
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -3716,7 +3716,7 @@ a.link_blue:link {
 
 .list ul li {
     list-style-type: none;
-    background: url(../../file4.batdongsan.com.vn/images/bullet-xanh.jpg) no-repeat 7px 13px;
+    background: url(http://file4.batdongsan.com.vn/images/bullet-xanh.jpg) no-repeat 7px 13px;
     padding: 5px 7px 2px 19px;
 }
 

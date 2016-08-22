@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginRaoVatController {
 
-	@RequestMapping(value = {"/raovat/login"}, method = RequestMethod.GET)
+	@RequestMapping(value = { "/raovat/login" }, method = RequestMethod.GET)
 	public String home(Map<String, Object> model, HttpServletRequest request) {
 		return "raovat/login";
 	}

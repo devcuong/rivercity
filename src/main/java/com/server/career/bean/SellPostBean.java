@@ -27,13 +27,13 @@ public class SellPostBean {
 	private int postWard;
 
 	private int userId;
-	
+
 	private String provinceName;
-	
+
 	private String districtName;
 
 	private String postDate;
-	
+
 	public String getPostDate() {
 		return postDate;
 	}

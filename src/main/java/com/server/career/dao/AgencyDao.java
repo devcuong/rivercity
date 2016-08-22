@@ -9,5 +9,6 @@ import com.server.career.bean.AgentBean;
 @Repository
 public interface AgencyDao {
 	public List<AgentBean> getAllAgent();
+
 	public List<AgentBean> getRepresentativeAgent();
 }

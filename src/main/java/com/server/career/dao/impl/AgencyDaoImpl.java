@@ -49,7 +49,8 @@ public class AgencyDaoImpl implements AgencyDao {
 			final RowMapper<AgentBean> mapper = new BeanPropertyRowMapper<AgentBean>(AgentBean.class);
 
 			// アプリ一覧情報（総件数）取得処理
-			agentBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(REPRESENTATIVE_AGENCY_SEL_ALL), mapper);
+			agentBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(REPRESENTATIVE_AGENCY_SEL_ALL),
+					mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

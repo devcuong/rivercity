@@ -25,7 +25,7 @@ public class InformationNormalDaoImpl implements InformationNormalDao {
 	private static final String INFORMATION_NORMAL_SEL_ALL = "Information_Normal_Select_01.sql";
 	private static final String INFORMATION_NORMAL_SEL_MAX_DATA = "Information_Normal_Select_02.sql";
 	private static final String INFORMATION_NORMAL_INS = "Information_Normal_Insert_01.sql";
-	
+
 	public List<InformationNormalBean> getAllInformationNormal() {
 		List<InformationNormalBean> informationNormalBeans = null;
 
@@ -35,9 +35,8 @@ public class InformationNormalDaoImpl implements InformationNormalDao {
 					InformationNormalBean.class);
 
 			// アプリ一覧情報（総件数）取得処理
-			informationNormalBeans = namedParameterJdbcTemplate.query(
-					SqlFileReaderUtil.getSql(INFORMATION_NORMAL_SEL_ALL),
-					mapper);
+			informationNormalBeans = namedParameterJdbcTemplate
+					.query(SqlFileReaderUtil.getSql(INFORMATION_NORMAL_SEL_ALL), mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -55,9 +54,8 @@ public class InformationNormalDaoImpl implements InformationNormalDao {
 					InformationNormalBean.class);
 
 			// Return
-			informationNormalBeans = namedParameterJdbcTemplate.query(
-					SqlFileReaderUtil.getSql(INFORMATION_NORMAL_SEL_MAX_DATA),
-					mapper);
+			informationNormalBeans = namedParameterJdbcTemplate
+					.query(SqlFileReaderUtil.getSql(INFORMATION_NORMAL_SEL_MAX_DATA), mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -67,30 +65,22 @@ public class InformationNormalDaoImpl implements InformationNormalDao {
 		else
 			return null;
 	}
-	
+
 	@Override
 	public int updateNormalBean(InformationNormalBean informationNormalBean) {
 		int normal = 0;
 		try {
 			// Parameter sql
 			final MapSqlParameterSource parameter = new MapSqlParameterSource();
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_IMAGE,
-					informationNormalBean.getInforImage());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_URL,
-					informationNormalBean.getInforUrl());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_DATA_NAME,
-					informationNormalBean.getInforDataName());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_DATA_HASH,
-					informationNormalBean.getInforDataHash());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_NAME,
-					informationNormalBean.getInforName());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_ALIAS,
-					informationNormalBean.getInforAlias());
-			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_CONTENT,
-					informationNormalBean.getInforContent());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_IMAGE, informationNormalBean.getInforImage());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_URL, informationNormalBean.getInforUrl());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_DATA_NAME, informationNormalBean.getInforDataName());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_DATA_HASH, informationNormalBean.getInforDataHash());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_NAME, informationNormalBean.getInforName());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_ALIAS, informationNormalBean.getInforAlias());
+			parameter.addValue(SQLConstant.SQL_PARAMETER_INFOR_CONTENT, informationNormalBean.getInforContent());
 			// Return
-			normal = namedParameterJdbcTemplate.update(
-					SqlFileReaderUtil.getSql(INFORMATION_NORMAL_INS), parameter);
+			normal = namedParameterJdbcTemplate.update(SqlFileReaderUtil.getSql(INFORMATION_NORMAL_INS), parameter);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

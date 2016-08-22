@@ -38,12 +38,11 @@ public class UserDaoImpl implements UserDao {
 			parameter.addValue(SQLConstant.SQL_PARAMETER_PASSWORD, password);
 
 			// RowMapper
-			final RowMapper<LoginBean> mapper = new BeanPropertyRowMapper<LoginBean>(
-					LoginBean.class);
+			final RowMapper<LoginBean> mapper = new BeanPropertyRowMapper<LoginBean>(LoginBean.class);
 
 			// Return
-			loginBean = namedParameterJdbcTemplate.queryForObject(
-					SqlFileReaderUtil.getSql(USER_SEL_01), parameter, mapper);
+			loginBean = namedParameterJdbcTemplate.queryForObject(SqlFileReaderUtil.getSql(USER_SEL_01), parameter,
+					mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

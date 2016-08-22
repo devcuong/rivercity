@@ -122,7 +122,7 @@
 				Email: hotro@batdongsan.com.vn | cskh@batdongsan.com.vn <a
 					rel="nofollow" href="skype:cskh.batdongsan?chat"
 					title="Chat với cskh.batdongsan" style="text-decoration: none;">
-					<img src="../file4.batdongsan.com.vn/images/skype.png" alt="skype"
+					<img src="http://file4.batdongsan.com.vn/images/skype.png" alt="skype"
 					style="vertical-align: bottom; height: 20px;" />
 				</a>
 			</div>
@@ -134,18 +134,10 @@
 				style="color: #555754; position: relative;">
 				Phát triển bởi Daiviet Software Jsc <a style="color: #555754"
 					href='http://daivietgroup.net/' target="_blank">http://daivietgroup.net</a>
-				<div style="position: absolute; right: 20px; bottom: 0;">
-					<a
-						href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=5488"
-						target="_blank" rel="nofollow"> <img
-						src="../file4.batdongsan.com.vn/images/dangkyBCT.jpg"
-						alt="Đã đăng ký với Bộ Công Thương" width="96px;" />
-					</a>
-				</div>
 			</div>
 
 			<div class="footer-bottom-end-row1" style="padding: 10px 0 10px;">
-				<img src="../file4.batdongsan.com.vn/images/line-footer.png" alt=""
+				<img src="http://file4.batdongsan.com.vn/images/line-footer.png" alt=""
 					noloaderror="true" />
 			</div>
 			<div class="footer-bottom-end-row1">

@@ -11,10 +11,10 @@ import com.server.career.service.ProjectService;
 
 @Service
 public class ProjectServiceImpl implements ProjectService {
-	
+
 	@Autowired
 	private ProjectDao projectDao;
-	
+
 	@Override
 	public List<ProjectBean> getAllProject() {
 		return projectDao.getAllProject();

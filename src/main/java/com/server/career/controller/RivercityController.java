@@ -42,27 +42,24 @@ public class RivercityController {
 	@Autowired
 	private AgencyService agencyService;
 
-	private static final Logger logger = Logger
-			.getLogger(RivercityController.class);
+	private static final Logger logger = Logger.getLogger(RivercityController.class);
 
-	@RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/rivercityhome" }, method = RequestMethod.GET)
 	public String home(Map<String, Object> model, HttpServletRequest request) {
-		List<ImageSlideBean> imageSlideBeans = imageSlideService
-				.getAllImageSlide();
+		List<ImageSlideBean> imageSlideBeans = imageSlideService.getAllImageSlide();
 		model.put("slide", imageSlideBeans);
 		return "rivercity/home";
 	}
 
 	@RequestMapping(value = { "/{urlPage}" }, method = RequestMethod.GET)
-	public String page(@PathVariable("urlPage") String urlPage,
-			Map<String, Object> model, HttpServletRequest request) {
+	public String page(@PathVariable("urlPage") String urlPage, Map<String, Object> model, HttpServletRequest request) {
 
 		try {
 			if (urlPage != null) {
 				String[] nameArray = urlPage.split("\\.");
 				String pageName = nameArray[0].toString();
 				if ("gioi-thieu".equals(pageName)) {
-					// Get 
+					// Get
 					List<InformationNormalBean> informationNormalBeans = informationNormalService
 							.getAllInformationNormal();
 
@@ -97,7 +94,7 @@ public class RivercityController {
 					if (agentBeans != null) {
 						model.put("agent", agentBeans);
 					}
-					
+
 				}
 			}
 			return "admin/error";
@@ -108,8 +105,7 @@ public class RivercityController {
 	}
 
 	@RequestMapping(value = { "/{urlPage}/{urlSubPage}" }, method = RequestMethod.GET)
-	public String subPage(@PathVariable("urlPage") String urlPage,
-			@PathVariable("urlSubPage") String urlSubPage,
+	public String subPage(@PathVariable("urlPage") String urlPage, @PathVariable("urlSubPage") String urlSubPage,
 			Map<String, Object> model, HttpServletRequest request) {
 		if (urlSubPage != null) {
 			if ("tin-tuc".equals(urlPage)) {
@@ -117,8 +113,7 @@ public class RivercityController {
 				String lastName = nameArray[nameArray.length - 1];
 				String[] idArray = lastName.split("\\.");
 				String id = idArray[0];
-				NewsBean newsBean = newsService.getNewsById(Integer
-						.parseInt(id));
+				NewsBean newsBean = newsService.getNewsById(Integer.parseInt(id));
 
 				// Tin tuc chinh
 				model.put("newsMain", newsBean);
@@ -139,15 +134,13 @@ public class RivercityController {
 	}
 
 	@RequestMapping(value = "/tin-tuc", method = RequestMethod.POST)
-	public @ResponseBody NewsBean loadNews(Map<String, Object> model,
-			HttpServletRequest request) {
+	public @ResponseBody NewsBean loadNews(Map<String, Object> model, HttpServletRequest request) {
 
 		try {
 			String newsId = request.getParameter("newsId");
 
 			if (newsId != null) {
-				NewsBean newsBean = newsService.getNewsById(Integer
-						.parseInt(newsId));
+				NewsBean newsBean = newsService.getNewsById(Integer.parseInt(newsId));
 
 				return newsBean;
 			}

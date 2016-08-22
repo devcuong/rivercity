@@ -21,19 +21,16 @@ public class ImageSlideDaoImpl implements ImageSlideDao {
 
 	/** SQL. */
 	private static final String IMAGE_SLIDE_SEL_ALL = "Image_Slide_Select_01.sql";
-	
+
 	public List<ImageSlideBean> getAllImageSlide() {
 		List<ImageSlideBean> imageSlideBeans = null;
 
 		try {
 			// RowMapper
-			final RowMapper<ImageSlideBean> mapper = new BeanPropertyRowMapper<ImageSlideBean>(
-					ImageSlideBean.class);
+			final RowMapper<ImageSlideBean> mapper = new BeanPropertyRowMapper<ImageSlideBean>(ImageSlideBean.class);
 
 			// アプリ一覧情報（総件数）取得処理
-			imageSlideBeans = namedParameterJdbcTemplate.query(
-					SqlFileReaderUtil.getSql(IMAGE_SLIDE_SEL_ALL),
-					mapper);
+			imageSlideBeans = namedParameterJdbcTemplate.query(SqlFileReaderUtil.getSql(IMAGE_SLIDE_SEL_ALL), mapper);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

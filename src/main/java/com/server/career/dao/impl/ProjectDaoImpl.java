@@ -18,10 +18,10 @@ public class ProjectDaoImpl implements ProjectDao {
 	/** JDBC. */
 	@Autowired
 	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
-	
+
 	/** SQL. */
 	private static final String PROJECT_SEL_ALL = "Project_Select_01.sql";
-	
+
 	@Override
 	public List<ProjectBean> getAllProject() {
 		List<ProjectBean> projectBeans = null;

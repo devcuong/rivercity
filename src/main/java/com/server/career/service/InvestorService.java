@@ -10,5 +10,6 @@ import com.server.career.bean.InformationNormalBean;
 @Service
 public interface InvestorService {
 	public List<InformationInvestorBean> getInvestorByInformationNormalId(Integer informationSpecialId);
+
 	public List<InformationInvestorBean> AddAllInvester(List<InformationNormalBean> informationNormalBeans);
 }

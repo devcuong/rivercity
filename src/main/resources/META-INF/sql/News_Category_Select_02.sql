@@ -1,0 +1,1 @@
+SELECT * FROM news_category WHERE news_category_id = :newsCategoryId

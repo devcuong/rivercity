@@ -1,0 +1,1 @@
+SELECT * FROM news_real ORDER BY news_date DESC LIMIT 8

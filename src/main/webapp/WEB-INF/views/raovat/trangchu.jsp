@@ -509,7 +509,7 @@
 
 												<li vl="LA" class="advance-options">Long An</li>
 
-												<li vl="VT" class="advance-options">Bà Rịa Vũng Tàu</li>
+							r					<li vl="VT" class="advance-options">Bà Rịa Vũng Tàu</li>
 
 												<li vl="AG" class="advance-options">An Giang</li>
 
@@ -530,8 +530,6 @@
 												<li vl="BTH" class="advance-options">Bình Thuận</li>
 
 												<li vl="CM" class="advance-options">Cà Mau</li>
-
-
 
 												<li vl="CT" class="advance-options">Cần Thơ</li>
 

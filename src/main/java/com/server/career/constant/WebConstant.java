@@ -8,7 +8,7 @@ public class WebConstant {
 	public static final String REQUEST_PARAMETER_EMAIL = "email";
 	public static final String REQUEST_PARAMETER_PASSWORD = "password";
 	public static final String REQUEST_PARAMETER_TYPE = "type";
-	
+
 	/*
 	 * Time
 	 */
@@ -28,7 +28,7 @@ public class WebConstant {
 	public static final String GENDER_MALE = "Nam";
 	public static final String GENDER_FEMALE = "Nữ";
 	public static final String GENDER_NOT_REQUIRE = "Không yêu cầu";
-	
+
 	public static final String IMAGES_SERVER_PATH = "D:\\images\\";
-	
+
 }

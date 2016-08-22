@@ -11,18 +11,19 @@ import org.springframework.stereotype.Repository;
 import com.server.career.bean.SellPostBean;
 import com.server.career.dao.SellPostDao;
 import com.server.career.util.SqlFileReaderUtil;
+
 @Repository
 public class SellPostDaoImpl implements SellPostDao {
-	
+
 	/** JDBC. */
 	@Autowired
 	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
-	
+
 	/** SQL. */
 	private static final String SELL_POST_SEL_TOP = "Sell_Post_Select_01.sql";
 	private static final String SELL_POST_SELL_SEL_VIP = "Sell_Post_Select_02.sql";
 	private static final String SELL_POST_RENT_SEL_VIP = "Sell_Post_Select_03.sql";
-	
+
 	@Override
 	public List<SellPostBean> getTopSellPost() {
 		List<SellPostBean> sellPosts = null;
@@ -39,7 +40,7 @@ public class SellPostDaoImpl implements SellPostDao {
 
 		return sellPosts;
 	}
-	
+
 	@Override
 	public List<SellPostBean> getVipSellPostTypeSell() {
 		List<SellPostBean> sellPosts = null;
@@ -56,7 +57,7 @@ public class SellPostDaoImpl implements SellPostDao {
 
 		return sellPosts;
 	}
-	
+
 	@Override
 	public List<SellPostBean> getVipSellPostTypeRent() {
 		List<SellPostBean> sellPosts = null;
